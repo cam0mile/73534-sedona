@@ -1,0 +1,29 @@
+{
+  "name": "73534-sedona",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Обучающий проект «Седона» от HTML Academy",
+  "author": "Ника Скобелева",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/up-htmlacademy/73534-sedona.git"
+  },
+  "bugs": {
+    "url": "https://github.com/up-htmlacademy/73534-sedona/issues"
+  },
+  "homepage": "https://github.com/up-htmlacademy/73534-sedona",
+  "dependencies": {
+    "eclint": "1.1.x",
+    "fs-extra": "0.26.x",
+    "gulp": "3.9.x",
+    "gulp-plumber": "1.0.x"
+  },
+  "scripts": {
+    "pregosha": "npm install > /dev/null",
+    "gosha": "gulp gosha",
+    "test": "gulp lint"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
