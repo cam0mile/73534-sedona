@@ -1,6 +1,7 @@
 # Проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ника Скобелева](https://htmlacademy.ru/profile/id73534).
+* Наставник: [Андрей Алексеев](https://htmlacademy.ru/profile/id4596)
 
 ### Немного о себе
 
