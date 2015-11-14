@@ -1,3 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <meta name="description" content="СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header class="header"> 
+    <div class="mobile-section">
+      <div class="mobile-section__close"></div>
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__list clearfix">
+          <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--active" href="#">ИНФОРМАЦИЯ</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">ОСТАВИТЬ ОТЗЫВ</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">БЛОГ ШЕРИФА</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">ГОСТИНИЦЫ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="main-menu">
+      <ul class="main-menu__list clearfix">
+        <li class="main-menu__item main-menu__item--logo"><a href="#"><img src="img/menu-logo.png" alt="citi of sedona" width="138" height="70"></a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="clearfix"> 
+    <div class="img-text-main"><img src="img/img-text.png" width="458" height="352" alt="WELCOME to the gorgeous SEDONA Because The Grand Canyon Sacks!"></div>
+    <h1 class="slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h3> 
+    <p class="description">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p> 
+    <section class="bg-blue clearfix"> 
+      <div class="reason"> 
+        <div class="vertical">
+          <h4 class="reason__title">НАСТОЯЩИЙ ГОРОДОК</h4> 
+          <p class="reason__number">— №1 —</p> 
+          <p class="reason__text">СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p> 
+        </div>
+      </div>
+      <div class="reason-picture reason-picture--img-1"></div>
+    </section>
+    <section class="features clearfix">
+      <div class="features__item">
+        <div class="sprite sprite-house"></div>
+        <h4 class="features__title">Жилье</h4>
+        <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      </div>
+      <div class="features__item">
+        <div class="sprite sprite-eat"></div>
+        <h4 class="features__title">ЕДА</h4>
+        <p class="features__text">Всегда заказывай ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+      </div>
+      <div class="features__item">
+        <div class="sprite sprite-surprise"></div>
+        <h4 class="features__title">СУВЕНИРЫ</h4>
+        <p class="features__text">Не только китайского, но и местного производства!</p>
+      </div>
+    </section>
+    <section class="clearfix bg-blue"> 
+      <div class="reason-picture reason-picture--img-2">
+      </div>
+      <div class="reason"> 
+        <div class="vertical">
+          <h4 class="reason__title">ТАМ ЕСТЬ Мост дьявола</h4> 
+          <p class="reason__number">— №2 —</p>  
+          <p class="reason__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p> 
+        </div>
+      </div>
+    </section>
+    <section class="clearfix bg-grey">
+      <div class="reason"> 
+        <div class="vertical">
+          <h4>НЕБОЛЬШАЯ ПЛОЩАДЬ</h4> 
+          <p class="reason__number">— №3 —</p>  
+          <p class="reason__text">ВСЕ достопримеча<wbr>тельности находятся очень близко</p> 
+        </div>
+      </div>
+      <div class="reason"> 
+        <div class="vertical">
+          <h4>КРАСИВАЯ ДОРОГА</h4> 
+          <p class="reason__number">— №4 —</p>  
+          <p class="reason__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p> 
+        </div>
+      </div>
+      <div class="reason"> 
+        <div class="vertical">
+          <h4>МАЛО ТУРИСТОВ</h4> 
+          <p class="reason__number">— №5 —</p>  
+          <p class="reason__text">Большинство едет в гранд каньон и толпится там</p> 
+        </div>
+      </div>
+    </section>
+    <section  class="info">
+      <div class="info__title">ЗАИНТЕРЕСОВАЛИСЬ?</div>
+      <p class="info__text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <div class="booking">
+        <a class="booking__button" href="#">Найти гостиницу</a>
+      </div>
+      <div class="info__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8369633065!2d-111.79513845!3d34.854378399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1430084786520" width="100%" height="590" frameborder="0" style="border:0"></iframe>
+      </div> 
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="clearfix">
+      <div class="footer-hashtag">
+        #visitSEDONA
+      </div>
+      <div class="footer-social">
+        <a class="social-btn icon-twitter" href="http://twitter.com/htmlacademy" target="_blank"></a>
+        <a class="social-btn icon-facebook" href="http://www.facebook.com/htmlacademy" target="_blank"></a>
+        <a class="social-btn icon-youtube" href="http://youtube.com/watch?v=3vrvBe-iaY8" target="_blank"></a>
+      </div>
+      <div class="footer-copyright">
+        Разработано<a class="logo-htmlacademy" href="#"></a>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
