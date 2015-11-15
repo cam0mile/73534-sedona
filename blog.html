@@ -2,27 +2,174 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <title>html academy: седона</title>
+  <meta name="description" content="седона — небольшой городок в аризоне, заслуживающий большего!">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'></head>
 <body>
   <header class="header">
+    <div class="menu-section">
+      <div class="menu-section__close"></div>
+      <nav class="main-menu">
+        <ul class="main-menu__list clearfix">
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--active" href="#">информация</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">оставить отзыв</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">блог шерифа</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">гостиницы</a>
+          </li>
         </ul>
       </nav>
     </div>
+    <div class="logo">
+      <a href="#">
+        <img src="img/menu-logo.png" alt="citi of sedona" width="138" height="70"></a>
+    </div>
+    <div class="menu-section-open">
+      <a class="menu-section-open__link" href="#" title="menu">menu</a>
+    </div>
   </header>
+  <main>
+    <div class="intro">
+      <img src="img/img-text-sedona.png" width="458" height="352" alt="sedona"></div>
+    <h1 class="page-title">блог шерифа</h1>
     <p class="description">
+      седона удивительный город! горы здесь красного цвета, а местный шериф ведет блог и общается на форумах.
     </p>
+    <article class="post-preview">
+      <header>
+        <h3 class="post-preview__title">
+          <a href="#">внимание! сбежала моя домашняя анаконда</a>
+        </h3>
+      </header>
+      <section>
+        <p class="post-preview__text">
+          жители седоны и гости города, будьте бдительны — сбежала моя домашняя змея. увидевшему срочно звонить 911 и бежать от нее подальше.
+        </p>
+      </section>
+      <footer class="post__tag">
+        <time class="post__tag--time" datetime="2015-11-13">позавчера</time>
+        <p class="post__tag--description">
+          <a href="#">происшествия</a>
+        </p>
+      </footer>
+    </article>
+    <article class="post-preview">
+      <header>
+        <h3 class="post-preview__title">
+          <a href="#">принят антитабачный закон штата</a>
+        </h3>
+      </header>
+      <section>
+        <p class="post-preview__text">
+          уважаемые туристы, пожалуйста не забывайте, что курение сигарет и сигар в общественных местах города седона категорически запрещено.
+        </p>
+      </section>
+      <footer class="post__tag">
+        <time class="post__tag--time" datetime="2015-11-13">2 дня назад</time>
+        <p class="post__tag--description">
+          <a href="#">законы</a>
+        </p>
+      </footer>
+    </article>
+    <article class="post-preview">
+      <header>
+        <h3 class="post-preview__title">
+          <a href="#">маньяк задержан, дает показания</a>
+        </h3>
+      </header>
+      <section>
+        <p class="post-preview__text">
+          жители седоны могут спать спокойно. задержан маньяк-эксгибиционист, державший в страхе весь город. пострадавшим обращаться в 911.
+        </p>
+      </section>
+      <footer class="post__tag">
+        <time class="post__tag--time" datetime="2015-11-13">3 дня назад</time>
+        <p class="post__tag--description">
+          <a href="#">происшествия</a>
+        </p>
+      </footer>
+    </article>
+    <article class="post-preview">
+      <header>
+        <h3 class="post-preview__title">
+          <a href="#">водопад закрыт на реконструкцию</a>
+        </h3>
+      </header>
+      <section>
+        <p class="post-preview__text">
+          всем, кто планировал посещать водопад на этих выходных придется изменить планы, на нем ведутся ремонтные работы по улучшению подачи воды.
+        </p>
+      </section>
+      <footer class="post__tag">
+        <time class="post__tag--time" datetime="2015-11-13">неделю назад</time>
+        <p class="post__tag--description">
+          <a href="#">интересное</a>
+        </p>
+      </footer>
+    </article>
+    <article class="post-preview">
+      <header>
+        <h3 class="post-preview__title">
+          <a href="#">отрылся новый стейкхаус «горный бык»</a>
+        </h3>
+      </header>
+      <section>
+        <p class="post-preview__text">
+          лучшие стейки в аризоне! приемлемые цены и только самые лучшие продукты. заходите попробовать! действует акция: съешь два и получи третий!
+        </p>
+      </section>
+      <footer class="post__tag">
+        <time class="post__tag--time" datetime="2015-11-13">месяц назад</time>
+        <p class="post__tag--description">
+          <a href="#">еда</a>
+        </p>
+      </footer>
+    </article>
+    <article class="post-preview">
+      <header>
+        <h3 class="post-preview__title">
+          <a href="#">прогноз погоды на ближайшие выходные</a>
+        </h3>
+      </header>
+      <section>
+        <p class="post-preview__text">
+          синоптики обещают, что будет ясно, безветрено и около 90 по фаренгейту. как в пустыне! проверим их слова уже через пару дней.
+        </p>
+      </section>
+      <footer class="post__tag">
+        <time class="post__tag--time" datetime="2015-11-13">год назад</time>
+        <p class="post__tag--description">
+          <a href="#">погода</a>
+        </p>
+      </footer>
+    </article>
+    <section class="paginator">
+      <p class="paginator__item paginator__item--active">1</p>
       <a class="paginator__item" href="#">2</a>
       <a class="paginator__item" href="#">3</a>
       <a class="paginator__item" href="#">4</a>
       <a class="paginator__item" href="#">5</a>
+    </section>
   </main>
   <footer class="footer">
     <div class="clearfix">
+      <div class="footer-hashtag">#visitsedona</div>
       <div class="footer-social">
+        <a class="social-btn icon-twitter" href="http://twitter.com/htmlacademy" target="_blank" title="twitter">twitter</a>
+        <a class="social-btn icon-facebook" href="http://www.facebook.com/htmlacademy" target="_blank" title="facebook">facebook</a>
+        <a class="social-btn icon-youtube" href="http://youtube.com/watch?v=3vrvbe-iay8" target="_blank" title="youtube">youtube</a>
       </div>
       <div class="footer-copyright">
+        разработано
+        <a class="logo-htmlacademy" href="#" title="htmlacademy">htmlacademy</a>
       </div>
     </div>
   </footer>
