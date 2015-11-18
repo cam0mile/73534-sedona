@@ -10,9 +10,7 @@
 <body>
   <header class="header">
     <div class="menu-section">
-      <div class="menu-section__close"></div>
       <nav class="main-menu">
-        <ul class="main-menu__list clearfix">
           <li class="main-menu__item">
             <a class="main-menu__link main-menu__link--active" href="#">информация</a>
           </li>
@@ -28,130 +26,23 @@
         </ul>
       </nav>
     </div>
-    <div class="logo">
-      <a href="#">
-        <img src="img/menu-logo.png" alt="citi of sedona" width="138" height="70"></a>
-    </div>
     <div class="menu-section-open">
       <a class="menu-section-open__link" href="#" title="menu">menu</a>
     </div>
   </header>
   <main>
     <div class="intro">
-      <img src="img/img-text-sedona.png" width="458" height="352" alt="sedona"></div>
-    <div class="page-review">
-      <h4 class="page-review__title">оставьте свой отзыв</h4>
-      <p class="page-review__text">
         помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
     </div>
-    <section class="review-form">
       <form action="/echo" method="post">
-        <div class"review-form-section">
-          <h4 class="review-form-section__title">представьтесь, пожалуйста:</h4>
-          <label class="label" for="surname">фамилия:</label>
-          <input id="surname" class="contact-info" type="text" name="surname" required>
-          <label class="label" for="firstname">имя:</label>
-          <input id="firstname" class="contact-info" type="text" name="firstname" required>
-          <label class="label" for="secondname">отчество:</label>
-          <input id="secondname" class="contact-info" type="text" name="secondname" required></div>
-        <div class="review-form-section">
-          <h4 class="review-form-section__title">ваше общее впечатление:</h4>
-          <input id="radio-1" class="radio" type="radio" name="radio-1" checked>
-          <label for="radio-1" class="label-bold">скорее положительное</label>
-          <input id="radio-2" class="radio" type="radio" name="radio-2">
-          <label for="radio-2" class="label-bold">скорее отрицательное</label>
-        </div>
-        <div class"review-form-section">
-          <h4 class="review-form-section__title">даты вашей поездки:</h4>
-          <label class="label" for="date-arrival">дата приезда:</label>
-          <input id="date-arrival" class="date-info" type="date" name="date-arrival" required>
-          <label class="label" for="amount-days">Длительность пребывания:</label>
-          <input id="amount-days" class="amount-days" type="number" name="amount-days" value="14">
-          <button class="btn btn-plus">+</button>
-          <button class="btn btn-minus">-</button>
-          <label class="label" for="date-departure">дата отъезда:</label>
-          <input id="date-departure" class="date-info" type="date" name="date-departure" required></div>
-        <div class"review-form-section">
-          <h4 class="review-form-section__title">кол-во путешественников:</h4>
-          <label class="label" for="amount-persons">Количество путешественников:</label>
-          <input id="amount-persons" class="amount-persons" type="number" name="amount-persons" value="2">
-          <button class="btn btn-plus">+</button>
-          <button class="btn btn-minus">-</button>
-          <div class="contact-info-table">
-            <div class="ontact-info-table__column">
-              <p class="label">№</p>
-              <p class="contact-info">1</p>
-            </div>
-            <div class="contact-info-table__column">
-              <label class="label" for="surname--1">фамилия:</label>
-              <input id="surname--1" class="contact-info" type="text" name="surname--1" required>
-              <label class="label" for="firstname--1">имя:</label>
-              <input id="firstname--1" class="contact-info" type="text" name="firstname--1" required>
-              <label class="label" for="secondname--1">отчество:</label>
-              <input id="secondname--1" class="contact-info" type="text" name="secondname--1"></div>
           </div>
-          <div class="contact-info-table">
-            <div class="ontact-info-table__column">
-              <p class="label">№</p>
-              <p class="contact-info">2</p>
-            </div>
-            <div class="contact-info-table__column">
-              <label class="label" for="surname--1">фамилия:</label>
-              <input id="surname--2" class="contact-info" type="text" name="surname--2" required>
-              <label class="label" for="firstname--1">имя:</label>
-              <input id="firstname--2" class="contact-info" type="text" name="firstname--2" required>
-              <label class="label" for="secondname--1">отчество:</label>
-              <input id="secondname--2" class="contact-info" type="text" name="secondname--2"></div>
           </div>
-        </div>
-        <div class"review-form-section">
-          <h4 class="review-form-section__title">посещенные достопримечательности:</h4>
-          <input id="checkbox--1" class="checkbox" type="checkbox" name="checkbox--1" checked>
-          <label for="checkbox--1" class="label">мост дьявола</label>
-          <input id="checkbox--2" class="checkbox" type="checkbox" name="checkbox--2">
-          <label for="checkbox--2" class="label">слайд-парк</label>
-          <input id="checkbox--3" class="checkbox" type="checkbox" name="checkbox--3" checked>
-          <label for="checkbox--3" class="label">гора-колокол</label>
-          <input id="checkbox--4" class="checkbox" type="checkbox" name="checkbox--4" checked>
-          <label for="checkbox--4" class="label">красные скалы</label>
-        </div>
-        <div class"review-form-section">
-          <h4 class="review-form-section__title">загрузите фотографии:</h4>
-          <a class="photo-loading btn" href="#">выбрать фотографии</a>
           <div class="photo-catalog">
-            <a class="photo-catalog__link" href="#">
-              <img src="img/photo-review-1.png" width="" height="" alt="photo-review-1"></a>
-            <a class="photo-catalog__link" href="#">
-              <img src="img/photo-review-2.png" width="" height="" alt="photo-review-2"></a>
-            <a class="photo-catalog__link" href="#">
-              <img src="img/photo-review-3.png" width="" height="" alt="photo-review-3"></a>
-            <a class="photo-catalog__link" href="#">
-              <img src="img/photo-review-4.png" width="" height="" alt="photo-review-4"></a>
-            <a class="photo-catalog__link" href="#">
-              <img src="img/photo-review-5.png" width="" height="" alt="photo-review-5"></a>
-            <a class="photo-catalog__link" href="#">
-              <img src="img/photo-review-6.png" width="" height="" alt="photo-review-6"></a>
-            <a class="photo-catalog__link" href="#">
-              <img src="img/photo-review-7.png" width="" height="" alt="photo-review-7"></a>
           </div>
-        </div>
-        <a class="btn-filter" href="#">отправить отзыв</a>
       </form>
-    </section>
   </main>
   <footer class="footer">
-    <div class="clearfix">
-      <div class="footer-hashtag">#visitsedona</div>
-      <div class="footer-social">
-        <a class="social-btn icon-twitter" href="http://twitter.com/htmlacademy" target="_blank" title="twitter">twitter</a>
-        <a class="social-btn icon-facebook" href="http://www.facebook.com/htmlacademy" target="_blank" title="facebook">facebook</a>
-        <a class="social-btn icon-youtube" href="http://youtube.com/watch?v=3vrvbe-iay8" target="_blank" title="youtube">youtube</a>
-      </div>
-      <div class="footer-copyright">
-        разработано
-        <a class="logo-htmlacademy" href="#" title="htmlacademy">htmlacademy</a>
-      </div>
     </div>
   </footer>
 </body>
