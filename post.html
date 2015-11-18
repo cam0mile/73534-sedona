@@ -10,22 +10,102 @@
 <body>
   <header class="header">
     <div class="menu-section">
+      <div class="menu-section__close">Close</div>
       <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link main-menu__link--active" href="#">Информация</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Оставить отзыв</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Блог шерифа</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Гостиницы</a>
+          </li>
         </ul>
       </nav>
     </div>
+    <a class ="logo" href="#">
+      <img src="img/menu-logo.png" alt="citi of sedona" width="138" height="70"></a>
     <div class="menu-section-open">
       <a class="menu-section-open__link" href="#" title="menu">menu</a>
     </div>
   </header>
   <main>
+    <div class="intro">
+      <img src="img/img-text-sedona.png" width="458" height="352" alt="sedona">
+      <h2 class="intro__title">Блог шерифа</h2>
+      <p class="intro__text">
+        Седона удивительный город! горы здесь красного цвета, а местный шериф ведет блог и общается на форумах.
       </p>
     </div>
+    <div class="post-tag">
+      <time class="post-tag__time" datetime="2015-11-13">Позавчера</time>
+      <p class="post-tag__description">
+        <a  class="post-tag__link" href="#">Происшествия</a>
       </p>
     </div>
+    <section class="text-content">
+      <ul>
+        <li>
+          <h1>Внимание! Сбежала моя домашняя анаконда</h1>
+          <p>
+            Жители седоны и гости города, будьте бдительны — Сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше.
+          </p>
+        </li>
+        <li>
+          <h2>Предыстория</h2>
+          <p>
+            В далеком 85-ом я подобрал эту змею на трассе. Ее переехал грузовик и она валялась на обочине. Мне стало жаль ее и я решил взять ее с собой. Кинул в багажник пикапа и подумал  тогда: «если доедет до седоны живой, так и быть, оставлю ее себе»
+          </p>
+        </li>
+        <li>
+          <h2>пропажа</h2>
+          <p>
+            Неделю назад я вернулся из канзаса и не нашел анаконду дома. Обошел все 200 гектаров своего участка, но ее нигде нет. Решил сообщить в полицию, но вовремя вспомнил, что я и есть полиция, поэтому отправился на поиски сам. Особые приметы змеи:
+          </p>
+          <ul>
+            <li>Длина: 5 метров</li>
+            <li>Масса: 85 кг</li>
+            <li>Окраска: серовато-зелёная</li>
+          </ul>
+          <p>
+            Если вы увидите эту змею, сразу
+            <a href=”tel:911”>звоните 911</a>
+            и бегите со всех ног от нее!
+          </p>
+        </li>
+        <li>
+          <h2>Предостережение</h2>
+          <p>
+            Не пытайтесь убить змею, если увидите! Помните, что она тоже живое существо, хоть и выглядит не очень приятно. вот цитата, которая мне очень нравится:
+          </p>
+          <blockquote>
+            Самый свирепый из зверей — теперь мы знаем — это человек, он убивает даже если не голоден.
+            <cite>Адриано Челентано</cite>
+          </blockquote>
+        </li>
       </ul>
+    </section>
+    <section class="paginator-post">
+      <a class="paginator-post__btn" href="#">пред.</a>
+      <a class="paginator-post__btn" href="#">след.</a>
+      <a class="paginator-post__btn paginator-post__btn--return" href="#">Назад к списку</a>
+    </section>
   </main>
   <footer class="footer">
+    <div class="footer-hashtag">#visitsedona</div>
+    <div class="footer-social">
+      <a class="footer-social__link  icon-twitter" href="http://twitter.com/htmlacademy" target="_blank" title="twitter">twitter</a>
+      <a class="footer-social__link  icon-facebook" href="http://www.facebook.com/htmlacademy" target="_blank" title="facebook">facebook</a>
+      <a class="footer-social__link  icon-youtube" href="http://youtube.com/watch?v=3vrvbe-iay8" target="_blank" title="youtube">youtube</a>
+    </div>
+    <div class="footer-copyright">
+      разработано
+      <a class="logo-htmlacademy" href="#" title="htmlacademy">htmlacademy</a>
     </div>
   </footer>
 </body>
