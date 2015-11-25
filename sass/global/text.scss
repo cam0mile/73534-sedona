@@ -1,0 +1,15 @@
+
+
+body
+{
+    @include font-face;
+    font{
+    size: $fz_base;
+    weight: normal;
+}
+    line-height: $lh_base;
+    text-align: center;
+    text-transform: uppercase;
+    hyphens: auto;
+    color: $c_grey;
+}

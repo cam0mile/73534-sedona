@@ -1,0 +1,17 @@
+.social {
+  padding-top:40px;
+&__link {
+    font-size: $fz_21;
+    line-height: 48px;
+
+    display: inline-block;
+
+    width: 46px;
+    height: 48px;
+
+    text-decoration: none;
+
+    color: #fff;
+    background-color: $c_blue;
+}
+}

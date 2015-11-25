@@ -1,0 +1,30 @@
+.main-menu{
+
+&__list{
+  margin: 0;
+  padding-left: 0;
+
+}
+
+&__item{
+  list-style-type: none;
+}
+
+&__link{
+font: {
+    size: $fz_18;
+    weight: bold;
+  }
+    line-height: $lh_40_18;
+    padding: 15px;
+    background: $c_blue;
+    color: #fff;
+    vertical-align: middle;
+    text-decoration: none;
+    display: block;
+  }
+
+&__link--active{}
+}
+
+
