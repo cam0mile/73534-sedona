@@ -1,6 +1,6 @@
 
 // font-family
-/*$ff_base :*/
+$ff_base : 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 //font-size
 $fz_base: 14px;
@@ -16,10 +16,16 @@ $lh_46_21: (46/21);
 $lh_48_14: (48/14);
 $lh_28_30: (28/30);
 
+//
 
+$w-min: 320px;
+$w-max: 1200px;
 
 /*---- colors ----*/
 $c_blue: #81b3d2;
 $c_grey: #333;
 $c_light-grey: #eee;
 $c_light: rgba(255, 255, 255, .902);
+$c_dark-blue: #678fa8;
+$c_light-blue: #9ac2db;
+
