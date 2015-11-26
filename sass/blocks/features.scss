@@ -1,8 +1,15 @@
 .features {
   text-align: left;
-&__item {}
-&__title {
-  margin-bottom: 26px;
-}
-&__text {}
+  padding: $p_base;
+  &__item {
+    position: relative;
+    padding: 10px 0;
+  }
+  &__title {
+    margin-bottom: 15px;
+    padding: $p_features;
+  }
+  &__text {
+    padding: $p_features;
+  }
 }

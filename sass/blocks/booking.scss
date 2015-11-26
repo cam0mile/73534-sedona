@@ -1,19 +1,20 @@
 .booking {
+  padding: $p_base;
   &__button {
   font: {
-  size: $fz_21;
-    weight: bold;
+  size: $fz_m;
+  weight: bold;
   }
-    line-height: 26px;
+  line-height: (26/21);
 
-    display: block;
+  display: block;
 
-    padding: 17px 0;
-    margin-bottom: 50px;
+  padding: 17px 0;
+  margin-bottom: 50px;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    color: #fff;
-    background-color: $c_blue;
+  color: #fff;
+  background-color: $c_blue;
 }
 }

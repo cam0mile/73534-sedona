@@ -1,7 +1,7 @@
-.logo{
-   position: relative;
-    z-index: 2;
-
-}
-.logo img {margin-bottom: -20px;
+.logo {
+  position: relative;
+  z-index: 2;
+  & img {
+    margin-bottom: -20px;
+  }
 }

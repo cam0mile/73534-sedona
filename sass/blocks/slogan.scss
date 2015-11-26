@@ -1,7 +1,8 @@
 .slogan {
-&__title {
-  font-size:$fz_18;
-  line-height: $lh_26_18;
-}
-&__text {}
+  padding: $p_base;
+  &__title {
+    font-size:$fz_s;
+    line-height: (26/18);
+  }
+  &__text {}
 }

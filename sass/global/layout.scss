@@ -1,13 +1,11 @@
-body{
+body {
   min-width: $w-min;
   margin: 0;
 
 }
-.conteiner{
+.container {
   min-width: $w-min;
   max-width: $w-max;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }

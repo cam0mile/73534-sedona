@@ -1,11 +1,10 @@
-.footer-copyright
-{
+.footer-copyright {
   padding-top:40px;
   padding-bottom:30px;
-    font-size: $fz_base;
-    line-height: $lh_48_14;
+  font-size: $fz_base;
+  line-height: (48/14);
 
-    vertical-align: top;
+  vertical-align: top;
 
-    color: #000;
+  color: #000;
 }

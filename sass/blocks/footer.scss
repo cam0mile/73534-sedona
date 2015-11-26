@@ -1,18 +1,17 @@
 .footer {
   box-sizing: border-box;
-   // height: 120px;
-    padding-top: 36px;
-    background-color: $c_light;
-&-hashtag {
-  font: {
-   size: $fz_21;
-   weight: bold;
+  // height: 120px;
+  padding-top: 36px;
+  background-color: $c_light;
+  &-hashtag {
+    font: {
+      size: $fz_m;
+      weight: bold;
+    }
+    line-height: (26/21);
   }
-    line-height: $lh_26_21;
-
-}
-&-hashtag__link {
-  text-decoration: none;
-  color: #000;
-}
+  &-hashtag__link {
+    text-decoration: none;
+    color: #000;
+  }
 }

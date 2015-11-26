@@ -16,36 +16,36 @@ font-family: 'PT Sans';
 
 @font-face
 {
-    font-family: 'symbols-sedona';
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'symbols-sedona';
+  font-weight: normal;
+  font-style: normal;
 
-    src: url('../font/symbols-sedona.eot?60737633');
-    src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
-    url('../font/symbols-sedona.woff?60737633') format('woff'),
-    url('../font/symbols-sedona.ttf?60737633') format('truetype'),
-    url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+  src: url('../font/symbols-sedona.eot?60737633');
+  src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
+  url('../font/symbols-sedona.woff?60737633') format('woff'),
+  url('../font/symbols-sedona.ttf?60737633') format('truetype'),
+  url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
 }
 [class^='icon-']:before,
 [class*=' icon-']:before
 {
-    font-family: 'symbols-sedona';
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1em;
+  font-family: 'symbols-sedona';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1em;
 
-    display: inline-block;
+  display: inline-block;
 
-    width: 1em;
-    margin-right: .2em;
-    margin-left: .2em;
+  width: 1em;
+  margin-right: .2em;
+  margin-left: .2em;
 
-    text-align: center;
-    text-decoration: inherit;
-    text-transform: none;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
 
-    speak: none;
+  speak: none;
 }
 .icon-facebook:before { content: '\66'; } /* 'f' */
 .icon-twitter:before { content: '\74'; } /* 't' */
@@ -68,6 +68,6 @@ body {
   line-height: $lh_base;
   text-align: center;
   text-transform: uppercase;
-  hyphens: auto;
+  //hyphens: auto;
   color: $c_grey;
 }

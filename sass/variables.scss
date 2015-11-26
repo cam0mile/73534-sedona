@@ -6,20 +6,21 @@ $ff_base : 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
 $fz_base: 14px;
 $lh_base: (21/14);
 
-$fz_18: 18px;
-$fz_21: 21px;
-$fz_30: 30px;
-$lh_40_18: (40/18);
-$lh_26_18: (26/18);
-$lh_26_21: (26/21);
-$lh_46_21: (46/21);
-$lh_48_14: (48/14);
-$lh_28_30: (28/30);
+$fz_s: 18px;
+$fz_m: 21px;
+$fz_l: 30px;
 
-//
+
+//width
 
 $w-min: 320px;
 $w-max: 1200px;
+
+//padding
+
+$p_base: 0 20px;
+$p_features: 0 0 0 50px;
+
 
 /*---- colors ----*/
 $c_blue: #81b3d2;
@@ -28,4 +29,4 @@ $c_light-grey: #eee;
 $c_light: rgba(255, 255, 255, .902);
 $c_dark-blue: #678fa8;
 $c_light-blue: #9ac2db;
-
+$c_dark-grey: #d6d6d6;

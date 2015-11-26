@@ -1,22 +1,21 @@
-.main-menu{
-
-  &__list{
+.main-menu {
+  &__list {
     margin: 0;
     padding-left: 0;
   }
-  &__item{
+  &__item {
     list-style-type: none;
-    &:last-child a{
+    &:last-child a {
       box-shadow: inset 0 -5px 5px 0 #6c96b0;
       border-bottom: none;
     }
-    &:first-child a{
+    &:first-child a {
       border-top:none;
     }
   }
-  &__link{
+  &__link {
     font: {
-      size: $fz_18;
+      size: $fz_s;
       weight: bold;
     }
     line-height: (40/18);
