@@ -1,11 +1,10 @@
 .form {
   & fieldset {
     border: none;
-    border-bottom: 1px solid $c_lighter-grey;
+    border-top: 1px solid $c_lighter-grey;
   }
   &__item {
     padding: $p_base;
-    border-bottom: 1px solid $c_lighter-grey;
   }
   &__title {
     font-size: $fz_s;
@@ -47,8 +46,6 @@
     font-weight: bold;
     line-height: 62px;
 
-
-
     box-sizing: border-box;
     width: 58px;
     height: 62px;
@@ -63,5 +60,17 @@
     background: $c_lighter-grey;
   }
   &__input-checkbox {}
-  &__btn {}
+  &__btn {
+    padding: 15px 40px;
+    background: $c_blue;
+    border: none;
+    font: {
+      size: $fz_m;
+      weight: bold;
+    }
+  line-height: (26/21);
+  text-transform: uppercase;
+  color: #fff;
+
+  }
 }
