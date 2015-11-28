@@ -1,11 +1,67 @@
 .form {
-  &__item {}
-  &__title {}
-  &__label {}
-  &__input-text {}
+  & fieldset {
+    border: none;
+    border-bottom: 1px solid $c_lighter-grey;
+  }
+  &__item {
+    padding: $p_base;
+    border-bottom: 1px solid $c_lighter-grey;
+  }
+  &__title {
+    font-size: $fz_s;
+    line-height: (26/21);
+  }
+  &__label {
+    font: {
+      size: $fz_base;
+    }
+    line-height: (26/14);
+    //float:left;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+  &__input-text {
+    font: {
+      size: $fz_s;
+      weight: bold;
+    }
+    text-align: left;
+    line-height: (26/18);
+    display: block;
+    border: none;
+    background: $c_lighter-grey;
+    //width:100%;
+    padding:15px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
   &__label--bold {}
-  &__item-contact {}
-  &__item-number {}
+  &__item-contact {
+    display:flex;
+    flex-wrap: wrap;
+    & p {margin: 0;}
+  }
+  &__item-number {
+    font-family: 'PT Sans', sans-serif;
+    font-size: $fz_s;
+    font-weight: bold;
+    line-height: 62px;
+
+
+
+    box-sizing: border-box;
+    width: 58px;
+    height: 62px;
+    padding: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000;
+    border: none;
+    outline: none;
+    background: $c_lighter-grey;
+  }
   &__input-checkbox {}
   &__btn {}
 }

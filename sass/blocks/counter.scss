@@ -1,1 +1,47 @@
-.counter {}
+.counter {
+  //display: flex;
+  margin-bottom: 10px;
+  & input {
+    position: relative;
+
+    font-size: $fz_s;
+    font-weight: bold;
+    line-height: 62px;
+
+    box-sizing: border-box;
+    width: 58px;
+    height: 62px;
+    padding: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000;
+    border: none;
+    outline: none;
+    background: $c_lighter-grey;
+}
+  & input:after {
+    content: "дн.";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: $fz_s;
+    font-weight: bold;
+    line-height: 62px;
+
+    box-sizing: border-box;
+    width: 58px;
+    height: 62px;
+    padding: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000;
+    border: none;
+    outline: none;
+    background: $c_lighter-grey;
+}
+}

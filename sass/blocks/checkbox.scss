@@ -1,0 +1,12 @@
+.checkbox {
+  position: relative;
+  padding-left:60px;
+  display: inline-block;
+  padding-bottom: 25px;
+  font-weight: bold;
+  font-size:$fz_s;
+  text-transform: none;
+  & input {
+    display:none;
+  }
+}

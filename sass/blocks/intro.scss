@@ -1,4 +1,25 @@
 .intro {
-  &__title {}
-  &__text {}
+  & img {
+    position: relative;
+    z-index: 1;
+    height: 160px;
+    margin-bottom: 45px;
+    padding: $p_base;
+    padding-top: 50px;
+    box-sizing:border-box;
+    background-image: url('../img/bg-main.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  &__title {
+    font-size: $fz_s;
+    line-height: (26/21);
+    margin-bottom: 40px;
+  }
+  &__text {
+    font-size: $fz_base;
+    margin-bottom: 25px;
+  }
 }

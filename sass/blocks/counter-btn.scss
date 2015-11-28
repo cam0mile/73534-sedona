@@ -1,4 +1,20 @@
 .counter-btn {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 62px;
+
+  box-sizing: border-box;
+  width: 58px;
+  height: 62px;
+  padding: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $c_darken-grey;
+  border: none;
+  outline: none;
+  background: $c_lighter-grey;
   &--plus {}
   &--minus {}
 }
