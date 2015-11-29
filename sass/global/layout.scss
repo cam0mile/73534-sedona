@@ -1,3 +1,13 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   min-width: $w-min;
   margin: 0;

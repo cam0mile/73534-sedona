@@ -1,40 +1,39 @@
 .counter {
-  //display: flex;
-  margin-bottom: 10px;
-  & input {
-    position: relative;
-
-    font-size: $fz_s;
-    font-weight: bold;
-    line-height: 62px;
-
-    box-sizing: border-box;
-    width: 58px;
-    height: 62px;
-    padding: 0;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    color: #000;
-    border: none;
-    outline: none;
-    background: $c_lighter-grey;
-}
-  & input:after {
-    content: "дн.";
+  position: relative;
+  margin-bottom: 17px;
+  width: 100%;
+  padding: 0 67px;
+  &--mb38{
+    margin-bottom: 38px;
+  }
+  &:before {
+    content: attr(data-count);
     position: absolute;
     top: 0;
-    left: 0;
+    right: 90px;
+
+    font-size: $fz_s;
+    line-height: 58px;
+    text-transform: none;
+
+    //width: 45px;
+    height: 58px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    color: $c_darken-grey;
+  }
+  &__field {
+    display: block;
 
     font-size: $fz_s;
     font-weight: bold;
-    line-height: 62px;
+    line-height: (58/18);
 
-    box-sizing: border-box;
-    width: 58px;
-    height: 62px;
-    padding: 0;
+    width: 100%;
+    height: 58px;
+    padding-right: 80px;
 
     text-align: center;
     text-transform: uppercase;
@@ -43,5 +42,31 @@
     border: none;
     outline: none;
     background: $c_lighter-grey;
+  }
+&__btn {
+  position: absolute;
+  top: 0;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 62px;
+
+  width: 61px;
+  height: 58px;
+  padding: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $c_darken-grey;
+  border: none;
+  outline: none;
+  background: $c_lighter-grey;
+  &--plus {
+    right: 0px;
+  }
+  &--minus {
+    left: 0px;
+  }
 }
+
 }

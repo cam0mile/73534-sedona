@@ -2,53 +2,78 @@
   & fieldset {
     border: none;
     border-top: 1px solid $c_lighter-grey;
+    padding: $p_base;
+    margin: 0;
+
   }
   &__item {
-    padding: $p_base;
   }
   &__title {
     font-size: $fz_s;
-    line-height: (26/21);
+    line-height: (26/18);
+    margin-top: 19px;
+    margin-bottom: 25px;
+    &--mb20{
+      margin-bottom: 20px;
+    }
   }
   &__label {
     font: {
       size: $fz_base;
     }
     line-height: (26/14);
-    //float:left;
+    display: block;
     padding-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    text-align: left;
   }
   &__input-text {
     font: {
       size: $fz_s;
       weight: bold;
     }
+    height: 58px;
     text-align: left;
     line-height: (26/18);
     display: block;
     border: none;
     background: $c_lighter-grey;
-    //width:100%;
-    padding:15px 20px;
-    margin-bottom: 20px;
+    width:100%;
+    padding:0 20px;
+    margin-bottom: 16px;
     box-sizing: border-box;
+    &:last-child{
+      margin-bottom: 23px;
+    }
   }
-  &__label--bold {}
+  &__label--bold {
+    font-weight: bold;
+  }
   &__item-contact {
-    display:flex;
-    flex-wrap: wrap;
-    & p {margin: 0;}
+    position: relative;
+    margin-bottom: 32px;
+    & p {margin-top: 0;}
+    &:last-child {
+      margin-bottom: 24px;
+    }
   }
   &__item-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    & .form__label {
+      padding-left: 25px;
+    }
+  }
+  &__number {
     font-family: 'PT Sans', sans-serif;
     font-size: $fz_s;
     font-weight: bold;
-    line-height: 62px;
+    line-height: 58px;
 
     box-sizing: border-box;
-    width: 58px;
-    height: 62px;
+    width: 61px;
+    height: 58px;
     padding: 0;
 
     text-align: center;
@@ -58,6 +83,9 @@
     border: none;
     outline: none;
     background: $c_lighter-grey;
+  }
+  &__item-column {
+    padding-left: 67px;
   }
   &__input-checkbox {}
   &__btn {
