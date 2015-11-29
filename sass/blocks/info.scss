@@ -6,13 +6,14 @@
     font-weight: bold;
     line-height: (26/21);
 
-    margin-bottom: 29px;
+    margin-bottom: 19px;
 
     color: #000;
   }
   &__text {
     padding: $p_base;
-    margin-bottom:42px;
+    margin-bottom:32px;
+    line-height: (24/14)
   }
   &__map{
   }

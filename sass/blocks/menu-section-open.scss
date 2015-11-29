@@ -1,5 +1,20 @@
 .menu-section-open {
+  position: relative;
   &__link {
-    display:none;
+    @include no-text-2;
+    @include menu-icon;
+    top:-21px;
+    right:20px;
+    &:before {
+      content: '';
+      @include menu-icon
+      top: -18px;
+    }
+    &:after{
+      content: '';
+      @include menu-icon
+      top: -9px;
+    }
   }
 }
+

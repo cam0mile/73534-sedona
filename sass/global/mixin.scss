@@ -4,3 +4,38 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+@mixin no-text-2 {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+
+@mixin cross {
+position: absolute;
+border-radius: 1px;
+height: 2px;
+width: 15px;
+background: #bbb;
+display: block;
+}
+
+@mixin menu-icon {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 1px;
+  height: 4px;
+  width: 23px;
+  background: $c_blue;
+  display: block;
+}
+
+@mixin cross-white {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 1px;
+  height: 4px;
+  width: 23px;
+  background: #fff;
+  display: block;
+}

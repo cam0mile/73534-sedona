@@ -1,9 +1,10 @@
 .form {
+    padding: $p_base;
   & fieldset {
     border: none;
     border-top: 1px solid $c_lighter-grey;
-    padding: $p_base;
     margin: 0;
+    padding: 0;
 
   }
   &__item {
@@ -26,12 +27,14 @@
     padding-left: 20px;
     margin-bottom: 7px;
     text-align: left;
+    cursor: pointer;
   }
   &__input-text {
     font: {
       size: $fz_s;
       weight: bold;
     }
+    cursor: pointer;
     height: 58px;
     text-align: left;
     line-height: (26/18);
@@ -41,7 +44,6 @@
     width:100%;
     padding:0 20px;
     margin-bottom: 16px;
-    box-sizing: border-box;
     &:last-child{
       margin-bottom: 23px;
     }
@@ -71,7 +73,6 @@
     font-weight: bold;
     line-height: 58px;
 
-    box-sizing: border-box;
     width: 61px;
     height: 58px;
     padding: 0;
@@ -89,16 +90,17 @@
   }
   &__input-checkbox {}
   &__btn {
-    padding: 15px 40px;
+    width: 100%;
+    height: 58px;
     background: $c_blue;
     border: none;
     font: {
       size: $fz_m;
       weight: bold;
     }
-  line-height: (26/21);
-  text-transform: uppercase;
-  color: #fff;
-
+    line-height: 58px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 80px;
   }
 }

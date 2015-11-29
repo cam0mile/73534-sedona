@@ -1,5 +1,24 @@
 .menu-section {
+  position: relative;
   &__close {
-    display: none;
+    @include no-text-2;
+    &:before {
+      content: '';
+      @include cross-white;
+      transform: rotate(45deg);
+      right: 19px;
+      top:26px;
+    }
+    &:after{
+      content: '';
+      @include cross-white;
+      transform: rotate(-45deg);
+      right: 19px;
+      top:26px;
+    }
   }
 }
+
+
+
+

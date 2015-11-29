@@ -47,8 +47,8 @@ font-family: 'PT Sans';
 
   speak: none;
 }
-.icon-facebook:before { content: '\66'; } /* 'f' */
-.icon-twitter:before { content: '\74'; } /* 't' */
+.icon--facebook:before { content: '\66'; } /* 'f' */
+.icon--twitter:before { content: '\74'; } /* 't' */
 .icon-up-dir:before { content: '\25b2'; } /* '▲' */
 .icon-down-dir:before { content: '\25bc'; } /* '▼' */
 .icon-star:before { content: '\2605'; } /* '★' */
@@ -57,7 +57,7 @@ font-family: 'PT Sans';
 .icon-calendar:before { content: '\e800'; } /* '' */
 .icon-plus:before { content: '\e801'; } /* '' */
 .icon-minus:before { content: '\e802'; } /* '' */
-.icon-youtube:before { content: '\f39e'; } /* '' */
+.icon--youtube:before { content: '\f39e'; } /* '' */
 
 body {
   font: {

@@ -1,8 +1,12 @@
 .slogan {
-  padding: $p_base;
+  padding: 0 25px;
+  margin-bottom: 42px;
   &__title {
     font-size:$fz_s;
     line-height: (26/18);
+    margin-bottom: 30px;
   }
-  &__text {}
+  &__text {
+    line-height: (26/14);
+  }
 }
