@@ -1,5 +1,6 @@
 .social {
   //padding-top:40px;
+  font-size: 0;
   &__link {
     font-size: $fz_m;
     line-height: 48px;
@@ -14,6 +15,7 @@
     color: #fff;
     background-color: $c_blue;
 
-    margin-right: 2px;
+    margin-right: 4px;
+    margin-bottom: 4px;
   }
 }
