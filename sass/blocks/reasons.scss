@@ -1,27 +1,23 @@
-.reason {
-  &--bg-blue {
+.reasons {
+  &__item {
+    &--bg-blue {
     background-color: $c_blue;
     color: #fff;
-    & .reason__item{
-      padding-top: 41px;
-      padding-bottom: 40px;
+    padding-top: 41px;
+    padding-bottom: 40px;
     }
-  }
   &--bg-grey {
     background-color: $c_light-grey;
-    & .reason__item{
-      border-bottom: 1px solid $c_dark-grey;
+    border-bottom: 1px solid $c_dark-grey;
     }
-    & .reason__item:last-child .reason__text{
-      border-bottom: none;
-    }
-  }
-  &__item {
     padding: $p_base;
     padding-top: 28px;
-    padding-bottom: 27px;
+    padding-bottom: 26px;
     & h4 {
       margin-top: 0;
+    }
+    &:last-child{
+      border-bottom: none;
     }
   }
   &__title {
