@@ -1,5 +1,6 @@
 .booking {
   padding: $p_base;
+  margin-bottom: 50px;
   &__button {
   font: {
   size: $fz_m;
@@ -9,8 +10,7 @@
 
   display: block;
 
-  padding: 17px 0;
-  margin-bottom: 50px;
+  padding: 16px 15px;
 
   text-decoration: none;
 
