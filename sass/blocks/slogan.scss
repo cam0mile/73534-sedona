@@ -2,7 +2,10 @@
   padding: 0 25px;
   margin-bottom: 42px;
   &__title {
-    font-size:$fz_s;
+    font: {
+      size:$fz_s;
+      weight: bold;
+    }
     line-height: (26/18);
     margin-bottom: 30px;
   }
