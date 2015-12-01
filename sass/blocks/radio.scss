@@ -6,6 +6,15 @@
   text-transform: none;
   font-size: $fz_s;
   line-height: (26/18);
+  &__label {
+    font: {
+      weight: bold;
+    }
+    display: block;
+    cursor: pointer;
+    margin-bottom: 7px;
+    text-align: left;
+  }
   &:last-child {
     margin-bottom: 18px;
   }
@@ -22,7 +31,7 @@
     left: 0;
     display: block;
   }
-  & input:checked ~ &__ind:after {
+    &__ind:after  {
     content:"";
     position:absolute;
     left:16px;
@@ -31,5 +40,10 @@
     background-color: $c_grey;
     border-radius: 12px;
     padding: 12px;
+    opacity: 0;
+  }
+  & input:checked ~ &__ind:after {
+  opacity: 1;
+  transition: all 0.5s;
   }
 }

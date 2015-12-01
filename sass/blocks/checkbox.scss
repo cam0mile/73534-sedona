@@ -1,4 +1,8 @@
 .checkbox {
+  &__label{
+    display: block;
+    text-align: left;
+  }
   &:last-child {
     margin-bottom: 35px;
   }
@@ -12,6 +16,9 @@
   text-transform: none;
   & input {
     display:none;
+  }
+  &__ind {
+    cursor: pointer;
   }
   &__ind:before {
     content:"";
@@ -29,7 +36,7 @@
     background: $c_lighter-grey;
     border-radius: 10%;
   }
-  & input:checked ~ &__ind:after {
+  &__ind:after {
     content:"";
     position:absolute;
     left:18px;
@@ -40,5 +47,10 @@
     border-left: 5px solid $c_grey;
     border-bottom: 5px solid $c_grey;
     transform: rotate(-45deg);
+    opacity: 0;
+  }
+  & input:checked ~ &__ind:after {
+    opacity: 1;
+    transition: all 0.5s;
   }
 }
