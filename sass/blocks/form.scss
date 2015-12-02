@@ -1,5 +1,6 @@
 .form {
     padding: $p_base;
+    margin-bottom: 80px;
   & fieldset {
     border: none;
     border-top: 1px solid $c_lighter-grey;
@@ -98,6 +99,6 @@
     line-height: 58px;
     text-transform: uppercase;
     color: #fff;
-    margin-bottom: 80px;
+    margin-bottom: 5px;
   }
 }
