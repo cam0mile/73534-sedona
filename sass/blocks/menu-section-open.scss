@@ -17,4 +17,8 @@
     }
   }
 }
-
+@media (min-width: $screen-md) {
+  .menu-section-open {
+    display: none;
+  }
+}

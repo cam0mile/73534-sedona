@@ -32,13 +32,31 @@
     margin-bottom: 0;
   }
   &__image {
+    min-height: 256px;
+    background-position: center;
+    background-size: cover;
   }
   &__image--img-1 {
-    height: 256px;
     background-image: url('../img/pict-content-reason1.jpg');
   }
   &__image--img-2 {
-    height: 256px;
     background-image: url('../img/pict-content-reason2.jpg');
+  }
+}
+@media (min-width: $screen-md) {
+  .reasons {
+    display: flex;
+    &__item {
+      width: 33.33%;
+      &--bg-grey {
+        border-bottom: none;
+      }
+    }
+    &__image {
+      width: 66.66%
+    }
+    &__image--img-2 {
+      order: 1;
+    }
   }
 }

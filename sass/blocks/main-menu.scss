@@ -31,5 +31,41 @@
   &--active{}
   }
 }
+@media (min-width: $screen-md) {
+  .main-menu {
+    &__list {
+      margin: 0;
+      padding-left: 0;
+      display: flex;
+    }
+    &__item {
+      width: 20%;
+      list-style-type: none;
+    &:last-child a {
+      box-shadow: none;
+      border-bottom: none;
+    }
+    &:first-child a {
+      border-top: none;
+    }
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
+    }
+    &__link {
+      font: {
+        size: $fz_base;
+        weight: bold;
+      }
+      line-height: (26/14);
+      padding: 15px;
+      background: #fff;
+      color: #000;
+      border-top: none;
+      border-bottom: none;
+    &--active{}
+    }
+  }
+}
 
 

@@ -5,3 +5,12 @@
     margin-bottom: -20px;
   }
 }
+@media (min-width: $screen-md) {
+  .logo {
+    margin-top: -20px;
+    display: block;
+  & img {
+   margin-top: -76px;
+  }
+}
+}

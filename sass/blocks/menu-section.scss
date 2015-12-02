@@ -18,7 +18,13 @@
     }
   }
 }
-
+@media (min-width: $screen-md) {
+  .menu-section {
+    &__close {
+    display: none;
+    }
+  }
+}
 
 
 
