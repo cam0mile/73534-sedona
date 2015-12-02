@@ -4,12 +4,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   &__item {
     position: relative;
     width: 70px;
     margin-right: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     flex-basis: 70px;
     height: 70px;
   }
@@ -39,12 +39,4 @@
       transform: rotate(-45deg);
     }
   }
-  &__btn {
-    padding: 20px 10px;
-    background:$c_lighter-grey;
-    margin-bottom: 30px;
-  }
-  &__label {}
-  &__file{}
-  &__file-label{}
 }

@@ -15,8 +15,8 @@
     line-height: (26/18);
     margin-top: 19px;
     margin-bottom: 25px;
-    &--mb20{
-      margin-bottom: 20px;
+    &--mb19{
+      margin-bottom: 19px;
     }
   }
   &__label {
@@ -100,5 +100,6 @@
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 5px;
+    padding: 0px 10px;
   }
 }
