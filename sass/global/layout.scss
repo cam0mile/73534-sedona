@@ -9,13 +9,15 @@ html {
 }
 
 body {
-  min-width: $w-min;
+  min-width: $screen-sm;
   margin: 0;
 
 }
 .container {
-  min-width: $w-min;
-  max-width: $w-max;
+  min-width: $screen-sm;
+  max-width: $screen-lg;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,.20);
 }

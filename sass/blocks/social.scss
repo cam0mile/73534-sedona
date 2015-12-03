@@ -15,8 +15,13 @@
     color: #fff;
     background-color: $c_blue;
 
-    margin-right: 4px;
-    margin-left: 2px;
-    margin-bottom: 4px;
+    margin-right: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+  }
+}
+@media (min-width: $screen-md) {
+  .social {
+    width: 33.33%;
   }
 }

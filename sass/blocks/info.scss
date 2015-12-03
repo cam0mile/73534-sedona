@@ -23,3 +23,26 @@
     border: 0;
   }
 }
+@media (min-width: $screen-md) {
+  .info {
+    padding-top: 28px;
+    &__title {
+      font-size: $fz_l;
+      line-height: (26/30);
+      margin-bottom: 16px;
+    }
+    &__text {
+      display: inline-block;
+      max-width: 458px;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+  }
+}
+@media (min-width: $screen-lg) {
+  .info {
+    &__text {
+      margin-bottom: 45px;
+    }
+  }
+}

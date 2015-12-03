@@ -1,7 +1,7 @@
 .logo {
   position: relative;
   z-index: 2;
-  & img {
+  img {
     margin-bottom: -20px;
   }
 }
@@ -9,9 +9,9 @@
   .logo {
     margin-top: -20px;
     display: block;
-  & img {
-   margin-top: -76px;
+    img {
+      margin-top: -76px;
+    }
   }
-}
 }
 

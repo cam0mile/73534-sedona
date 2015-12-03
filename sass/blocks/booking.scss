@@ -1,20 +1,34 @@
 .booking {
   padding: $p_base;
   margin-bottom: 50px;
-  &__button {
-  font: {
-  size: $fz_m;
-  weight: bold;
+    &__button {
+    font: {
+    size: $fz_m;
+    weight: bold;
+    }
+    line-height: (26/21);
+
+    display: block;
+
+    padding: 16px 15px;
+
+    text-decoration: none;
+
+    color: #fff;
+    background-color: $c_blue;
+
+          max-width: 458px;
+      margin: 0 auto;
+      margin-bottom: 10px;
   }
-  line-height: (26/21);
-
-  display: block;
-
-  padding: 16px 15px;
-
-  text-decoration: none;
-
-  color: #fff;
-  background-color: $c_blue;
 }
+@media (min-width: $screen-md) {
+  .booking {
+    margin-bottom: 58px;
+  }
+}
+@media (min-width: $screen-lg) {
+  .booking {
+    margin-bottom: 66px;
+  }
 }

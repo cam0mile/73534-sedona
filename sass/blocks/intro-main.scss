@@ -11,5 +11,12 @@
   background-size: cover;
   overflow: hidden;
 }
+@media (min-width: $screen-md) {
+  .intro-main {
+    min-height: 512px;
+    background-size: 100% auto;
+    margin-bottom: 57px;
+  }
+}
 
 

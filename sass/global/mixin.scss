@@ -39,3 +39,8 @@ display: block;
   background: #fff;
   display: block;
 }
+
+@mixin font-21 {
+  font-size:$fz_m;
+  line-height: (26/21);
+}

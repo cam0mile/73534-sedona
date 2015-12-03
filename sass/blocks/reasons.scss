@@ -13,7 +13,7 @@
     padding: $p_base;
     padding-top: 28px;
     padding-bottom: 26px;
-    & h4 {
+    h4 {
       margin-top: 0;
     }
     &:last-child{
@@ -47,16 +47,43 @@
   .reasons {
     display: flex;
     &__item {
+      min-height: 256px;
       width: 33.33%;
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
       &--bg-grey {
         border-bottom: none;
       }
     }
+    &__title {
+      padding: 0 19%;
+      @include font-21;
+    }
+    &__number {
+      margin-bottom: 7px;
+    }
+    &__text {
+      padding: $p_md-lg-display;
+    }
     &__image {
-      width: 66.66%
+      width: 66.66%;
+      order: 3;
     }
     &__image--img-2 {
       order: 1;
+    }
+  }
+}
+@media (min-width: $screen-lg) {
+  .reasons {
+    &__title {
+      padding: 0 30%;
     }
   }
 }
