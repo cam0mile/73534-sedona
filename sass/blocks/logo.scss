@@ -1,17 +1,22 @@
-.logo {
+.logo
+{
   position: relative;
   z-index: 2;
-  img {
+  img
+  {
     margin-bottom: -20px;
   }
 }
-@media (min-width: $screen-md) {
-  .logo {
-    margin-top: -20px;
+@media (min-width: $screen-md)
+{
+  .logo
+  {
     display: block;
-    img {
-      margin-top: -76px;
-    }
+
+    margin-top: -20px;
+      img
+      {
+        margin-top: -76px;
+      }
   }
 }
-

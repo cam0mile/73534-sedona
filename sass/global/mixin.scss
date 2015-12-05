@@ -1,16 +1,13 @@
-
 @mixin no-text {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
-
 @mixin no-text-2 {
   font: 0/0 serif;
   text-shadow: none;
   color: transparent;
 }
-
 @mixin cross {
 position: absolute;
 border-radius: 1px;
@@ -19,7 +16,6 @@ width: 15px;
 background: #bbb;
 display: block;
 }
-
 @mixin menu-icon {
   cursor: pointer;
   position: absolute;
@@ -29,7 +25,6 @@ display: block;
   background: $c_blue;
   display: block;
 }
-
 @mixin cross-white {
   cursor: pointer;
   position: absolute;
@@ -39,8 +34,37 @@ display: block;
   background: #fff;
   display: block;
 }
-
-@mixin font-21 {
+@mixin font-md {
   font-size:$fz_m;
   line-height: (26/21);
+}
+@mixin font-lg {
+  font-size:$fz_l;
+  line-height: (26/30);
+}
+@mixin input-text {
+    font: {
+      size: $fz_s;
+      weight: bold;
+    }
+    cursor: pointer;
+    height: 58px;
+    text-align: left;
+    line-height: (26/18);
+    display: block;
+    border: none;
+    background: $c_lighter-grey;
+    width:100%;
+    padding:0 20px;
+}
+@mixin label {
+  font: {
+    size: $fz_base;
+  }
+  line-height: (26/14);
+  display: block;
+  padding-left: 20px;
+  margin-bottom: 7px;
+  text-align: left;
+  cursor: pointer;
 }

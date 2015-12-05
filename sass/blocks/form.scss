@@ -20,73 +20,15 @@
     }
   }
   &__label {
-    font: {
-      size: $fz_base;
-    }
-    line-height: (26/14);
-    display: block;
-    padding-left: 20px;
-    margin-bottom: 7px;
-    text-align: left;
-    cursor: pointer;
+    @include label;
   }
   &__input-text {
-    font: {
-      size: $fz_s;
-      weight: bold;
-    }
-    cursor: pointer;
-    height: 58px;
-    text-align: left;
-    line-height: (26/18);
-    display: block;
-    border: none;
-    background: $c_lighter-grey;
-    width:100%;
-    padding:0 20px;
+    @include input-text;
     margin-bottom: 16px;
     &:last-child{
       margin-bottom: 23px;
     }
   }
-  &__item-contact {
-    position: relative;
-    margin-bottom: 32px;
-    & p {margin-top: 0;}
-    &:last-child {
-      margin-bottom: 24px;
-    }
-  }
-  &__item-number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    & .form__label {
-      padding-left: 25px;
-    }
-  }
-  &__number {
-    font-family: 'PT Sans', sans-serif;
-    font-size: $fz_s;
-    font-weight: bold;
-    line-height: 58px;
-
-    width: 61px;
-    height: 58px;
-    padding: 0;
-
-    text-align: center;
-    text-transform: uppercase;
-
-    color: #000;
-    border: none;
-    outline: none;
-    background: $c_lighter-grey;
-  }
-  &__item-column {
-    padding-left: 67px;
-  }
-  &__input-checkbox {}
   &__btn {
     width: 100%;
     height: 58px;
@@ -99,7 +41,35 @@
     line-height: 58px;
     text-transform: uppercase;
     color: #fff;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     padding: 0px 10px;
+  }
+}
+@media (min-width: $screen-md) {
+  .form {
+    & fieldset {
+      border-top: none;
+    }
+    &__item {
+      //display: flex;
+    }
+    &__title-wrap{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      @include font-md;
+      font-weight: bold;
+      width: 100%;
+      flex-basis: 400px;
+      margin: 0 auto;}
+    &__line {
+      flex: 1;
+      margin-top: -3px;
+      height: 1px;
+      width: 100%;
+      background: $c_grey;
+    }
   }
 }

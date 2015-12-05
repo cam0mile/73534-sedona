@@ -1,22 +1,27 @@
-.intro-main {
-  position: relative;
-  z-index: 1;
-  min-height: 390px;
-  margin-bottom: 41px;
-  padding: $p_base;
-  padding-top: 50px;
-  background-image: url('../img/bg-main.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
-@media (min-width: $screen-md) {
-  .intro-main {
-    min-height: 512px;
-    background-size: 100% auto;
-    margin-bottom: 57px;
-  }
-}
+.intro-main
+{
+    position: relative;
+    z-index: 1;
 
+    overflow: hidden;
 
+    min-height: 390px;
+    margin-bottom: 41px;
+    padding: $p_base;
+    padding-top: 50px;
+
+    background-image: url('../img/bg-main.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+@media (min-width: $screen-md)
+{
+    .intro-main
+    {
+        min-height: 512px;
+        margin-bottom: 57px;
+
+        background-size: 100% auto;
+    }
+}

@@ -37,7 +37,7 @@
   </header>
   <main>
     <div class="intro">
-      <img src="img/img-text.png" width="458" height="352" alt="sedona">
+      <img class="intro__img" src="img/img-text.png" width="458" height="352" alt="sedona">
       <h1 class="intro__title">Оставьте свой отзыв</h1>
       <p class="intro__text">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
@@ -46,7 +46,11 @@
     <div class="form">
       <form action="/echo" method="post">
         <fieldset class="form__item">
+          <div class="form__title-wrap">
+            <div class="form__line"></div>
           <h4 class="form__title">Представьтесь, пожалуйста:</h4>
+             <div class="form__line"></div>
+        </div>
           <label class="form__label required" for="surname">Фамилия:</label>
           <input id="surname" class="form__input-text" type="text" name="surname" required>
           <label class="form__label required" for="firstname">Имя:</label>
@@ -55,12 +59,12 @@
           <input id="secondname" class="form__input-text" type="text" name="secondname" required></fieldset>
         <fieldset class="form__item">
           <h4 class="form__title">Ваше общее впечатление:</h4>
-          <label for="radio-1" class="radio radio__label">
+          <label for="radio-1" class="radio">
             <input type="radio" name="radio" id="radio-1">
             <span class="radio__ind"></span>
             Скорее положительное
           </label>
-          <label for="radio-2" class="radio radio__label">
+          <label for="radio-2" class="radio">
             <input type="radio" name="radio" id="radio-2">
             <span class="radio__ind"></span>
             Скорее отрицательное
@@ -74,7 +78,7 @@
             Длительность пребывания:
           </label>
           <div class="counter" data-count="дн.">
-            <input class="counter__field" id="amount-days" type="number" name="amount-days" value="14">
+            <input class="counter__field" id="amount-days" type="number" name="amount-days" value="14" min="0">
             <button class="counter__btn counter__btn--plus" type="button">+</button>
             <button class="counter__btn counter__btn--minus" type="button">-</button>
           </div>
@@ -86,55 +90,53 @@
             Количество путешественников:
           </label>
           <div class="counter counter--mb38" data-count="чел.">
-            <input class="counter__field" id="amount-persons" type="number" name="amount-persons" value="2">
+            <input class="counter__field" id="amount-persons" type="number" name="amount-persons" value="2" min="0">
             <button class="counter__btn counter__btn--plus" type="button">+</button>
             <button class="counter__btn counter__btn--minus" type="button">-</button>
           </div>
-          <div class="form__item-contact">
-          <div class="form__item-number">
-            <p class="form__label">№</p>
-            <p class="form__number">1</p>
+          <div class="contact-info">
+          <div class="contact-info__item-number">
+            <p class="contact-info__text">№</p>
+            <p class="contact-info__number">1</p>
           </div>
-            <div class="form__item-column">
-            <label class="form__label" for="surname--1">Фамилия:</label>
-            <input id="surname--1" class="form__input-text" type="text" name="surname--1" required>
-            <label class="form__label" for="firstname--1">Имя:</label>
-            <input id="firstname--1" class="form__input-text" type="text" name="firstname--1" required>
-            <label class="form__label" for="secondname--1">Отчество:</label>
-            <input id="secondname--1" class="form__input-text" type="text" name="secondname--1"></div>
-            </div>
-          <div class="form__item-contact">
-          <div class="form__item-number">
-            <p class="form__label">№</p>
-            <p class="form__number">2</p>
+            <label class="contact-info__label" for="surname--1">Фамилия:</label>
+            <input id="surname--1" class="contact-info__input-text" type="text" name="surname--1" required>
+            <label class="contact-info__label" for="firstname--1">Имя:</label>
+            <input id="firstname--1" class="contact-info__input-text" type="text" name="firstname--1" required>
+            <label class="contact-info__label" for="secondname--1">Отчество:</label>
+            <input id="secondname--1" class="contact-info__input-text" type="text" name="secondname--1">
           </div>
-          <div class="form__item-column">
-            <label class="form__label" for="surname--1">Фамилия:</label>
-            <input id="surname--2" class="form__input-text" type="text" name="surname--2" required>
-            <label class="form__label" for="firstname--1">Имя:</label>
-            <input id="firstname--2" class="form__input-text" type="text" name="firstname--2" required>
-            <label class="form__label" for="secondname--1">Отчество:</label>
-            <input id="secondname--2" class="form__input-text" type="text" name="secondname--2"></div>
+          <div class="contact-info">
+          <div class="contact-info__item-number">
+            <p class="contact-info__text">№</p>
+            <p class="contact-info__number">2</p>
+          </div>
+            <label class="contact-info__label" for="surname--1">Фамилия:</label>
+            <input id="surname--2" class="contact-info__input-text" type="text" name="surname--2" required>
+            <label class="contact-info__label" for="firstname--1">Имя:</label>
+            <input id="firstname--2" class="contact-info__input-text" type="text" name="firstname--2" required>
+            <label class="contact-info__label" for="secondname--1">Отчество:</label>
+            <input id="secondname--2" class="contact-info__input-text" type="text" name="secondname--2">
           </div>
         </fieldset>
         <fieldset class"form__item">
           <h4 class="form__title">Посещенные достопримечательности:</h4>
-          <label class="checkbox checkbox__label" for="checkbox--1">
+          <label class="checkbox" for="checkbox--1">
             <input id="checkbox--1" class="form__input-checkbox" type="checkbox" name="checkbox--1" checked>
             <span class="checkbox__ind"></span>
             Мост Дьявола
           </label>
-          <label class="checkbox checkbox__label" for="checkbox--2">
+          <label class="checkbox" for="checkbox--2">
             <input id="checkbox--2" class="form__input-checkbox" type="checkbox" name="checkbox--2">
             <span class="checkbox__ind"></span>
             Слайд-парк
           </label>
-          <label class="checkbox checkbox__label" for="checkbox--3">
+          <label class="checkbox" for="checkbox--3">
             <input id="checkbox--3" class="form__input-checkbox" type="checkbox" name="checkbox--3" checked>
             <span class="checkbox__ind"></span>
             Гора-Колокол
           </label>
-          <label class="checkbox checkbox__label" for="checkbox--4">
+          <label class="checkbox" for="checkbox--4">
             <input id="checkbox--4" class="form__input-checkbox" type="checkbox" name="checkbox--4" checked>
             <span class="checkbox__ind"></span>
             Красные скалы
@@ -150,25 +152,46 @@
           <div class="photo-catalog">
             <div class="photo-catalog__item">
               <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="http://placebear.com/200/300" width="70" height="70" alt="photo-review-1"></div>
+              <div class="photo-catalog__photo-wrap">
+                <img class="photo-catalog__photo" src="http://placebear.com/200/300" width="70" height="70" alt="photo-review-1">
+              </div>
+            </div>
             <div class="photo-catalog__item">
               <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="http://placebear.com/200/300" width="100%" height="100%" alt="photo-review-2"></div>
+              <div class="photo-catalog__photo-wrap">
+                <img class="photo-catalog__photo" src="http://placebear.com/200/300" alt="photo-review-2">
+              </div>
+            </div>
             <div class="photo-catalog__item">
               <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="http://placebear.com/200/300" width="100%" height="100%" alt="photo-review-3"></div>
+              <div class="photo-catalog__photo-wrap">
+                <img class="photo-catalog__photo" src="http://placebear.com/400/800" alt="photo-review-3">
+              </div>
+            </div>
             <div class="photo-catalog__item">
               <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="http://placebear.com/200/300" width="100%" height="100%" alt="photo-review-4"></div>
+              <div class="photo-catalog__photo-wrap">
+                <img class="photo-catalog__photo" src="http://placebear.com/700/900" alt="photo-review-4">
+              </div>
+            </div>
             <div class="photo-catalog__item">
               <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="http://placebear.com/200/300" width="100%" height="100%" alt="photo-review-5"></div>
+              <div class="photo-catalog__photo-wrap">
+                <img class="photo-catalog__photo" src="http://placebear.com/1000/700" alt="photo-review-5">
+              </div>
+            </div>
             <div class="photo-catalog__item">
               <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="http://placebear.com/200/300" width="100%" height="100%" alt="photo-review-6"></div>
+              <div class="photo-catalog__photo-wrap">
+                <img class="photo-catalog__photo" src="http://placebear.com/600/500" alt="photo-review-6">
+              </div>
+            </div>
             <div class="photo-catalog__item">
               <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="http://placebear.com/200/300" width="100%" height="100%" alt="photo-review-7"></div>
+              <div class="photo-catalog__photo-wrap">
+                <img class="photo-catalog__photo" src="http://placebear.com/40/40" alt="photo-review-7">
+              </div>
+            </div>
           </div>
         </fieldset>
         <button class="form__btn" type="submit">Отправить отзыв</button>

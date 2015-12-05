@@ -19,7 +19,7 @@
   .slogan {
     margin-bottom: 50px;
     &__title {
-      @include font-21;
+      @include font-md;
       margin-bottom: 28px;
     }
   }

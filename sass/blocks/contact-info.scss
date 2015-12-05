@@ -1,0 +1,54 @@
+.contact-info {
+
+  padding-left: 67px;
+  margin-bottom: 33px;
+  &:last-child {
+    margin-bottom: 24px;
+  }
+
+  &__item-number{
+    float: left;
+    clear: both;
+    margin-left: -67px;
+  }
+
+  &__text {
+    margin: 0;
+      font: {
+      size: $fz_base;
+    }
+    line-height: (26/14);
+    display: block;
+    margin-bottom: 7px;
+  }
+
+  &__label{
+      @include label;
+  }
+
+  &__number{
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: $fz_s;
+    font-weight: bold;
+    line-height: 58px;
+
+    width: 61px;
+    height: 58px;
+    padding: 0;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000;
+    border: none;
+    outline: none;
+    background: $c_lighter-grey;
+  }
+
+  &__input-text{
+    @include input-text;
+    margin-bottom: 16px;
+  }
+
+}

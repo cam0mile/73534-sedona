@@ -1,29 +1,55 @@
 
 .photo-catalog {
+  $z: 10;
+  $gap: 10px;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+
   margin-bottom: 13px;
+  margin-left: (- $gap);
+  margin-right: (- $gap);
+
   &__item {
     position: relative;
-    width: 70px;
-    margin-right: 1px;
-    margin-bottom: 35px;
+    z-index: ($z);
+    //margin-right: 1px;
+    //margin-bottom: 35px;
+    margin: 0 $gap 35px;
     flex-basis: 70px;
-    height: 70px;
   }
+
+  &__photo-wrap {
+    position: relative;
+    overflow: hidden;
+    z-index: ($z);
+    height: 70px;
+    width: 70px;
+  }
+
+  &__photo {
+    max-height: 100%;
+    weight: auto;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%)
+  }
+
   &__link {
     @include no-text-2;
     text-decoration: none;
     position: absolute;
     top: -15px;
     left: 20px;
+    z-index: ($z+1);
     background: $c_lighter-grey;
     padding: 15px;
     border-radius: 30px;
     display: block;
     cursor: pointer;
+
     &:before{
       @include cross;
       top: 15px;
@@ -31,6 +57,7 @@
       content: '';
       transform: rotate(45deg);
     }
+
     &:after{
       @include cross;
       top: 15px;

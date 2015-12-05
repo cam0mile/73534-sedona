@@ -1,27 +1,30 @@
-.social {
-  //padding-top:40px;
-  font-size: 0;
-  &__link {
-    font-size: $fz_m;
-    line-height: 48px;
+.social
+{
+    //padding-top:40px;
+    font-size: 0;
+    &__link
+    {
+        font-size: $fz_m;
+        line-height: 48px;
 
-    display: inline-block;
+        display: inline-block;
 
-    width: 46px;
-    height: 48px;
+        width: 46px;
+        height: 48px;
+        margin-right: 3px;
+        margin-bottom: 3px;
+        margin-left: 3px;
 
-    text-decoration: none;
+        text-decoration: none;
 
-    color: #fff;
-    background-color: $c_blue;
-
-    margin-right: 3px;
-    margin-left: 3px;
-    margin-bottom: 3px;
-  }
+        color: #fff;
+        background-color: $c_blue;
+    }
 }
-@media (min-width: $screen-md) {
-  .social {
-    width: 33.33%;
-  }
+@media (min-width: $screen-md)
+{
+    .social
+    {
+        width: 33.33%;
+    }
 }
