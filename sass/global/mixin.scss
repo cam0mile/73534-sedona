@@ -43,19 +43,19 @@ display: block;
   line-height: (26/30);
 }
 @mixin input-text {
-    font: {
-      size: $fz_s;
-      weight: bold;
-    }
-    cursor: pointer;
-    height: 58px;
-    text-align: left;
-    line-height: (26/18);
-    display: block;
-    border: none;
-    background: $c_lighter-grey;
-    width:100%;
-    padding:0 20px;
+  font: {
+    size: $fz_s;
+    weight: bold;
+  }
+  cursor: pointer;
+  height: 58px;
+  text-align: left;
+  line-height: (26/18);
+  display: block;
+  border: none;
+  background: $c_lighter-grey;
+  width:100%;
+  padding:0 20px;
 }
 @mixin label {
   font: {

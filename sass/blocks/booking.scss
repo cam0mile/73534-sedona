@@ -6,20 +6,20 @@
     size: $fz_m;
     weight: bold;
     }
-    line-height: (26/21);
+  line-height: (26/21);
 
-    display: block;
+  display: block;
 
-    padding: 16px 15px;
+  padding: 16px 15px;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    color: #fff;
-    background-color: $c_blue;
+  color: #fff;
+  background-color: $c_blue;
 
-          max-width: 458px;
-      margin: 0 auto;
-      margin-bottom: 20px;
+  max-width: 458px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   }
 }
 @media (min-width: $screen-md) {

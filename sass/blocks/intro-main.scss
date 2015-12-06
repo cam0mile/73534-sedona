@@ -1,27 +1,32 @@
-.intro-main
-{
-    position: relative;
-    z-index: 1;
+.intro-main {
+  position: relative;
+  z-index: 1;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    min-height: 390px;
-    margin-bottom: 41px;
-    padding: $p_base;
-    padding-top: 50px;
+  min-height: 390px;
+  margin-bottom: 41px;
+  padding: $p_base;
+  padding-top: 50px;
 
-    background-image: url('../img/bg-main.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  background-image: url('../img/photo-background@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
 }
 @media (min-width: $screen-md)
 {
-    .intro-main
-    {
-        min-height: 512px;
-        margin-bottom: 57px;
+  .intro-main {
+    min-height: 512px;
+    margin-bottom: 57px;
 
-        background-size: 100% auto;
-    }
+    background-size: 100% auto;
+  }
+}
+
+@media (min-resolution: 1.5dppx) {
+  .intro-main {
+    background-image: url('../img/photo-background@2x.jpg');
+  }
 }

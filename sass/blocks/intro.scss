@@ -1,7 +1,5 @@
-.intro
-{
-  &__img
-  {
+.intro {
+  &__img {
   position: relative;
   z-index: 1;
   width: 100%;
@@ -13,20 +11,18 @@
   padding: $p_base;
   padding-top: 50px;
 
-  background-image: url('../img/bg-main.jpg');
+  background-image: url('../img/photo-background@1x.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   }
-  &__title
-  {
+  &__title {
     font-size: $fz_s;
     line-height: (26/21);
 
     margin-bottom: 28px;
   }
-  &__text
-  {
+  &__text {
     font-size: $fz_base;
     line-height: (24/14);
 
@@ -35,8 +31,7 @@
 }
 @media (min-width: $screen-md)
 {
-  .intro
-  {
+  .intro {
     margin-bottom: 60px;
     &__img
     {
@@ -58,3 +53,9 @@
     }
   }
 }
+@media (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url('../img/photo-background@2x.jpg');
+  }
+}
+

@@ -1,12 +1,11 @@
 .form {
-    padding: $p_base;
-    margin-bottom: 80px;
+  padding: $p_base;
+  margin-bottom: 80px;
   & fieldset {
     border: none;
     border-top: 1px solid $c_lighter-grey;
     margin: 0;
     padding: 0;
-
   }
   &__item {
   }
@@ -47,11 +46,14 @@
 }
 @media (min-width: $screen-md) {
   .form {
+    padding-right: 8%;
+    padding-left: 8%;
     & fieldset {
       border-top: none;
+      //display: flex;
     }
     &__item {
-      //display: flex;
+      display: flex;
     }
     &__title-wrap{
       display: flex;
