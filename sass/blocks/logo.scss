@@ -1,39 +1,33 @@
 .logo {
   position: relative;
-  z-index: 2;
-  :before {
-    content: 'hhh';
-    width:67px;
-    height: 56px;
-    background-image: url('../img/logo-sedona@1x.png');
-    position:absolute;
-  }
-  // img
-  // {
-  //   margin-bottom: -20px;
-  // }
-  // picture {
-  //   background-image: url('../img/form-logo-triangle.svg');
-  //   background-color: $c_blue;
-  //   background-size: 138px 70px;
-  //   width:138px;
-  //   height: 70px;
-  // }
-  svg {
-    margin-bottom: -20px;
-    fill: $c_blue;
-  }
+  z-index: 20;
+  background:
+  url('../img/logo/logo-sedona@1x.png') center top no-repeat,
+  url('../img/svg/form-logo-triangle.svg') center top no-repeat;
+  display: block;
+  width:137px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: -15px;
 }
 
 @media (min-width: $screen-md)
 {
   .logo {
-    display: block;
-    //margin-top: -20px;
     margin-top: -55px;
-    // img
-    // {
-    //   margin-top: -76px;
-    // }
+  }
+}
+@media (min-resolution: 1.5dppx) {
+  .logo {
+    background:
+    url('../img/logo/logo-sedona@2x.png') center top no-repeat,
+    url('../img/svg/form-logo-triangle.svg') center top no-repeat;
+  }
+}
+@media (min-resolution: 3dppx) {
+  .logo {
+    background:
+    url('../img/logo/logo-sedona@3x.png') center top no-repeat,
+    url('../img/svg/form-logo-triangle.svg') center top no-repeat;
   }
 }

@@ -46,7 +46,7 @@
       </div>
       <div class="form">
         <form action="/echo" method="post">
-          <fieldset class="form__item">
+          <div class="form__item">
             <div class="form__title-wrap">
               <div class="form__line"></div>
               <h4 class="form__title">Представьтесь, пожалуйста:</h4>
@@ -58,8 +58,8 @@
             <input id="firstname" class="form__input-text" type="text" name="firstname" required>
             <label class="form__label required" for="secondname">Отчество:</label>
             <input id="secondname" class="form__input-text" type="text" name="secondname" required>
-          </fieldset>
-          <fieldset class="form__item">
+          </div>
+          <div class="form__item">
             <h4 class="form__title">Ваше общее впечатление:</h4>
             <label for="radio-1" class="radio">
               <input type="radio" name="radio" id="radio-1">
@@ -71,8 +71,8 @@
               <span class="radio__ind"></span>
               Скорее отрицательное
             </label>
-          </fieldset>
-          <fieldset class"form__item">
+          </div>
+          <div class"form__item">
             <h4 class="form__title form__title--mb19">Даты вашей поездки:</h4>
             <label class="form__label required" for="date-arrival">Дата приезда:</label>
             <input id="date-arrival" class="form__input-text" type="date" name="date-arrival" required>
@@ -85,8 +85,8 @@
               <button class="counter__btn counter__btn--minus" type="button">-</button>
             </div>
             <label class="form__label" for="date-departure">Дата отъезда:</label>
-            <input id="date-departure" class="form__input-text" type="date" name="date-departure" required></fieldset>
-          <fieldset class"form__item">
+            <input id="date-departure" class="form__input-text" type="date" name="date-departure" required></div>
+          <div class"form__item">
             <h4 class="form__title">Кол-во путешественников:</h4>
             <label class="form__label" for="amount-persons">
               Количество путешественников:
@@ -120,8 +120,8 @@
               <label class="contact-info__label" for="secondname--1">Отчество:</label>
               <input id="secondname--2" class="contact-info__input-text" type="text" name="secondname--2">
             </div>
-          </fieldset>
-          <fieldset class"form__item">
+          </div>
+          <div class"form__item">
             <h4 class="form__title">Посещенные достопримечательности:</h4>
             <label class="checkbox" for="checkbox--1">
               <input id="checkbox--1" class="form__input-checkbox" type="checkbox" name="checkbox--1" checked>
@@ -143,8 +143,8 @@
               <span class="checkbox__ind"></span>
               Красные скалы
             </label>
-          </fieldset>
-          <fieldset class"form__item">
+          </div>
+          <div class"form__item">
             <h4 class="form__title form__title--mb19">Загрузите фотографии:</h4>
             <label class="download-btn">
               <input class="download-btn__field" type="file" multiple>
@@ -195,7 +195,7 @@
                 </div>
               </div>
             </div>
-          </fieldset>
+          </div>
           <button class="form__btn" type="submit">Отправить отзыв</button>
         </form>
       </div>

@@ -4,7 +4,7 @@
 
   overflow: hidden;
 
-  min-height: 390px;
+  max-height: 390px;
   margin-bottom: 41px;
   padding: $p_base;
   padding-top: 50px;
@@ -20,6 +20,7 @@
   .intro-main {
     min-height: 512px;
     margin-bottom: 57px;
+    padding-top: 76px;
 
     background-size: 100% auto;
   }

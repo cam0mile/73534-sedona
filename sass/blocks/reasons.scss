@@ -37,10 +37,10 @@
     background-size: cover;
   }
   &__image--img-1 {
-    background-image: url('../img/photo-city@1x.jpg');
+    background-image: url('../img/reasons/photo-city@1x.jpg');
   }
   &__image--img-2 {
-    background-image: url('../img/photo-bridge@1x.jpg');
+    background-image: url('../img/reasons/photo-bridge@1x.jpg');
   }
 }
 @media (min-width: $screen-md) {
@@ -90,10 +90,10 @@
 @media (min-resolution: 1.5dppx) {
   .reasons {
     &__image--img-1 {
-    background-image: url('../img/photo-city@2x.jpg');
+    background-image: url('../img/reasons/photo-city@2x.jpg');
     }
     &__image--img-2 {
-    background-image: url('../img/photo-bridge@2x.jpg');
+    background-image: url('../img/reasons/photo-bridge@2x.jpg');
     }
   }
 }
