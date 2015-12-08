@@ -1,13 +1,9 @@
 .form {
   padding: $p_base;
   margin-bottom: 80px;
-  & fieldset {
-    border: none;
-    border-top: 1px solid $c_lighter-grey;
-    margin: 0;
-    padding: 0;
-  }
   &__item {
+    border-top: 1px solid $c_lighter-grey;
+    clear: both;
   }
   &__title {
     font-size: $fz_s;
@@ -43,35 +39,63 @@
     margin-bottom: 20px;
     padding: 0px 10px;
   }
+  &__counter {
+    margin-bottom: 17px;
+    &--mb38 {
+      margin-bottom: 38px;
+    }
+  }
 }
 @media (min-width: $screen-md) {
   .form {
     padding-right: 8%;
     padding-left: 8%;
-    & fieldset {
-      border-top: none;
-      //display: flex;
-    }
     &__item {
-      display: flex;
-    }
-    &__title-wrap{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      border-top: none;
+      overflow: hidden;
     }
     &__title {
       @include font-md;
       font-weight: bold;
-      width: 100%;
-      flex-basis: 400px;
-      margin: 0 auto;}
-    &__line {
-      flex: 1;
-      margin-top: -3px;
-      height: 1px;
-      width: 100%;
-      background: $c_grey;
+      display: inline-block;
+      width: 400px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      margin-bottom: 23px;
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        height: 1px;
+        width: 1000px;
+        background-color: $c_lightest-grey;
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        margin-top: -3px;
+      }
+      &:after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        height: 1px;
+        width: 1000px;
+        background-color: $c_lightest-grey;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        margin-top: -3px;
+      }
+      &--mb38{
+        margin-bottom: 38px;
+      }
+    }
+    &__label {
+      &--center{
+        text-align: center;
+        padding-left: 0px;
+      }
     }
   }
 }

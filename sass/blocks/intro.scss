@@ -11,7 +11,7 @@
   padding: $p_base;
   padding-top: 50px;
 
-  background-image: url('../img/photo-background@1x.jpg');
+  background-image: url('../img/intro/photo-background@1x.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -46,6 +46,7 @@
       font-weight: bold;
 
       margin-top: 14px;
+      margin-bottom: 30px;
     }
     &__text
     {
@@ -53,9 +54,9 @@
     }
   }
 }
-@media (min-resolution: 1.5dppx) {
+@media (min-resolution: $retina2x) {
   .intro {
-    background-image: url('../img/photo-background@2x.jpg');
+    background-image: url('../img/intro/photo-background@2x.jpg');
   }
 }
 

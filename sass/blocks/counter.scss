@@ -2,11 +2,7 @@
   position: relative;
 
   width: 100%;
-  margin-bottom: 17px;
   padding: 0 67px;
-  &--mb38 {
-    margin-bottom: 38px;
-  }
   &:before {
     font-size: $fz_s;
     line-height: 58px;
@@ -72,5 +68,19 @@
     &--minus {
       left: 0;
     }
+  }
+}
+@media (min-width: $screen-md) {
+  .counter {
+    padding: 0;
+    &:before {
+      display: none;
+    }
+    &__field {
+      padding-right: 61px;
+      padding-left: 61px;
+      text-align: center;
+    }
+
   }
 }

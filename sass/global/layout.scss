@@ -23,3 +23,22 @@ body {
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {}
+
+@media (min-width: $screen-md) {
+.flex-wrap {
+        display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+          margin-bottom: 45px;
+          &--mb33 {
+            margin-bottom: 33px;
+          }
+      &__item {
+       flex-basis: 27%;
+      }
+}
+.md-wrap {
+  width: 27%;
+  margin:0 auto;
+}
+}

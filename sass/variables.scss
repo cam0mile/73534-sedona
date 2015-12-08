@@ -1,7 +1,16 @@
 //media
 $screen-sm: 320px;
 $screen-md: 768px;
+$screen-sm-max: ($screen-md - 1);
 $screen-lg: 1200px;
+$screen-bp-md-lg: 960px;
+
+// @2x Images (Pixel Ratio of 1.25+)
+$retina2x: 1.25dppx;
+
+// @3x Images (Pixel Ratio of 2.25+)
+$retina3x: 2.25dppx;
+
 
 // font-family
 $ff_base : 'PT Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -31,9 +40,14 @@ $p_md-lg-display: 0 18%;
 $c_blue: #81b3d2;
 $c_grey: #333;
 $c_light-grey: #eee;
+$c_lighter-grey: #f2f2f2;
+$c_lightest-grey: #dbdbdb;
+$c_dark-grey: #d6d6d6;
+$c_darken-grey: #b8b8b8;
 $c_light: rgba(255, 255, 255, .902);
 $c_dark-blue: #678fa8;
 $c_light-blue: #9ac2db;
 $c_dark-grey: #d6d6d6;
 $c_lighter-grey: #f2f2f2;
 $c_darken-grey: #b8b8b8;
+

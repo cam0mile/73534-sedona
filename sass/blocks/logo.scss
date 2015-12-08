@@ -1,4 +1,5 @@
 .logo {
+  @include no-text;
   position: relative;
   z-index: 20;
   background:
@@ -17,14 +18,14 @@
     margin-top: -55px;
   }
 }
-@media (min-resolution: 1.5dppx) {
+@media (min-resolution: $retina2x) {
   .logo {
     background:
     url('../img/logo/logo-sedona@2x.png') center top no-repeat,
     url('../img/svg/form-logo-triangle.svg') center top no-repeat;
   }
 }
-@media (min-resolution: 3dppx) {
+@media (min-resolution: $retina3x) {
   .logo {
     background:
     url('../img/logo/logo-sedona@3x.png') center top no-repeat,

@@ -7,6 +7,7 @@ var notify = require("gulp-notify");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var browserSync = require('browser-sync').create();
+var svgSprite  = require('gulp-svg-sprite');
 
 gulp.task("style", function() {
   return gulp.src("sass/style.{sass,scss}")
@@ -31,6 +32,38 @@ gulp.task('server', function() {
             baseDir: "./"
         }
     });
+});
+
+gulp.task('sprite', function () {
+  gulp.src('img/for-sprite/*.svg')
+  .pipe(svgSprite({
+    mode                : {
+        view            : {         // Activate the «view» mode
+            bust        : false,
+            render      : {
+                scss    : true      // Activate Sass output (with default options)
+            }
+        },
+        symbol          : true      // Activate the «symbol» mode
+    }
+
+
+
+    // symbol: true
+
+
+
+    // preview: false,
+    // selector: "icon-%f",
+    // svg: {
+    //   sprite: 'svg_sprite.svg'
+    //   },
+    // cssFile: 'sass/svg_sprite.scss',
+    // templates: {
+    //   css: require("fs").readFileSync('sass/sprite-template.scss', "utf-8")
+    //     }
+  }))
+  .pipe(gulp.dest('img/'));
 });
 
 // Оставьте эту строку в самом конце файла

@@ -27,6 +27,21 @@ body {
   color: $c_grey;
 }
 
-@media (max-width: $screen-md){
-
+@media (max-width: $screen-sm-max) {
+  .sm-hidden {
+    display: none;
+  }
 }
+
+@media (min-width: $screen-md), (max-width: $screen-bp-md-lg) {
+  .md-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-bp-md-lg), (max-width: $screen-sm-max){
+  .lg-hidden {
+    display: none;
+  }
+}
+

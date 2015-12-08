@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.10.0",
-    "gulp-notify": "^2.2.0"
+    "gulp-notify": "^2.2.0",
+    "gulp-svg-sprite": "^1.2.16"
   }
 }
