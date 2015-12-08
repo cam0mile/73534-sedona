@@ -1,11 +1,7 @@
 .booking {
   padding: $p_base;
   margin-bottom: 50px;
-    &__button {
-    font: {
-    size: $fz_m;
-    weight: bold;
-    }
+
   line-height: (26/21);
 
   display: block;
@@ -20,6 +16,25 @@
   max-width: 458px;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  &__button {
+    font: {
+      size: $fz_m;
+      weight: bold;
+    }
+  }
+
+  &:hover {
+  background-color: $c_blue-dark;
+  }
+
+  &:active {
+  background-color: #5496bd;
+  color: #91b7d1;
+  }
+
+  &:disabled {
+      background-color: #e5e5e5;
   }
 }
 @media (min-width: $screen-md) {

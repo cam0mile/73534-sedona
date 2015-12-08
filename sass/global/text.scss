@@ -33,13 +33,13 @@ body {
   }
 }
 
-@media (min-width: $screen-md), (max-width: $screen-bp-md-lg) {
+@media (min-width: $screen-md) and (max-width: $screen-bp-md-lg) {
   .md-hidden {
     display: none;
   }
 }
 
-@media (min-width: $screen-bp-md-lg), (max-width: $screen-sm-max){
+@media (min-width: $screen-bp-md-lg) and (max-width: $screen-sm-max) {
   .lg-hidden {
     display: none;
   }

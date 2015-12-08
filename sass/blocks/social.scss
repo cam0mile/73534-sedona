@@ -18,6 +18,12 @@
 
     color: #fff;
     background-color: $c_blue;
+    &:hover {
+      background-color: #669ec0;
+    }
+    &:active {
+      background-color: #5496bd;
+    }
   }
 }
 @media (min-width: $screen-md)

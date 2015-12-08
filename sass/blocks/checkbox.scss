@@ -24,6 +24,7 @@
   & input {
     display:none;
   }
+
   &__ind:before {
     content:"";
     display:block;
@@ -40,6 +41,13 @@
     background: $c_lighter-grey;
     border-radius: 10%;
   }
+  &__ind:hover:before {
+    background-color: #e5e5e5;
+  }
+  &__ind:active:before {
+    background-color: #d5d5d5;
+  }
+
   &__ind:after {
     content:"";
     position:absolute;
@@ -53,8 +61,12 @@
     transform: rotate(-45deg);
     opacity: 0;
   }
+
   & input:checked ~ &__ind:after {
     opacity: 1;
     transition: all 0.5s;
+  }
+  & input:checked ~ &__ind:active:after {
+    border-color: #a4a4a4;
   }
 }

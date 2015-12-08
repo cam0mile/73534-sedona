@@ -3,6 +3,7 @@
 
   width: 100%;
   padding: 0 67px;
+
   &:before {
     font-size: $fz_s;
     line-height: 58px;
@@ -23,6 +24,7 @@
 
     color: $c_darken-grey;
   }
+
   &__field {
     font-size: $fz_s;
     font-weight: bold;
@@ -43,6 +45,7 @@
     outline: none;
     background: $c_lighter-grey;
   }
+
   &__btn {
     font-size: 21px;
     font-weight: bold;
@@ -62,14 +65,27 @@
     border: none;
     outline: none;
     background: $c_lighter-grey;
+
+    &:hover {
+      background-color: #e5e5e5;
+      color: #8c8c8c;
+    }
+    &:active {
+      background-color: #d5d5d5;
+      color: #c4c4c4;
+    }
+
     &--plus {
       right: 0;
     }
+
     &--minus {
       left: 0;
     }
   }
 }
+
+
 @media (min-width: $screen-md) {
   .counter {
     padding: 0;

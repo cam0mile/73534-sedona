@@ -28,7 +28,13 @@
     display: block;
     border-top: 1px solid $c_light-blue;
     border-bottom: 1px solid $c_dark-blue;
-  &--active{}
+    &:hover {
+      background: $c_blue-dark;
+    }
+    &:active {
+      background-color: #5496bd;
+      color: #91b7d1;
+    }
   }
 }
 @media (min-width: $screen-md) {
@@ -63,7 +69,21 @@
       color: #000;
       border-top: none;
       border-bottom: none;
-    &--active{}
+      &:hover {
+        color: $c_blue;
+      }
+      &:active {
+        color: $c_grey-light;
+      }
+      &--active{
+        color: $c_brown;
+        :hover {
+          color: $c_dark-brown;
+        }
+        &:active {
+          color: $c_light-brown;
+        }
+      }
     }
   }
 }

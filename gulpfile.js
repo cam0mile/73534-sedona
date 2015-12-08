@@ -34,6 +34,28 @@ gulp.task('server', function() {
     });
 });
 
+// gulp.task('sprite', function() {
+//   gulp.src('/img/for-sprite/*.svg').pipe(svgSprite({
+//     mode: {
+//       symbol: {
+//         dest: './img',
+//         dimensions: '-icon',
+//         sprite: 'svg_sprite.svg',
+//         example: true,
+//         render: {
+//             scss: {
+//             dest: 'sass/svg_sprite.scss'
+//           }
+//         }
+//       }
+//     },
+//     svg: {
+//       xmlDeclaration: false,
+//       doctypeDeclaration: false
+//     }
+//   })).pipe(gulp.dest('./img'));
+// });
+
 gulp.task('sprite', function () {
   gulp.src('img/for-sprite/*.svg')
   .pipe(svgSprite({
@@ -49,19 +71,15 @@ gulp.task('sprite', function () {
 
 
 
-    // symbol: true
-
-
-
-    // preview: false,
-    // selector: "icon-%f",
-    // svg: {
-    //   sprite: 'svg_sprite.svg'
-    //   },
-    // cssFile: 'sass/svg_sprite.scss',
-    // templates: {
-    //   css: require("fs").readFileSync('sass/sprite-template.scss', "utf-8")
-    //     }
+//     // preview: false,
+//     // selector: "icon-%f",
+//     // svg: {
+//     //   sprite: 'svg_sprite.svg'
+//     //   },
+//     // cssFile: 'sass/svg_sprite.scss',
+//     // templates: {
+//     //   css: require("fs").readFileSync('sass/sprite-template.scss', "utf-8")
+//     //     }
   }))
   .pipe(gulp.dest('img/'));
 });

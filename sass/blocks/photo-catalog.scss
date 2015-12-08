@@ -65,5 +65,24 @@
       content: '';
       transform: rotate(-45deg);
     }
+
+    &:hover {
+      background-color: #e5e5e5;
+      &:before {
+        background-color: #8c8c8c;
+      }
+      &:after {
+        background-color: #8c8c8c;
+      }
+    }
+    &:active {
+      background-color: #d5d5d5;
+      &:before {
+        background-color: #c4c4c4;
+      }
+      &:after {
+        background-color: #c4c4c4;
+      }
+    }
   }
 }
