@@ -13,7 +13,7 @@ body {
   margin: 0;
 
 }
-.container {
+.page-wrap {
   min-width: $screen-sm;
   max-width: $screen-lg;
   margin-left: auto;
@@ -21,6 +21,10 @@ body {
   background-color: #fff;
   box-shadow: 0 5px 15px rgba(0,0,0,.20);
 }
+
+// .conteiner {
+//   padding: $p_base;
+// }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {}
 
@@ -42,3 +46,4 @@ body {
     margin:0 auto;
   }
 }
+

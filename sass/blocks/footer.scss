@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 15px;
+  padding-top: 31px;
   background-color: $c_light;
   &-hashtag {
     font: {
@@ -18,9 +18,12 @@
   .footer {
     display: flex;
     justify-content: space-around;
+    padding-top: 31px;
     &-hashtag {
       width: 33.33%;
       padding-top: 11px;
     }
   }
 }
+
+

@@ -4,6 +4,7 @@ $screen-md: 768px;
 $screen-sm-max: ($screen-md - 1);
 $screen-lg: 1200px;
 $screen-bp-md-lg: 960px;
+$screen-bp-lg-md: ($screen-bp-md-lg - 1);
 
 // @2x Images (Pixel Ratio of 1.25+)
 $retina2x: 1.25dppx;
@@ -22,7 +23,7 @@ $lh_base: (21/14);
 $fz_s: 18px;
 $fz_m: 21px;
 $fz_l: 30px;
-
+//width="459.754px" height="351.196px"
 
 //width
 
