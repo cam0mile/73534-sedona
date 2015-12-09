@@ -26,8 +26,6 @@ body {
 //   padding: $p_base;
 // }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {}
-
 @media (min-width: $screen-md) {
   .flex-wrap {
     display: flex;

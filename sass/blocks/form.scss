@@ -117,5 +117,19 @@
         padding-left: 0px;
       }
     }
+    .form__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 35px;
+        &__item {
+          flex-basis: 27%;
+        }
+      }
+    .form__group {
+      width: 27%;
+      margin-bottom: 10px;
+    }
   }
 }
+

@@ -54,5 +54,13 @@
   & input:checked ~ &__ind:active:after {
     background-color: #a4a4a4;
   }
+}
 
+@media (min-width: $screen-md) {
+  .radio {
+    margin-bottom: 16px;
+      &:last-child {
+      margin-bottom: 16px;
+    }
+  }
 }
