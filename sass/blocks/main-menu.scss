@@ -71,17 +71,21 @@
       border-bottom: none;
       &:hover {
         color: $c_blue;
+        background: #fff;
       }
       &:active {
         color: $c_grey-light;
+        background: #fff;
       }
       &--active{
         color: $c_brown;
         :hover {
           color: $c_dark-brown;
+          background: #fff;
         }
         &:active {
           color: $c_light-brown;
+          background: #fff;
         }
       }
     }
