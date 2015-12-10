@@ -4,7 +4,7 @@
   margin-bottom: 33px;
 
   &:last-child {
-    margin-bottom: 24px;
+    margin-bottom: 0px;
   }
 
   &__item-number{
@@ -51,5 +51,24 @@
     @include input-text;
     margin-bottom: 16px;
   }
-
+}
+@media (min-width: $screen-md) {
+  .contact-info {
+    &__row{
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+    &__group{
+      margin-right: 5px;
+      width: 100%;
+      max-width: 280px;
+      &:first-child{
+        max-width: 211px;
+      }
+      &:last-child{
+        margin-right: 0px;
+      }
+    }
+  }
 }
