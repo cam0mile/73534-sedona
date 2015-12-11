@@ -19,6 +19,15 @@
     //margin-bottom: 35px;
     margin: 0 $gap 35px;
     flex-basis: 70px;
+    &--empty{
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      min-height: 0 !important;
+      padding: 0 !important;
+      height: 0 !important;
+      font-size: 0;
+      line-height: 0;
+    }
   }
 
   &__photo-wrap {
@@ -27,6 +36,7 @@
     z-index: ($z);
     height: 70px;
     width: 70px;
+    background-color: $c_light-grey;
   }
 
   &__photo {
