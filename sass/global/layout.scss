@@ -23,16 +23,22 @@ body {
 }
 
 .conteiner {
-  //max-width: 960px;
+  max-width: 960px;
 }
 // .conteiner {
 //   padding: $p_base;
 // }
 
-@media (min-width: $screen-md) {
+@media (min-width: $screen-md) and (max-width: $screen-bp-md-lg) {
   .md-wrap {
     width: 27%;
     margin:0 auto;
+  }
+}
+@media (min-width: $screen-bp-md-lg) {
+  .md-wrap {
+    max-width: 278px;
+    margin:0;
   }
 }
 

@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: flex-start;
 
-  margin-bottom: 13px;
+  margin-bottom: 5px;
   margin-left: (- $gap);
   margin-right: (- $gap);
 
@@ -93,6 +93,52 @@
       &:after {
         background-color: #c4c4c4;
       }
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .photo-catalog {
+    $z: 10;
+    justify-content: flex-start;
+    margin-bottom: 21px;
+    &__item {
+      flex-basis: 140px;
+      margin-left: 43px;
+      margin-right: 22px;
+      margin-bottom: 68px;
+    }
+    &__photo-wrap {
+      height: 140px;
+      width: 140px;
+    }
+    &__link {
+      top: -30px;
+      left: 110px;
+      padding: 30px;
+      z-index: ($z - 1);
+      &:before{
+        height: 3px;
+        width: 32px;
+        top: 28px;
+        left: 14px;
+      }
+      &:after{
+        height: 3px;
+        width: 32px;
+        top: 28px;
+        left: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-bp-md-lg) {
+  .photo-catalog {
+    justify-content: space-between;
+    &__item {
+      margin-left: 12px;
+      margin-right: 12px;
     }
   }
 }

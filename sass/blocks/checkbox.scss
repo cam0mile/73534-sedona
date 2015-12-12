@@ -70,3 +70,16 @@
     border-color: #a4a4a4;
   }
 }
+
+@media (min-width: $screen-md) {
+  .checkbox {
+    &__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+    }
+  }
+}
+

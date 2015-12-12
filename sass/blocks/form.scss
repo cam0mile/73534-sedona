@@ -11,7 +11,7 @@
     line-height: (26/18);
     margin-top: 19px;
     margin-bottom: 25px;
-    &--mb19{
+    &--mb{
       margin-bottom: 19px;
     }
   }
@@ -25,7 +25,9 @@
   }
   &__btn {
     width: 100%;
+    max-width: 458px;
     height: 58px;
+    margin: 0 auto;
     background: $c_blue;
     border: none;
     font: {
@@ -52,7 +54,7 @@
   }
   &__counter {
     margin-bottom: 17px;
-    &--mb38 {
+    &--mb {
       margin-bottom: 38px;
     }
   }
@@ -108,6 +110,14 @@
       &--mb38{
         margin-bottom: 38px;
       }
+      &--mb{
+      margin-bottom: 56px;
+    }
+    }
+    &__counter {
+      &--mb {
+        margin-bottom: 28px;
+      }
     }
     &__label {
       &--center{
@@ -115,17 +125,22 @@
         padding-left: 0px;
       }
     }
-    .form__row {
+    &__row {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
       margin-bottom: 35px;
+      &--mb {
+        margin-bottom: 28px;
       }
-    .form__group {
+      }
+    &__group {
       width: 100%;
       margin-bottom: 10px;
       margin-right: 60px;
-
+      &--fb {
+        flex-basis: 27%;
+      }
       &:last-child{
         margin-right: 0px;
       }
@@ -136,6 +151,17 @@
   .form {
     padding-right: 10%;
     padding-left: 10%;
+    margin-bottom: 44px;
+    &__row {
+      &--center {
+        justify-content: center;
+      }
+    }
+    &__group {
+      &--fb {
+        flex-basis: 100%;
+      }
+    }
   }
 }
 

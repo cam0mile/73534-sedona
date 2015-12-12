@@ -86,7 +86,7 @@
 }
 
 
-@media (min-width: $screen-md) {
+@media (min-width: $screen-md) and (max-width: $screen-bp-md-lg) {
   .counter {
     padding: 0;
     &:before {
@@ -97,6 +97,5 @@
       padding-left: 61px;
       text-align: center;
     }
-
   }
 }

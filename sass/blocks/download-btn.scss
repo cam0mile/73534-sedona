@@ -1,5 +1,6 @@
 .download-btn {
   display: block;
+  margin: 0 auto;
   background:$c_lighter-grey;
   margin-bottom: 54px;
   font: {
@@ -7,6 +8,7 @@
     weight: bold;
   }
   width: 100%;
+  max-width: 458px;
   height: 58px;
 
   line-height: 58px;
@@ -26,5 +28,20 @@
   }
 
   &__item {
+  }
+}
+
+@media (min-width: $screen-md) {
+  .download-btn {
+    margin-bottom: 87px;
+  }
+}
+
+@media (min-width: $screen-bp-md-lg) {
+  .download-btn {
+    max-width: 960px;
+    background: $c_blue;
+    color: #fff;
+
   }
 }

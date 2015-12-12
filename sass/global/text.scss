@@ -45,3 +45,14 @@ body {
   }
 }
 
+@media (max-width: $screen-bp-md-lg) {
+  .sm-md-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-bp-lg-md) {
+  .lg-hidden {
+    display: none;
+  }
+}

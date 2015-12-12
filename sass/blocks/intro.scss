@@ -45,13 +45,13 @@
     font-size: $fz_base;
     line-height: (24/14);
 
-    margin-bottom: 16px;
+    margin-bottom: 17px;
   }
 }
 @media (min-width: $screen-md)
 {
   .intro {
-    margin-bottom: 60px;
+    margin-bottom: 59px;
     &__wrap {
       &:after{
         background-size: 102%;
@@ -80,12 +80,17 @@
       margin-top: 14px;
       margin-bottom: 30px;
     }
-    &__text
-    {
-      padding: 0 21%;
+  }
+}
+
+@media (min-width: $screen-bp-md-lg) {
+  .intro {
+    &__wrap {
+      margin-bottom: 114px;
     }
   }
 }
+
 @media (min-resolution: $retina2x) {
   .intro {
     background-image: url('../img/intro/photo-background@2x.jpg');

@@ -64,3 +64,9 @@
     }
   }
 }
+@media (min-width: $screen-bp-md-lg) {
+  .radio {
+    margin-right: 48px;
+    margin-left: 55px;
+  }
+}
