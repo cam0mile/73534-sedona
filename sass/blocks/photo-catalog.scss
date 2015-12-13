@@ -1,0 +1,144 @@
+
+.photo-catalog {
+  $z: 10;
+  $gap: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 5px;
+  margin-left: (- $gap);
+  margin-right: (- $gap);
+
+  &__item {
+    position: relative;
+    z-index: ($z);
+    //margin-right: 1px;
+    //margin-bottom: 35px;
+    margin: 0 $gap 35px;
+    flex-basis: 70px;
+    &--empty{
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      min-height: 0 !important;
+      padding: 0 !important;
+      height: 0 !important;
+      font-size: 0;
+      line-height: 0;
+    }
+  }
+
+  &__photo-wrap {
+    position: relative;
+    overflow: hidden;
+    z-index: ($z);
+    height: 70px;
+    width: 70px;
+    background-color: $c_light-grey;
+  }
+
+  &__photo {
+    max-height: 100%;
+    weight: auto;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%)
+  }
+
+  &__link {
+    @include no-text-2;
+    text-decoration: none;
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    z-index: ($z+1);
+    background: $c_lighter-grey;
+    padding: 15px;
+    border-radius: 30px;
+    display: block;
+    cursor: pointer;
+
+    &:before{
+      @include cross;
+      top: 15px;
+      left: 8px;
+      content: '';
+      transform: rotate(45deg);
+    }
+
+    &:after{
+      @include cross;
+      top: 15px;
+      left: 8px;
+      content: '';
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      background-color: #e5e5e5;
+      &:before {
+        background-color: #8c8c8c;
+      }
+      &:after {
+        background-color: #8c8c8c;
+      }
+    }
+    &:active {
+      background-color: #d5d5d5;
+      &:before {
+        background-color: #c4c4c4;
+      }
+      &:after {
+        background-color: #c4c4c4;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .photo-catalog {
+    $z: 10;
+    justify-content: flex-start;
+    margin-bottom: 21px;
+    &__item {
+      flex-basis: 140px;
+      margin-left: 43px;
+      margin-right: 22px;
+      margin-bottom: 68px;
+    }
+    &__photo-wrap {
+      height: 140px;
+      width: 140px;
+    }
+    &__link {
+      top: -30px;
+      left: 110px;
+      padding: 30px;
+      z-index: ($z - 1);
+      &:before{
+        height: 3px;
+        width: 32px;
+        top: 28px;
+        left: 14px;
+      }
+      &:after{
+        height: 3px;
+        width: 32px;
+        top: 28px;
+        left: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-bp-md-lg) {
+  .photo-catalog {
+    justify-content: space-between;
+    &__item {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+  }
+}

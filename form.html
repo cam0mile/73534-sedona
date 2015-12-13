@@ -2,176 +2,301 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <title>html academy: седона</title>
   <meta name="description" content="седона — небольшой городок в аризоне, заслуживающий большего!">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'></head>
 <body>
-  <header class="header">
-    <div class="menu-section">
-      <div class="menu-section__close">Close</div>
-      <nav class="main-menu">
-        <ul class="main-menu__list">
-          <li class="main-menu__item">
-            <a class="main-menu__link main-menu__link--active" href="#">Информация</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Оставить отзыв</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Блог шерифа</a>
-          </li>
-          <li class="main-menu__item">
-            <a class="main-menu__link" href="#">Гостиницы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <a class ="logo" href="#">
-      <img src="img/menu-logo.png" alt="citi of sedona" width="138" height="70"></a>
-    <div class="menu-section-open">
-      <a class="menu-section-open__link" href="#" title="menu">menu</a>
-    </div>
-  </header>
-  <main>
-    <div class="intro">
-      <img src="img/img-text-sedona.png" width="458" height="352" alt="sedona">
-      <h1 class="intro__title">Оставьте свой отзыв</h1>
-      <p class="intro__text">
-        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
-      </p>
-    </div>
-    <div class="form">
-      <form action="/echo" method="post">
-        <fieldset class="form__item">
-          <h4 class="form__title">Представьтесь, пожалуйста:</h4>
-          <label class="form__label required" for="surname">Фамилия:</label>
-          <input id="surname" class="form__input-text" type="text" name="surname" required>
-          <label class="form__label required" for="firstname">Имя:</label>
-          <input id="firstname" class="form__input-text" type="text" name="firstname" required>
-          <label class="form__label required" for="secondname">Отчество:</label>
-          <input id="secondname" class="form__input-text" type="text" name="secondname" required></fieldset>
-        <fieldset class="form__item">
-          <h4 class="form__title">Ваше общее впечатление:</h4>
-          <label for="radio-1" class="radio form__label form__label--bold">
-            <input type="radio" name="radio" id="radio-1">
-            <span class="radio__ind"></span>
-            Скорее положительное
-          </label>
-          <label for="radio-2" class="radio form__label form__label--bold">
-            <input type="radio" name="radio" id="radio-2">
-            <span class="radio__ind"></span>
-            Скорее отрицательное
-          </label>
-        </fieldset>
-        <fieldset class"form__item">
-          <h4 class="form__title">Даты вашей поездки:</h4>
-          <label class="form__label required" for="date-arrival">Дата приезда:</label>
-          <input id="date-arrival" class="form__input-text" type="date" name="date-arrival" required>
-          <label class="counter form__label" for="amount-days">
-            Длительность пребывания:
-            <input id="amount-days" type="number" name="amount-days" value="14">
-            <button class="counter-btn counter-btn--plus" type="button">+</button>
-            <button class="counter-btn counter-btn--minus" type="button">-</button>
-          </label>
-          <label class="form__label" for="date-departure">Дата отъезда:</label>
-          <input id="date-departure" class="form__input-text" type="date" name="date-departure" required></fieldset>
-        <fieldset class"form__item">
-          <h4 class="form__title">Кол-во путешественников:</h4>
-          <label class="counter form__label" for="amount-persons">
-            Количество путешественников:
-            <input id="amount-persons" type="number" name="amount-persons" value="2">
-            <button class="counter-btn counter-btn--plus" type="button">+</button>
-            <button class="counter-btn counter-btn--minus" type="button">-</button>
-          </label>
-          <div class="form__item-contact">
-            <p class="form__label">№</p>
-            <p class="form__item-number">1</p>
-            <label class="form__label" for="surname--1">Фамилия:</label>
-            <input id="surname--1" class="form__input-text" type="text" name="surname--1" required>
-            <label class="form__label" for="firstname--1">Имя:</label>
-            <input id="firstname--1" class="form__input-text" type="text" name="firstname--1" required>
-            <label class="form__label" for="secondname--1">Отчество:</label>
-            <input id="secondname--1" class="form__input-text" type="text" name="secondname--1"></div>
-          <div class="form__item-contact">
-            <p class="form__label">№</p>
-            <p class="form__item-number">2</p>
-            <label class="form__label" for="surname--1">Фамилия:</label>
-            <input id="surname--2" class="form__input-text" type="text" name="surname--2" required>
-            <label class="form__label" for="firstname--1">Имя:</label>
-            <input id="firstname--2" class="form__input-text" type="text" name="firstname--2" required>
-            <label class="form__label" for="secondname--1">Отчество:</label>
-            <input id="secondname--2" class="form__input-text" type="text" name="secondname--2"></div>
-        </fieldset>
-        <fieldset class"form__item">
-          <h4 class="form__title">Посещенные достопримечательности:</h4>
-          <label class="checkbox form__label" for="checkbox--1">
-            <input id="checkbox--1" class="form__input-checkbox" type="checkbox" name="checkbox--1" checked>
-            <span class="control-ind-chek"></span>
-            Мост Дьявола
-          </label>
-          <label class="checkbox form__label" for="checkbox--2">
-            <input id="checkbox--2" class="form__input-checkbox" type="checkbox" name="checkbox--2">
-            <span class="control-ind-chek"></span>
-            Слайд-парк
-          </label>
-          <label class="checkbox form__label" for="checkbox--3">
-            <input id="checkbox--3" class="form__input-checkbox" type="checkbox" name="checkbox--3" checked>
-            <span class="control-ind-chek"></span>
-            Гора-Колокол
-          </label>
-          <label class="checkbox form__label" for="checkbox--4">
-            <input id="checkbox--4" class="form__input-checkbox" type="checkbox" name="checkbox--4" checked>
-            <span class="control-ind-chek"></span>
-            Красные скалы
-          </label>
-        </fieldset>
-        <fieldset class"form__item">
-          <h4 class="form__title">Загрузите фотографии:</h4>
-          <input class="photo-catalog__btn" type="file" multiple>
-          <label class="photo-catalog__label">Выбрать фотографии</label>
-          <div class="photo-catalog">
-            <div class="photo-catalog__item">
-              <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="img/photo-review-1.png" width="" height="" alt="photo-review-1"></div>
-            <div class="photo-catalog__item">
-              <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="img/photo-review-2.png" width="" height="" alt="photo-review-2"></div>
-            <div class="photo-catalog__item">
-              <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="img/photo-review-3.png" width="" height="" alt="photo-review-3"></div>
-            <div class="photo-catalog__item">
-              <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="img/photo-review-4.png" width="" height="" alt="photo-review-4"></div>
-            <div class="photo-catalog__item">
-              <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="img/photo-review-5.png" width="" height="" alt="photo-review-5"></div>
-            <div class="photo-catalog__item">
-              <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="img/photo-review-6.png" width="" height="" alt="photo-review-6"></div>
-            <div class="photo-catalog__item">
-              <a class="photo-catalog__link" href="#">&times;</a>
-              <img src="img/photo-review-7.png" width="" height="" alt="photo-review-7"></div>
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol viewBox="0 0 10.633 11.393" id="blog-calendar">
+      <path d="M10.633 3.416V1.52h-1.52V.76a.758.758 0 1 0-1.518 0v.76H3.038V.76a.76.76 0 0 0-1.52 0v.76H0v1.896h10.633zM0 5.5h10.633v5.893H0z"/>
+    </symbol>
+    <symbol viewBox="0 0 10.634 9.874" id="blog-flag">
+      <path d="M10.634 9.874L5.317 7.48 0 9.875V0h10.634z"/>
+    </symbol>
+    <symbol viewBox="0 0 26.943 34.09" id="htmlacademy">
+      <path d="M13.62.017L13.472 0 0 1.412v24.66l13.472 8.018 13.43-7.99.042-.026V1.412L13.62.017zm11.4 12.11L13.494 5.334V5.23l-.088.05-.088-.056v.11L1.924 12.117v-8.97l11.547-1.213L25.02 3.147v8.98zm-11.615-5.34L24.923 13.5l-4.48 2.64-7.092-4.22-.012 1.414 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.032-1.787-.012 1.413 1.852 1.092-1.8 1.08-11.356-6.75 11.37-6.835zm-11.48 8.34l11.41 6.79.016 1.045-7.94-4.728-.015 1.416 7.98 4.796.016 1.076-7.97-4.74-.014 1.414 8.02 4.82.046.027 8.143-4.872v-1.267l-.01-.148v-3.76l3.414-2.037v10.02L13.47 31.85 1.925 24.98v-9.853z"/>
+    </symbol>
+    <symbol viewBox="0 0 76.166 68.959" id="icon-burger">
+      <path d="M71.914 46.042H4.25A4.265 4.265 0 0 0 0 50.294v3.454A4.265 4.265 0 0 0 4.252 58h.956v1.037c0 5.457 4.464 9.922 9.92 9.922h45.91c5.455 0 9.92-4.466 9.92-9.923V58h.956a4.265 4.265 0 0 0 4.252-4.252v-3.454a4.264 4.264 0 0 0-4.252-4.252zm-3.956 12.995c0 3.816-3.104 6.922-6.92 6.922h-45.91c-3.815 0-6.92-3.106-6.92-6.923V58h59.75v1.037zm5.208-5.29c0 .68-.573 1.253-1.252 1.253H4.25C3.572 55 3 54.427 3 53.748v-3.454c0-.68.573-1.252 1.252-1.252H71.914c.68 0 1.252.573 1.252 1.252v3.454zM16.162 37.857l5.473 4 5.477-4 5.48 4 5.477-4 5.478 4 5.48-4 5.477 4 5.48-4 5.488 4 6.37-4.645-1.77-2.424-4.6 3.356-5.487-4-5.48 4-5.48-4-5.478 4-5.48-4-5.477 4-5.478-4-5.476 4-5.473-4.002-5.477 4-4.593-3.353-1.77 2.42 6.363 4.647zM8.29 31.094h62.596c.043-.61.072-1.224.072-1.844 0-.388-.016-.772-.033-1.156C70.242 12.476 55.805 0 38.083 0 20.363 0 5.923 12.476 5.24 28.094c-.016.384-.032.77-.032 1.156 0 .62.03 1.233.072 1.844h3.01zM38.083 3c16.03 0 29.15 11.154 29.842 25.094H8.24C8.934 14.154 22.05 3 38.084 3z"/>
+      <circle cx="38.083" cy="15.042" r="2"/>
+      <circle cx="30.083" cy="10.083" r="2"/>
+      <circle cx="46.083" cy="10.083" r="2"/>
+    </symbol>
+    <symbol viewBox="0 0 19.875 21.916" id="icon-calendar">
+      <path d="M17.04 2h-2.08V0h-2v2H6.916V0h-2v2H2.835A2.842 2.842 0 0 0 0 4.835V19.08a2.842 2.842 0 0 0 2.835 2.836H17.04a2.842 2.842 0 0 0 2.835-2.835V4.836A2.842 2.842 0 0 0 17.04 2zm.835 17.08a.846.846 0 0 1-.835.836H2.835A.846.846 0 0 1 2 19.08V4.836C2 4.382 2.383 4 2.835 4H17.04c.452 0 .835.382.835.835V19.08z"/>
+      <path d="M4.917 6.958h2v2h-2zM12.96 6.958h2v2h-2zM8.938 6.958h2v2h-2zM4.917 10.958h2v2h-2zM12.96 10.958h2v2h-2zM8.938 10.958h2v2h-2zM4.917 14.942h2v2h-2zM12.96 14.942h2v2h-2zM8.938 14.942h2v2h-2z"/>
+    </symbol>
+    <symbol viewBox="0 0 8.672 18.944" id="icon-facebook">
+      <path d="M6.275 3.356h2.398V0H5.795C2.655.18 1.54 2.387 1.948 6.114H0v3.518h1.96v9.312h3.836V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/>
+    </symbol>
+    <symbol viewBox="0 0 63 75.084" id="icon-gift">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M60.165 22.23H35.758C49.36 15.415 50.446 11.115 49.946 8.71c-1.145-3.916-5.605-6.938-9.85-5.34-5.483 2.062-7.027 10.26-8.512 16.19-1.894-6-3.726-13.65-8.01-17.526C22.33.91 20.523-.203 17.896.03c-3.965.353-9.652 5.318-7.344 10.85 2.217 5.313 9.54 8.67 14.354 11.35H2.834A2.843 2.843 0 0 0 0 25.065V36.25a2.842 2.842 0 0 0 2.835 2.834h.27v36h56.958V39.085h.103A2.842 2.842 0 0 0 63 36.25V25.065a2.845 2.845 0 0 0-2.835-2.835zm-18.4-16.357c2.07-.306 4.908 1.283 5.176 3.17.387 2.724-3.347 5.193-5.007 6.344-2.484 1.723-4.852 2.61-7.177 4.006.872-3.645 2.51-12.854 7.01-13.52zM19.233 15.72c-2.19-1.466-6.444-4.377-6.342-7.677.11-3.552 5.655-6.49 8.68-3.84 3.797 3.332 5.625 10.973 7.01 16.358-3.2-1.518-6.23-2.752-9.348-4.84zm5.882 56.427H6.042V39.084h19.072v33.063zm0-36.063H3V25.23h22.114v10.854zm10 0v36.062h-7.062V25.23h7.063v10.854zm22.01 36.063h-19.07V39.084h19.07v33.063zM60 36.084H38.053V25.23H60v10.854z"/>
+    </symbol>
+    <symbol viewBox="0 0 74.696 72.345" id="icon-house">
+      <path d="M29.503 43.845v21.5h16V41.407h-16v2.438zm13.063 18.562H32.44V44.345h10.126v18.062z"/>
+      <path d="M72.62 39.44l2.076-2.078-9.908-9.913V.47H50.974v13.162L37.35 0 0 37.363l2.077 2.078 7.832-7.83v37.798H5.97v2.938h63.876v-2.938h-5.06v-37.8l7.834 7.832zM53.913 3.408h7.938v21.104l-7.937-7.94V3.408zm7.937 66H12.846V28.67l24.502-24.5 24.502 24.5v40.737z"/>
+      <path d="M29.753 27.21a7.75 7.75 0 1 0 15.5 0 7.75 7.75 0 0 0-15.5 0zm7.75-4.97a4.97 4.97 0 1 1 0 9.94 4.97 4.97 0 0 1 0-9.94zM16.91 41.407h3v3.938h-3zM22.846 41.407h3v3.938h-3zM16.91 47.407h3v3.938h-3zM22.846 47.407h3v3.938h-3zM48.846 41.407h3v3.938h-3zM54.784 41.407h3v3.938h-3zM48.846 47.407h3v3.938h-3zM54.784 47.407h3v3.938h-3z"/>
+    </symbol>
+    <symbol viewBox="0 0 9.917 1.917" id="icon-minus">
+      <path d="M0 0h9.917v1.917H0z"/>
+    </symbol>
+    <symbol viewBox="0 0 9.917 9.917" id="icon-plus">
+      <path d="M9.917 4h-4V0H4v4H0v1.917h4v4h1.917v-4h4z"/>
+    </symbol>
+    <symbol viewBox="0 0 17.5 14.663" id="icon-twitter">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.84-.538 1.478-.883 1.728.704.166 1.343-.48 1.343-.48-.175.977-1.035 1.746-1.61 1.977-.24 6.592-3.273 10.956-10.383 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.34.192 4.01-.412 4.835-1.15-.99-.293-2.76-.464-3.07-2.88.362.104.583.222 1.228.116C1.757 8.067.385 7.366.46 5.218c.295.32 1.1.523 1.382.46C1.117 5.445-.188 2.4.922.844c1.872 1.812 3.847 3.52 7.368 3.685.216-2.24 1.17-3.74 2.993-4.375z"/>
+    </symbol>
+    <symbol viewBox="0 0 19.979 14.015" id="icon-youtube">
+      <path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.035 10.392v-6.77l6.77 3.385-6.77 3.385z"/>
+    </symbol>
+    <symbol viewBox="0 0 27 27" id="map-marker">
+      <circle fill="#FFF" cx="13.5" cy="13.5" r="13.5"/>
+      <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+    </symbol>
+  </svg>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="menu-section">
+        <div class="menu-section__close">Close</div>
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--active" href="#">Информация</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Оставить отзыв</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Блог шерифа</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <a class ="logo" href="#">logo-sedona</a>
+      <div class="menu-section-open">
+        <a class="menu-section-open__link" href="#" title="menu">menu</a>
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+      <div class="intro__wrap">
+        <img class="intro__img" src="img/svg/intro-sedona.svg" width="" height="" alt="sedona">
+      </div>
+        <h1 class="intro__title">Оставьте свой отзыв</h1>
+        <p class="intro__text">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="sm-hidden">а также о посещенных вами достопримечательностях
+        </p>
+      </div>
+      <div class="form">
+        <form action="/echo" method="post">
+          <div class="form__item">
+            <h4 class="form__title">Представьтесь, пожалуйста:</h4>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label required" for="surname">Фамилия:</label>
+                <input id="surname" class="form__input-text" type="text" name="surname" required></div>
+              <div class="form__group">
+                <label class="form__label required" for="firstname">Имя:</label>
+                <input id="firstname" class="form__input-text" type="text" name="firstname" required></div>
+              <div class="form__group">
+                <label class="form__label required" for="secondname">Отчество:</label>
+                <input id="secondname" class="form__input-text" type="text" name="secondname" required></div>
+            </div>
           </div>
-        </fieldset>
-        <button class="form__btn" type="submit">Отправить отзыв</button>
-      </form>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="footer-hashtag">
-      <a class="footer-hashtag__link" href="#">#visitsedona</a>
-    </div>
-    <div class="social">
-      <a class="social__link  icon-twitter" href="http://twitter.com/htmlacademy" target="_blank" title="twitter">twitter</a>
-      <a class="social__link  icon-facebook" href="http://www.facebook.com/htmlacademy" target="_blank" title="facebook">facebook</a>
-      <a class="social__link  icon-youtube" href="http://youtube.com/watch?v=3vrvbe-iay8" target="_blank" title="youtube">youtube</a>
-    </div>
-    <div class="footer-copyright">
-      Разработано
-      <a class="logo-htmlacademy" href="#" title="htmlacademy">htmlacademy</a>
-    </div>
-  </footer>
+          <div class="form__item">
+            <h4 class="form__title form__title--mb38">Ваше общее впечатление:</h4>
+            <div class="form__row form__row--mb form__row--center">
+              <label for="radio-1" class="radio">
+                <input type="radio" name="radio" id="radio-1">
+                <span class="radio__ind"></span>
+                Скорее положительное
+              </label>
+              <label for="radio-2" class="radio">
+                <input type="radio" name="radio" id="radio-2">
+                <span class="radio__ind"></span>
+                Скорее отрицательное
+              </label>
+            </div>
+          </div>
+          <div class="form__item">
+            <h4 class="form__title form__title--mb19">Даты вашей поездки:</h4>
+            <div class="form__row">
+              <div class="form__group form__group--fb">
+                <label class="form__label required" for="date-arrival">Дата приезда:</label>
+                <input id="date-arrival" class="form__input-text" type="date" name="date-arrival" required></div>
+              <div class="form__group form__group--fb">
+                <label class="form__label" for="amount-days">
+                  <span class="md-hidden">Длительность пребывания:</span>
+                  <span class="sm-hidden sm-lg-hidden">Дней пребывания</span>
+                </label>
+                <div class="counter form__counter" data-count="дн.">
+                  <input class="counter__field" id="amount-days" type="number" name="amount-days" value="14" min="0">
+                  <button class="counter__btn counter__btn--plus" type="button">+</button>
+                  <button class="counter__btn counter__btn--minus" type="button">-</button>
+                </div>
+              </div>
+              <div class="form__group form__group--fb">
+                <label class="form__label" for="date-departure">Дата отъезда:</label>
+                <input id="date-departure" class="form__input-text" type="date" name="date-departure" required></div>
+            </div>
+          </div>
+          <div class="form__item">
+            <h4 class="form__title">Кол-во путешественников:</h4>
+
+            <label class="form__label form__label--center" for="amount-persons">
+              <span class="md-hidden">Количество путешественников:</span>
+              <span class=" sm-lg-hidden">Кол-во путешественников:</span>
+            </label>
+            <div class="md-wrap">
+              <div class="counter form__counter form__counter--mb" data-count="чел.">
+                <input class="counter__field" id="amount-persons" type="number" name="amount-persons" value="2" min="0">
+                <button class="counter__btn counter__btn--plus" type="button">+</button>
+                <button class="counter__btn counter__btn--minus" type="button">-</button>
+              </div>
+            </div>
+            <div class="contact-info">
+              <div class="contact-info__group">
+                <div class="contact-info__item-number">
+                  <p class="contact-info__text">№</p>
+                  <p class="contact-info__number">1</p>
+                </div>
+                <label class="contact-info__label" for="surname--1">Фамилия:</label>
+                <input id="surname--1" class="contact-info__input-text" type="text" name="surname--1" required></div>
+              <div class="contact-info__group">
+                <label class="contact-info__label" for="firstname--1">Имя:</label>
+                <input id="firstname--1" class="contact-info__input-text" type="text" name="firstname--1" required></div>
+              <div class="contact-info__group">
+                <label class="contact-info__label" for="secondname--1">Отчество:</label>
+                <input id="secondname--1" class="contact-info__input-text" type="text" name="secondname--1"></div>
+            </div>
+            <div class="contact-info contact-info__row">
+              <div class="contact-info__group">
+                <div class="contact-info__item-number">
+                  <p class="contact-info__text">№</p>
+                  <p class="contact-info__number">2</p>
+                </div>
+                <label class="contact-info__label" for="surname--1">Фамилия:</label>
+                <input id="surname--2" class="contact-info__input-text" type="text" name="surname--2" required></div>
+              <div class="contact-info__group">
+                <label class="contact-info__label" for="firstname--1">Имя:</label>
+                <input id="firstname--2" class="contact-info__input-text" type="text" name="firstname--2" required></div>
+              <div class="contact-info__group">
+                <label class="contact-info__label" for="secondname--1">Отчество:</label>
+                <input id="secondname--2" class="contact-info__input-text" type="text" name="secondname--2"></div>
+            </div>
+          </div>
+          <div class="form__item">
+            <h4 class="form__title">Посещенные достопримечательности:</h4>
+            <div class="checkbox__row">
+              <label class="checkbox" for="checkbox--1">
+                <input id="checkbox--1" class="form__input-checkbox" type="checkbox" name="checkbox--1" checked>
+                <span class="checkbox__ind"></span>
+                Мост Дьявола
+              </label>
+              <label class="checkbox" for="checkbox--2">
+                <input id="checkbox--2" class="form__input-checkbox" type="checkbox" name="checkbox--2">
+                <span class="checkbox__ind"></span>
+                Слайд-парк
+              </label>
+              <label class="checkbox" for="checkbox--3">
+                <input id="checkbox--3" class="form__input-checkbox" type="checkbox" name="checkbox--3" checked>
+                <span class="checkbox__ind"></span>
+                Гора-Колокол
+              </label>
+              <label class="checkbox" for="checkbox--4">
+                <input id="checkbox--4" class="form__input-checkbox" type="checkbox" name="checkbox--4" checked>
+                <span class="checkbox__ind"></span>
+                Красные скалы
+              </label>
+            </div>
+          </div>
+          <div class="form__item">
+            <h4 class="form__title form__title--mb">Загрузите фотографии:</h4>
+            <label class="download-btn">
+              <input class="download-btn__field" type="file" multiple>
+              <span class="download-btn__item"></span>
+              <span class="lg-hidden">Выбрать фотографии</span>
+            <span class="sm-md-hidden">Перетащите фотографии сюда</span>
+            </label>
+            <div class="photo-catalog">
+              <div class="photo-catalog__item">
+                <a class="photo-catalog__link" href="#">&times;</a>
+                <div class="photo-catalog__photo-wrap">
+                  <img class="photo-catalog__photo" src="http://placebear.com/200/300" width="70" height="70" alt="photo-review-1"></div>
+              </div>
+              <div class="photo-catalog__item">
+                <a class="photo-catalog__link" href="#">&times;</a>
+                <div class="photo-catalog__photo-wrap">
+                  <img class="photo-catalog__photo" src="http://placebear.com/200/300" alt="photo-review-2"></div>
+              </div>
+              <div class="photo-catalog__item">
+                <a class="photo-catalog__link" href="#">&times;</a>
+                <div class="photo-catalog__photo-wrap">
+                  <img class="photo-catalog__photo" src="http://placebear.com/400/800" alt="photo-review-3"></div>
+              </div>
+              <div class="photo-catalog__item">
+                <a class="photo-catalog__link" href="#">&times;</a>
+                <div class="photo-catalog__photo-wrap">
+                  <img class="photo-catalog__photo" src="http://placebear.com/700/900" alt="photo-review-4"></div>
+              </div>
+              <div class="photo-catalog__item">
+                <a class="photo-catalog__link" href="#">&times;</a>
+                <div class="photo-catalog__photo-wrap">
+                  <img class="photo-catalog__photo" src="http://placebear.com/1000/700" alt="photo-review-5"></div>
+              </div>
+              <div class="photo-catalog__item">
+                <a class="photo-catalog__link" href="#">&times;</a>
+                <div class="photo-catalog__photo-wrap">
+                  <img class="photo-catalog__photo" src="http://placebear.com/600/500" alt="photo-review-6"></div>
+              </div>
+              <div class="photo-catalog__item">
+                <a class="photo-catalog__link" href="#">&times;</a>
+                <div class="photo-catalog__photo-wrap">
+                  <img class="photo-catalog__photo" src="http://placebear.com/40/40" alt="photo-review-7"></div>
+              </div>
+              <div class="photo-catalog__item photo-catalog__item--empty"></div>
+              <div class="photo-catalog__item photo-catalog__item--empty"></div>
+              <div class="photo-catalog__item photo-catalog__item--empty"></div>
+            </div>
+          </div>
+          <button class="form__btn" type="submit">Отправить отзыв</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-hashtag">
+        <a class="footer-hashtag__link" href="#">#visitsedona</a>
+      </div>
+      <div class="social">
+        <a class="social__link  icon icon--twitter" href="http://twitter.com/htmlacademy" target="_blank" title="twitter">
+          <svg>
+            <use xlink:href="#icon-twitter" />
+          </svg>
+          twitter
+        </a>
+        <a class="social__link  icon icon--facebook" href="http://www.facebook.com/htmlacademy" target="_blank" title="facebook">
+          <svg>
+            <use xlink:href="#icon-facebook" />
+          </svg>
+          facebook
+        </a>
+        <a class="social__link  icon icon--youtube" href="http://youtube.com/watch?v=3vrvbe-iay8" target="_blank" title="youtube">
+          <svg>
+            <use xlink:href="#icon-youtube" />
+          </svg>
+          youtube
+        </a>
+      </div>
+      <div class="footer-copyright">
+        Разработано
+        <a class="logo-htmlacademy" href="#" title="htmlacademy">htmlacademy</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

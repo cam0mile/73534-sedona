@@ -1,0 +1,55 @@
+.features {
+  text-align: left;
+  padding: $p_base;
+  padding-bottom: 35px;
+  padding-top: 10px;
+
+  &__item {
+    //position: relative;
+    padding: $p_features;
+  }
+
+  &__title {
+    font: {
+      size: $fz_s;
+      weight: bold;
+    }
+    line-height: (26/18);
+    padding-top: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+  }
+
+  &__text {
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $screen-md) {
+  .features{
+    padding: 0;
+    display: flex;
+    min-height: 330px;
+    text-align: center;
+    padding-bottom: 60px;
+
+    &__item {
+      width: 33.33%;
+      padding: 0;
+      padding-top: 57px;
+    }
+
+    &__title {
+      @include font-md;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      padding: $p_md-lg-display;
+    }
+  }
+}
+

@@ -1,0 +1,35 @@
+
+//@import "normalize.scss"
+@import "vendor/normalize.scss";
+@import "variables.scss";
+@import "sprite.scss";
+
+@import "global/layout.scss";
+@import "global/mixin.scss";
+@import "global/text.scss";
+@import "global/sprite.scss";
+
+@import "blocks/main-menu.scss";
+@import "blocks/menu-section.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu-section-open.scss";
+@import "blocks/intro-main.scss";
+@import "blocks/slogan.scss";
+@import "blocks/reasons.scss";
+@import "blocks/features.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/icon.scss";
+@import "blocks/logo-htmlacademy.scss";
+@import "blocks/footer-copyright.scss";
+@import "blocks/info.scss";
+@import "blocks/booking.scss";
+@import "blocks/intro.scss";
+@import "blocks/form.scss";
+@import "blocks/required.scss";
+@import "blocks/radio.scss";
+@import "blocks/counter.scss";
+@import "blocks/photo-catalog.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/download-btn.scss";
+@import "blocks/contact-info.scss";

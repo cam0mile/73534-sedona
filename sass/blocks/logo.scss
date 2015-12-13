@@ -1,0 +1,33 @@
+.logo {
+  @include no-text;
+  position: relative;
+  z-index: 20;
+  background:
+  url('../img/logo/logo-sedona@1x.png') center top no-repeat,
+  url('../img/svg/form-logo-triangle.svg') center top no-repeat;
+  display: block;
+  width:137px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: -15px;
+}
+
+@media (min-width: $screen-md) {
+  .logo {
+    margin-top: -55px;
+  }
+}
+@media (min-resolution: $retina2x) {
+  .logo {
+    background:
+    url('../img/logo/logo-sedona@2x.png') center top no-repeat,
+    url('../img/svg/form-logo-triangle.svg') center top no-repeat;
+  }
+}
+@media (min-resolution: $retina3x) {
+  .logo {
+    background:
+    url('../img/logo/logo-sedona@3x.png') center top no-repeat,
+    url('../img/svg/form-logo-triangle.svg') center top no-repeat;
+  }
+}

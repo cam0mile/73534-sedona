@@ -1,0 +1,24 @@
+.footer-copyright {
+  font-size: $fz_base;
+  line-height: (48/14);
+
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  vertical-align: top;
+
+  color: #000;
+}
+@media (min-width: $screen-md)
+{
+  .footer-copyright {
+    width: 33.33%;
+    padding: 0;
+    padding-left: 6%;
+  }
+}
+@media (min-width: $screen-bp-md-lg) {
+  .footer-copyright {
+    padding-left: 15%;
+  }
+}

@@ -1,0 +1,30 @@
+.menu-section {
+  position: relative;
+  &__close {
+    @include no-text-2;
+    &:before {
+      content: '';
+      @include cross-white;
+      transform: rotate(45deg);
+      right: 17px;
+      top:26px;
+    }
+    &:after{
+      content: '';
+      @include cross-white;
+      transform: rotate(-45deg);
+      right: 17px;
+      top:26px;
+    }
+  }
+}
+@media (min-width: $screen-md) {
+  .menu-section {
+    &__close {
+    display: none;
+    }
+  }
+}
+
+
+

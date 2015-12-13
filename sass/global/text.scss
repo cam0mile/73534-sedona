@@ -1,0 +1,64 @@
+@font-face
+{
+font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/oOt0DNfso2UXZt7DYCiN2gLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+@font-face
+{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPr3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+body {
+  font: {
+    family: $ff_base;
+    size: $fz_base;
+    weight: normal;
+  }
+  line-height: $lh_base;
+  text-align: center;
+  text-transform: uppercase;
+  //hyphens: auto;
+  color: $c_grey;
+}
+
+@media (max-width: $screen-sm-max) {
+  .sm-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-bp-lg-md) {
+  .md-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: $screen-sm-max), (min-width: $screen-bp-md-lg) {
+  .sm-lg-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: $screen-bp-md-lg) {
+  .sm-md-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-bp-lg-md) {
+  .lg-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .md-lg-hidden {
+    display: none;
+  }
+}

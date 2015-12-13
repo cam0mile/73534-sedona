@@ -19,7 +19,8 @@
     "gulp": "3.9.x",
     "gulp-plumber": "1.0.x",
     "gulp-postcss": "6.0.x",
-    "gulp-sass": "2.1.x"
+    "gulp-sass": "2.1.x",
+    "normalize-scss": "^4.0.2"
   },
   "scripts": {
     "pregosha": "npm install > /dev/null",
@@ -29,5 +30,10 @@
   },
   "engines": {
     "node": "^5.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-svg-sprite": "^1.2.16"
   }
 }

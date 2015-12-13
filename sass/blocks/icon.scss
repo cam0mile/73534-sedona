@@ -1,0 +1,6 @@
+.icon {
+  @include no-text;
+  :active {
+    fill: $c_darken-blue;
+  }
+}
