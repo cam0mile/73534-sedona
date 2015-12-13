@@ -55,13 +55,11 @@
 @media (min-width: $screen-md) {
   .contact-info {
     margin-bottom: 13px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     &:last-child {
       margin-bottom: 44px;
-    }
-    &__row{
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: space-between
     }
     &__group{
       margin-right: 5px;

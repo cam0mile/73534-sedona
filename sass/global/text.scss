@@ -56,3 +56,9 @@ body {
     display: none;
   }
 }
+
+@media (min-width: $screen-md) {
+  .md-lg-hidden {
+    display: none;
+  }
+}

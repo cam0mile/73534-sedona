@@ -4,15 +4,15 @@
     &--bg-blue {
       background-color: $c_blue;
       color: #fff;
-      padding-top: 41px;
-      padding-bottom: 40px;
+      padding-top: 19px;
+      padding-bottom: 37px;
     }
     &--bg-grey {
       background-color: $c_light-grey;
       border-bottom: 1px solid $c_dark-grey;
     }
     padding: $p_base;
-    padding-top: 28px;
+    padding-top: 6px;
     padding-bottom: 26px;
     &__title {
       margin-top: 0;
@@ -67,13 +67,15 @@
       justify-content: center;
       padding-right: 0;
       padding-left: 0;
-      padding-top: 10px;
-      padding-bottom: 10px;
       &--bg-grey {
         border-bottom: none;
       }
       &--triangle:after, &--triangle:before {
         display: none;
+      }
+      &--bg-blue {
+        padding-top: 15px;
+        padding-bottom: 40px;
       }
     }
     &__title {
@@ -100,7 +102,7 @@
     &__item {
       &--bg-grey {
         padding-top: 0px;
-        padding-bottom: 18px;
+        padding-bottom: 45px;
       }
     }
     &__title {

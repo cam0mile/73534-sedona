@@ -8,15 +8,16 @@
   margin-bottom: 41px;
   //padding: $p_base;
   padding-top: 50px;
+  padding-bottom: 50px;
 
   background-image: url('../img/intro/photo-background@1x.jpg');
   background-repeat: no-repeat;
   //background-position: center center;
   background-size: cover;
-  &__img {
-    max-width: 100%;
-    min-height: 340px;
-  }
+  // &__img {
+  //   max-width: 100%;
+  //   min-height: 340px;
+  // }
   &:after
   {
     position: absolute;
@@ -40,6 +41,7 @@
     min-height: 512px;
     margin-bottom: 57px;
     padding-top: 76px;
+    padding-bottom: 0px;
 
     background-size: 100% auto;
     &:after
