@@ -41,6 +41,9 @@
     background: $c_lighter-grey;
     border-radius: 10%;
   }
+   &:hover &__ind:before {
+    background-color: #e5e5e5;
+  }
   &__ind:hover:before {
     background-color: #e5e5e5;
   }

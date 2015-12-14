@@ -30,6 +30,9 @@
     left: 0;
     display: block;
   }
+  &:hover &__ind:before {
+    background-color: #e5e5e5;
+  }
   &__ind:hover:before {
     background-color: #e5e5e5;
   }
@@ -47,11 +50,11 @@
     padding: 12px;
     opacity: 0;
   }
-  & input:checked ~ &__ind:after {
+  & input:checked + &__ind:after {
   opacity: 1;
   transition: all 0.5s;
   }
-  & input:checked ~ &__ind:active:after {
+  & input:checked + &__ind:active:after {
     background-color: #a4a4a4;
   }
 }
