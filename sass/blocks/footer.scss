@@ -18,11 +18,16 @@
   .footer {
     display: flex;
     justify-content: space-around;
-    padding-top: 39px;
+    padding-top: 31px;
     &-hashtag {
       width: 33.33%;
       padding-top: 11px;
     }
+  }
+}
+@media (min-width: $screen-bp-md-lg) {
+  .footer {
+    padding-top: 39px;
   }
 }
 
