@@ -1,4 +1,9 @@
 
+.photo-catalog-wrap {
+  max-width: 458px;
+  margin: 0 auto;
+}
+
 .photo-catalog {
   $z: 10;
   $gap: 10px;
@@ -98,6 +103,9 @@
 }
 
 @media (min-width: $screen-md) {
+  .photo-catalog-wrap {
+    max-width: 652px;
+  }
   .photo-catalog {
     justify-content: flex-start;
     margin-bottom: 21px;
@@ -132,6 +140,9 @@
 }
 
 @media (min-width: $screen-bp-md-lg) {
+  .photo-catalog-wrap {
+    max-width: 960px;
+  }
   .photo-catalog {
     justify-content: space-between;
     &__item {
