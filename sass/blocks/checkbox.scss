@@ -41,7 +41,7 @@
     background: $c_lighter-grey;
     border-radius: 10%;
   }
-   &:hover &__ind:before {
+  &:hover &__ind:before {
     background-color: #e5e5e5;
   }
   &__ind:hover:before {
@@ -75,14 +75,12 @@
 }
 
 @media (min-width: $screen-md) {
-  .checkbox {
-    &__row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-bottom: 60px;
-    }
+  .checkbox-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
   }
 }
 
