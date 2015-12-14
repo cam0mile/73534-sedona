@@ -38,8 +38,12 @@
     </header>
     <main>
       <div class="intro-main">
-        <img class="intro-main__img sm-hidden" src="img/svg/intro-main-sedona.svg" width="" height="" alt="welcome to the gorgeous sedona because the grand canyon sacks!">
-        <img class="intro-main__img sm-shown" src="img/svg/intro-sedona-mobile.svg" width="" height="" alt="welcome to the gorgeous sedona because the grand canyon sacks!"></div>
+        <picture>
+        <sourse media="(min-width:768px)" srcset="img/svg/intro-sedona-mobile.svg">
+          <!-- <img class="intro-main__img sm-hidden" src="img/svg/intro-main-sedona.svg" width="" height="" alt="welcome to the gorgeous sedona because the grand canyon sacks!"> -->
+          <img class="intro-main__img" src="img/svg/intro-sedona-mobile.svg" width="" height="" alt="welcome to the gorgeous sedona because the grand canyon sacks!">
+        </picture>
+      </div>
       <div class="slogan">
         <h1 class="slogan__title">
           Седона&nbsp;&mdash; небольшой городок в&nbsp;аризоне,
@@ -59,9 +63,11 @@
       <section class="features">
         <div class="features__item">
           <div class="features__sprite features__sprite--house">
-           <svg class="svg-icon-house-icon">
-            <use xlink:href="img/svg/svg_sprite.svg#icon-house"/>
-          </svg>house</div>
+            <svg class="svg-icon-house-icon">
+              <use xlink:href="img/svg/svg_sprite.svg#icon-house"/>
+            </svg>
+            house
+          </div>
           <h4 class="features__title">Жилье</h4>
           <p class="features__text">
             Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!
@@ -69,9 +75,11 @@
         </div>
         <div class="features__item">
           <div class="features__sprite features__sprite--burger">
-          <svg class="svg-icon-burger-icon">
-            <use xlink:href="img/svg/svg_sprite.svg#icon-burger"/>
-          </svg>eat</div>
+            <svg class="svg-icon-burger-icon">
+              <use xlink:href="img/svg/svg_sprite.svg#icon-burger"/>
+            </svg>
+            eat
+          </div>
           <h4 class="features__title">Еда</h4>
           <p class="features__text">
             Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
@@ -79,9 +87,11 @@
         </div>
         <div class="features__item">
           <div class="features__sprite features__sprite--gift">
-          <svg class="svg-icon-gift-icon">
-            <use xlink:href="img/svg/svg_sprite.svg#icon-gift"/>
-          </svg>surprise</div>
+            <svg class="svg-icon-gift-icon">
+              <use xlink:href="img/svg/svg_sprite.svg#icon-gift"/>
+            </svg>
+            surprise
+          </div>
           <h4 class="features__title">Сувениры</h4>
           <p class="features__text">Не&nbsp;только китайского, но и местного производства!</p>
         </div>
@@ -110,7 +120,9 @@
           </p>
         </div>
         <div class="reasons__item reasons__item--bg-grey">
-          <h4 class="reasons__title">Мало<br class="sm-hidden"> туристов</h4>
+          <h4 class="reasons__title">
+            Мало
+            <br class="sm-hidden">туристов</h4>
           <span class="reasons__number">— №5 —</span>
           <p class="reasons__text">Большинство едет в&nbsp;гранд каньон и&nbsp;толпится там</p>
         </div>
@@ -153,12 +165,13 @@
         </a>
       </div>
       <div class="footer-copyright">
-      <p class="footer-copyright__text">Разработано</p>
+        <p class="footer-copyright__text">Разработано</p>
         <a class="logo-htmlacademy" href="#" title="htmlacademy">
-        <svg class="svg-htmlacademy-icon">
+          <svg class="svg-htmlacademy-icon">
             <use xlink:href="img/svg/svg_sprite.svg#htmlacademy"/>
           </svg>
-          htmlacademy</a>
+          htmlacademy
+        </a>
       </div>
     </footer>
   </div>
