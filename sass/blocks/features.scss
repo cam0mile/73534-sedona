@@ -18,11 +18,32 @@
     padding-top: 30px;
     margin-top: 0;
     margin-bottom: 10px;
-
   }
 
   &__text {
     margin-bottom: 0;
+  }
+
+  &__sprite {
+    @include no-text-2;
+    float: left;
+    margin-left: -48px;
+    margin-top: 5px;
+    fill: $c_blue;
+    svg {
+      max-width: 37px;
+    }
+    &--burger {
+      margin-top: 8px;
+      margin-left: -50px;
+    }
+    &--gift {
+      margin-left: -45px;
+      margin-top: 1px;
+      svg {
+        max-width: 32px;
+      }
+    }
   }
 }
 
@@ -49,6 +70,19 @@
 
     &__text {
       padding: $p_md-lg-display;
+    }
+    &__sprite {
+      float: none;
+      display: inline-block;
+      position: static;
+      margin: 0;
+      margin-bottom: 30px;
+      &--house {
+        margin-top: 3px;
+      }
+      &--burger {
+        margin-top: 5px;
+      }
     }
   }
 }
