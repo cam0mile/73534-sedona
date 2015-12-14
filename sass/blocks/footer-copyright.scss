@@ -8,6 +8,9 @@
   vertical-align: top;
 
   color: #000;
+  &__text {
+    display: inline-block;
+  }
 }
 @media (min-width: $screen-md)
 {
