@@ -46,7 +46,7 @@ body {
 }
 
 @media (max-width: $screen-bp-md-lg) {
-  .sm-md-hidden {
+  .lg-shown {
     display: none;
   }
 }
@@ -58,7 +58,7 @@ body {
 }
 
 @media (min-width: $screen-md) {
-  .md-lg-hidden {
+  .sm-shown {
     display: none;
   }
 }
