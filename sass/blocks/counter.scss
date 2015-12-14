@@ -47,6 +47,7 @@
   }
 
   &__btn {
+    @include no-text-2;
     font-size: 21px;
     font-weight: bold;
     line-height: 62px;
@@ -61,18 +62,18 @@
     text-align: center;
     text-transform: uppercase;
 
-    color: $c_darken-grey;
+    fill: $c_darken-grey;
     border: none;
     outline: none;
     background: $c_lighter-grey;
 
     &:hover {
       background-color: #e5e5e5;
-      color: #8c8c8c;
+      fill: #8c8c8c;
     }
     &:active {
       background-color: #d5d5d5;
-      color: #c4c4c4;
+      fill: #c4c4c4;
     }
 
     &--plus {
@@ -81,6 +82,13 @@
 
     &--minus {
       left: 0;
+    }
+    svg {
+      position: absolute;
+      top: 19px;
+      left: 21px;
+      min-width: 20px;
+      min-height: 20px;
     }
   }
 }

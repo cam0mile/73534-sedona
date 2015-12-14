@@ -87,8 +87,18 @@
                 </label>
                 <div class="counter form__counter" data-count="дн.">
                   <input class="counter__field" id="amount-days" type="number" name="amount-days" value="14" min="0" readonly>
-                  <button class="counter__btn counter__btn--plus" type="button">+</button>
-                  <button class="counter__btn counter__btn--minus" type="button">-</button>
+                  <button class="counter__btn counter__btn--plus" type="button">
+                    <svg class="svg-icon-plus-icon">
+                      <use xlink:href="img/svg/svg_sprite.svg#icon-plus"/>
+                    </svg>
+                    +
+                  </button>
+                  <button class="counter__btn counter__btn--minus" type="button">
+                    <svg class="svg-icon-minus-icon">
+                      <use xlink:href="img/svg/svg_sprite.svg#icon-minus"/>
+                    </svg>
+                    -
+                  </button>
                 </div>
               </div>
               <div class="form__group form__group--fb">
@@ -105,8 +115,18 @@
             <div class="md-wrap">
               <div class="counter form__counter form__counter--mb" data-count="чел.">
                 <input class="counter__field" id="amount-persons" type="number" name="amount-persons" value="2" min="0" readonly>
-                <button class="counter__btn counter__btn--plus" type="button">+</button>
-                <button class="counter__btn counter__btn--minus" type="button">-</button>
+                <button class="counter__btn counter__btn--plus" type="button">
+                  <svg class="svg-icon-plus-icon">
+                    <use xlink:href="img/svg/svg_sprite.svg#icon-plus"/>
+                  </svg>
+                  +
+                </button>
+                <button class="counter__btn counter__btn--minus" type="button">
+                  <svg class="svg-icon-minus-icon">
+                    <use xlink:href="img/svg/svg_sprite.svg#icon-minus"/>
+                  </svg>
+                  -
+                </button>
               </div>
             </div>
             <div class="contact-info">
@@ -172,48 +192,48 @@
               <span class="lg-hidden">Выбрать фотографии</span>
               <span class="lg-shown">Перетащите фотографии сюда</span>
             </label>
-          <div class="photo-catalog-wrap">
-            <div class="photo-catalog">
-              <div class="photo-catalog__item">
-                <a class="photo-catalog__link" href="#">&times;</a>
-                <div class="photo-catalog__photo-wrap">
-                  <img class="photo-catalog__photo" src="http://placebear.com/200/300" width="70" height="70" alt="photo-review-1"></div>
+            <div class="photo-catalog-wrap">
+              <div class="photo-catalog">
+                <div class="photo-catalog__item">
+                  <a class="photo-catalog__link" href="#">&times;</a>
+                  <div class="photo-catalog__photo-wrap">
+                    <img class="photo-catalog__photo" src="http://placebear.com/200/300" width="70" height="70" alt="photo-review-1"></div>
+                </div>
+                <div class="photo-catalog__item">
+                  <a class="photo-catalog__link" href="#">&times;</a>
+                  <div class="photo-catalog__photo-wrap">
+                    <img class="photo-catalog__photo" src="http://placebear.com/200/300" alt="photo-review-2"></div>
+                </div>
+                <div class="photo-catalog__item">
+                  <a class="photo-catalog__link" href="#">&times;</a>
+                  <div class="photo-catalog__photo-wrap">
+                    <img class="photo-catalog__photo" src="http://placebear.com/400/800" alt="photo-review-3"></div>
+                </div>
+                <div class="photo-catalog__item">
+                  <a class="photo-catalog__link" href="#">&times;</a>
+                  <div class="photo-catalog__photo-wrap">
+                    <img class="photo-catalog__photo" src="http://placebear.com/700/900" alt="photo-review-4"></div>
+                </div>
+                <div class="photo-catalog__item">
+                  <a class="photo-catalog__link" href="#">&times;</a>
+                  <div class="photo-catalog__photo-wrap">
+                    <img class="photo-catalog__photo" src="http://placebear.com/1000/700" alt="photo-review-5"></div>
+                </div>
+                <div class="photo-catalog__item">
+                  <a class="photo-catalog__link" href="#">&times;</a>
+                  <div class="photo-catalog__photo-wrap">
+                    <img class="photo-catalog__photo" src="http://placebear.com/600/500" alt="photo-review-6"></div>
+                </div>
+                <div class="photo-catalog__item">
+                  <a class="photo-catalog__link" href="#">&times;</a>
+                  <div class="photo-catalog__photo-wrap">
+                    <img class="photo-catalog__photo" src="http://placebear.com/40/40" alt="photo-review-7"></div>
+                </div>
+                <div class="photo-catalog__item photo-catalog__item--empty"></div>
+                <div class="photo-catalog__item photo-catalog__item--empty"></div>
+                <div class="photo-catalog__item photo-catalog__item--empty"></div>
               </div>
-              <div class="photo-catalog__item">
-                <a class="photo-catalog__link" href="#">&times;</a>
-                <div class="photo-catalog__photo-wrap">
-                  <img class="photo-catalog__photo" src="http://placebear.com/200/300" alt="photo-review-2"></div>
-              </div>
-              <div class="photo-catalog__item">
-                <a class="photo-catalog__link" href="#">&times;</a>
-                <div class="photo-catalog__photo-wrap">
-                  <img class="photo-catalog__photo" src="http://placebear.com/400/800" alt="photo-review-3"></div>
-              </div>
-              <div class="photo-catalog__item">
-                <a class="photo-catalog__link" href="#">&times;</a>
-                <div class="photo-catalog__photo-wrap">
-                  <img class="photo-catalog__photo" src="http://placebear.com/700/900" alt="photo-review-4"></div>
-              </div>
-              <div class="photo-catalog__item">
-                <a class="photo-catalog__link" href="#">&times;</a>
-                <div class="photo-catalog__photo-wrap">
-                  <img class="photo-catalog__photo" src="http://placebear.com/1000/700" alt="photo-review-5"></div>
-              </div>
-              <div class="photo-catalog__item">
-                <a class="photo-catalog__link" href="#">&times;</a>
-                <div class="photo-catalog__photo-wrap">
-                  <img class="photo-catalog__photo" src="http://placebear.com/600/500" alt="photo-review-6"></div>
-              </div>
-              <div class="photo-catalog__item">
-                <a class="photo-catalog__link" href="#">&times;</a>
-                <div class="photo-catalog__photo-wrap">
-                  <img class="photo-catalog__photo" src="http://placebear.com/40/40" alt="photo-review-7"></div>
-              </div>
-              <div class="photo-catalog__item photo-catalog__item--empty"></div>
-              <div class="photo-catalog__item photo-catalog__item--empty"></div>
-              <div class="photo-catalog__item photo-catalog__item--empty"></div>
             </div>
-          </div>
           </div>
           <button class="form__btn" type="submit">Отправить отзыв</button>
         </form>
