@@ -1,6 +1,19 @@
 .icon {
   @include no-text;
-  :active {
-    fill: $c_darken-blue;
+  position: relative;
+  &:active {
+    svg {
+      fill: $c_darken-blue;
+    }
+  }
+  svg {
+    position: absolute;
+    top: 17px;
+    left: 13px;
+    fill: #fff;
+  }
+  &--facebook svg {
+    top: 13;
+    left: 19;
   }
 }

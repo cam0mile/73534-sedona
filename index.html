@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width">
   <title>html academy: седона</title>
   <meta name="description" content="седона — небольшой городок в аризоне, заслуживающий большего!">
+  <script src="vendor/svg4everybody.js"></script>
+  <script>svg4everybody();</script>
   <link rel="stylesheet" href="css/style.css">
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'></head>
 <body>
@@ -40,7 +42,8 @@
         <img class="intro-main__img md-lg-hidden" src="img/svg/intro-sedona-mobile.svg" width="" height="" alt="welcome to the gorgeous sedona because the grand canyon sacks!"></div>
       <div class="slogan">
         <h1 class="slogan__title">
-          Седона&nbsp;&mdash; небольшой городок в&nbsp;аризоне, <br class="sm-hidden">заслуживающий большего!</h1>
+          Седона&nbsp;&mdash; небольшой городок в&nbsp;аризоне,
+          <br class="sm-hidden">заслуживающий большего!</h1>
         <p class="slogan__text">
           Рассмотрим 5&nbsp;причин, по&nbsp;которым седона круче чем гранд каньон!
         </p>
@@ -57,12 +60,16 @@
         <div class="features__item">
           <div class="sprite sprite-house">house</div>
           <h4 class="features__title">Жилье</h4>
-          <p class="features__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
+          <p class="features__text">
+            Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!
+          </p>
         </div>
         <div class="features__item">
           <div class="sprite sprite-eat">eat</div>
           <h4 class="features__title">Еда</h4>
-          <p class="features__text">Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+          <p class="features__text">
+            Всегда заказывайте фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
+          </p>
         </div>
         <div class="features__item">
           <div class="sprite sprite-surprise">surprise</div>
@@ -74,7 +81,9 @@
         <div class="reasons__item reasons__item--bg-blue">
           <h4 class="reasons__title">Там есть мост&nbsp;дьявола</h4>
           <span class="reasons__number">— №2 —</span>
-          <p class="reasons__text">Да, по&nbsp;нему можно пройти! если конечно вы&nbsp;осмелитесь</p>
+          <p class="reasons__text">
+            Да, по&nbsp;нему можно пройти! если конечно вы&nbsp;осмелитесь
+          </p>
         </div>
         <div class="reasons__image reasons__image--img-2"></div>
       </section>
@@ -87,7 +96,9 @@
         <div class="reasons__item reasons__item--bg-grey">
           <h4 class="reasons__title">Красивая дорога</h4>
           <span class="reasons__number">— №4 —</span>
-          <p class="reasons__text">Ехать в&nbsp;седону из&nbsp;лас-&nbsp;вегаса совсем не&nbsp;скучно!</p>
+          <p class="reasons__text">
+            Ехать в&nbsp;седону из&nbsp;лас-&nbsp;вегаса совсем не&nbsp;скучно!
+          </p>
         </div>
         <div class="reasons__item reasons__item--bg-grey">
           <h4 class="reasons__title">Мало туристов</h4>
@@ -113,9 +124,24 @@
         <a class="footer-hashtag__link" href="#">#visitsedona</a>
       </div>
       <div class="social">
-        <a class="social__link  icon icon--twitter" href="http://twitter.com/htmlacademy" target="_blank" title="twitter">twitter</a>
-        <a class="social__link  icon icon--facebook" href="http://www.facebook.com/htmlacademy" target="_blank" title="facebook">facebook</a>
-        <a class="social__link  icon icon--youtube" href="http://youtube.com/watch?v=3vrvbe-iay8" target="_blank" title="youtube">youtube</a>
+        <a class="social__link  icon icon--twitter" href="http://twitter.com/htmlacademy" target="_blank" title="twitter">
+          <svg class="svg-icon-twitter-icon">
+            <use xlink:href="img/svg/svg_sprite.svg#icon-twitter"/>
+          </svg>
+          twitter
+        </a>
+        <a class="social__link  icon icon--facebook" href="http://www.facebook.com/htmlacademy" target="_blank" title="facebook">
+          <svg class="svg-icon-facebook-icon">
+            <use xlink:href="img/svg/svg_sprite.svg#icon-facebook"/>
+          </svg>
+          facebook
+        </a>
+        <a class="social__link  icon icon--youtube" href="http://youtube.com/watch?v=3vrvbe-iay8" target="_blank" title="youtube">
+          <svg class="svg-icon-youtube-icon">
+            <use xlink:href="img/svg/svg_sprite.svg#icon-youtube"/>
+          </svg>
+          youtube
+        </a>
       </div>
       <div class="footer-copyright">
         Разработано
