@@ -29,10 +29,11 @@
 
   &__number{
     margin: 0;
+    margin-left: -2px;
     font-family: 'PT Sans', sans-serif;
     font-size: $fz_s;
     font-weight: bold;
-    line-height: 58px;
+    line-height: 59px;
 
     width: 61px;
     height: 58px;
@@ -79,6 +80,17 @@
       &:last-child{
         margin-right: 0px;
       }
+    }
+  }
+}
+
+@media (min-width: $screen-bp-md-lg) {
+  .contact-info {
+    &__number{
+      padding-left: 8px;
+    }
+    &__label{
+      padding-left: 23px;
     }
   }
 }
