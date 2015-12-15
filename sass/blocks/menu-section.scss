@@ -1,4 +1,5 @@
 .menu-section {
+  display: none;
   position: relative;
   &__close {
     @include no-text-2;
@@ -20,11 +21,14 @@
 }
 @media (min-width: $screen-md) {
   .menu-section {
+    display: block;
     &__close {
     display: none;
     }
   }
 }
 
-
+.menu-section-show {
+  display: block
+}
 
