@@ -70,7 +70,7 @@
   &__input-text:focus {
     outline: none;
     background: #fff;
-    border: 4px solid #e5e5e5;
+    outline: 4px solid #e5e5e5;
   }
 }
 @media (min-width: $screen-md) {
