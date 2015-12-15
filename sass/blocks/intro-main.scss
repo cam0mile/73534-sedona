@@ -51,6 +51,12 @@
   }
 }
 
+@media (min-width: $screen-bp-md-lg) {
+  .intro-main {
+    margin-bottom: 58px;
+  }
+}
+
 @media (min-resolution: $retina2x) {
   .intro-main {
     background-image: url('../img/intro/photo-background@2x.jpg');

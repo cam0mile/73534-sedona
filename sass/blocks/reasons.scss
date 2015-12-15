@@ -97,12 +97,15 @@
     }
   }
 }
-@media (min-width: $screen-lg) {
+@media (min-width: $screen-bp-md-lg) {
   .reasons {
     &__item {
       &--bg-grey {
         padding-top: 0px;
         padding-bottom: 45px;
+      }
+      &--bg-blue {
+        padding-top: 9px;
       }
     }
     &__title {

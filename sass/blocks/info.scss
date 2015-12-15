@@ -48,11 +48,11 @@
     }
   }
 }
-@media (min-width: $screen-lg) {
+@media (min-width: $screen-bp-md-lg) {
   .info
   {
-      &__text {
-          margin-bottom: 45px;
-      }
+    &__text {
+        margin-bottom: 45px;
+    }
   }
 }
