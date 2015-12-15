@@ -51,8 +51,9 @@
 @media (min-width: $screen-md)
 {
   .intro {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
     &__wrap {
+      margin-bottom: 75px;
       &:after{
         background-size: 102%;
       }

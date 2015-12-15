@@ -1,10 +1,13 @@
 .form {
-  margin-bottom: 80px;
+  margin-bottom: 65px;
   padding: $p_base;
   &__item {
     border-top: 1px solid $c_lighter-grey;
     clear: both;
     padding-bottom: 7px;
+    &--pb {
+      padding-bottom: 6px;
+    }
   }
   &__title {
     font-size: $fz_s;
@@ -12,7 +15,10 @@
     margin-top: 19px;
     margin-bottom: 25px;
     &--mb{
-      margin-bottom: 19px;
+      margin-bottom: 17px;
+    }
+    &--mb2{
+      margin-bottom: 21px;
     }
   }
   &__label {
@@ -69,6 +75,7 @@
 }
 @media (min-width: $screen-md) {
   .form {
+    margin-bottom: 89px;
     padding-right: 8%;
     padding-left: 8%;
     &__item {
