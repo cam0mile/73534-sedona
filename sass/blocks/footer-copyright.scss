@@ -10,6 +10,7 @@
   color: #000;
   &__text {
     display: inline-block;
+    margin-top: 0;
   }
 }
 @media (min-width: $screen-md)
