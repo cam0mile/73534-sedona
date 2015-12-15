@@ -173,6 +173,13 @@
         flex-basis: 100%;
       }
     }
+    &__label {
+      &--center{
+        text-align: left;
+        padding-left: 20px;
+      }
+    }
+
   }
 }
 
