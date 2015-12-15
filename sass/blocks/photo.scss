@@ -1,0 +1,102 @@
+.photo {
+  $z: 10;
+  $gap: 10px;
+  position: relative;
+  z-index: ($z);
+  margin: 0 $gap 35px;
+  &__wrap {
+    position: relative;
+    overflow: hidden;
+    z-index: ($z);
+    height: 70px;
+    width: 70px;
+    background-color: $c_light-grey;
+  }
+  &__img {
+    max-height: 100%;
+    width: auto;
+    margin: 50%;
+    transform: translate(-50%, -50%)
+  }
+  &__link {
+    @include no-text-2;
+    text-decoration: none;
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    z-index: ($z+1);
+    background: $c_lighter-grey;
+    padding: 15px;
+    border-radius: 30px;
+    display: block;
+    cursor: pointer;
+
+    &:before{
+      @include cross;
+      top: 15px;
+      left: 8px;
+      content: '';
+      transform: rotate(45deg);
+    }
+
+    &:after{
+      @include cross;
+      top: 15px;
+      left: 8px;
+      content: '';
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+      background-color: #e5e5e5;
+      &:before {
+        background-color: #8c8c8c;
+      }
+      &:after {
+        background-color: #8c8c8c;
+      }
+    }
+    &:active {
+      background-color: #d5d5d5;
+      &:before {
+        background-color: #c4c4c4;
+      }
+      &:after {
+        background-color: #c4c4c4;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .photo {
+    margin: 0 33px 68px;
+    &__wrap {
+      height: 140px;
+      width: 140px;
+    }
+    &__link {
+      top: -30px;
+      left: 110px;
+      padding: 30px;
+      &:before{
+        height: 3px;
+        width: 32px;
+        top: 28px;
+        left: 14px;
+      }
+      &:after{
+        height: 3px;
+        width: 32px;
+        top: 28px;
+        left: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-bp-md-lg) {
+  .photo {
+    margin: 0 12px 68px;
+  }
+}

@@ -1,3 +1,7 @@
+.form-title-wrap {
+  overflow: hidden;
+}
+
 .form {
   margin-bottom: 65px;
   padding: $p_base;
@@ -80,7 +84,6 @@
     padding-left: 8%;
     &__item {
       border-top: none;
-      overflow: hidden;
     }
     &__title {
       @include font-md;
