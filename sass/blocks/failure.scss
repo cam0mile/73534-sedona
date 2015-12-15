@@ -1,0 +1,17 @@
+.failure {
+  min-width: 320px;
+  min-height: 280px;
+  &__title {
+    font{
+      size: $fz_s;
+      weight: bold;
+    }
+    line-height: (26/18);
+  }
+  &__text {
+
+  }
+  &__btn {
+
+  }
+}
