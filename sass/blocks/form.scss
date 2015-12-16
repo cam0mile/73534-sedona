@@ -63,6 +63,7 @@
   }
   }
   &__counter {
+    max-width: 280px;
     margin-bottom: 17px;
     &--mb {
       margin-bottom: 38px;
@@ -175,12 +176,12 @@
       }
     }
     &__label {
+      padding-left: 23px;
       &--center{
         text-align: left;
-        padding-left: 23px;
+        padding-left: 32px;
       }
     }
-
   }
 }
 

@@ -29,7 +29,7 @@ body {
 //   padding: $p_base;
 // }
 
-@media (min-width: $screen-md) and (max-width: $screen-bp-md-lg) {
+@media (min-width: $screen-md) and (max-width: $screen-bp-lg-md) {
   .md-wrap {
     width: 27%;
     margin:0 auto;
