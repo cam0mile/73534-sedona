@@ -93,8 +93,14 @@
   }
 }
 
-@media (min-width: $screen-bp-md-lg) {
+@media (min-width: ($screen-bp-md-lg + 41)) {
   .checkbox-wrap {
     max-width: 960px;
+    justify-content: space-between;
+  }
+  .checkbox {
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 200px;
   }
 }
