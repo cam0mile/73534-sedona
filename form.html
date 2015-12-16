@@ -152,7 +152,7 @@
                 <label class="contact-info__label" for="secondname--1">Отчество:</label>
                 <input id="secondname--1" class="contact-info__input-text" type="text" name="secondname--1"></div>
             </div>
-            <div class="contact-info contact-info__row">
+            <div class="contact-info">
               <div class="contact-info__group">
                 <div class="contact-info__item-number">
                   <p class="contact-info__text">№</p>
@@ -298,5 +298,20 @@
   </div>
   <script src="js/script.js"></script>
   <script src="js/script-form.js"></script>
+  <script id="contact-template" type="text/html">
+      <div class="contact-info__group">
+        <div class="contact-info__item-number">
+          <p class="contact-info__text">№</p>
+          <p class="contact-info__number">{{number}}</p>
+        </div>
+        <label class="contact-info__label" for="surname--{{number}}">Фамилия:</label>
+        <input id="surname--{{number}}" class="contact-info__input-text" type="text" name="surname--{{number}}" required></div>
+      <div class="contact-info__group">
+        <label class="contact-info__label" for="firstname--{{number}}">Имя:</label>
+        <input id="firstname--{{number}}" class="contact-info__input-text" type="text" name="firstname--{{number}}" required></div>
+      <div class="contact-info__group">
+        <label class="contact-info__label" for="secondname--{{number}}">Отчество:</label>
+        <input id="secondname--{{number}}" class="contact-info__input-text" type="text" name="secondname--{{number}}"></div>
+  </script>
 </body>
 </html>
