@@ -1,5 +1,6 @@
 (function() {
   var form = document.querySelector("form");
+
   var elements = document.querySelectorAll(".counter");
   var area = form.querySelector(".contact-info-wrap");
   var template = document.querySelector("#contact-template").innerHTML;
@@ -31,10 +32,16 @@
 
     minus.addEventListener('click', function(){
       changeNumber(false);
+      if (input == document.querySelector("#amount-persons")) {
+        removeFields();
+      }
     });
 
     plus.addEventListener('click', function(){
       changeNumber(true);
+      if (input == document.querySelector("#amount-persons")) {
+        addFields();
+      }
     });
 
     function changeNumber(operation) {
@@ -51,73 +58,31 @@
       }
       input.value = result;
     }
-  }
 
-
-
-  var currentFieldsNumber = 2;
-  var amount = document.getElementById("amount-persons");
-  var amauntValue = amount.value;
-
-  console.log(amount);
-
-  amount.addEventListener("change", function(){
-    debugger;
-    var fieldsNumber = parseInt(amount.value);
-    if (fieldsNumber > currentFieldsNumber) {
-      for (var i= currentFieldsNumber; i < (fieldsNumber - 1); i++)
-        //function x() {fieldsNumber = fieldsNumber - 1}
-        addFields();
-
-    } else {
-      for (var i= currentFieldsNumber; i  > (fieldsNumber + 1); i--)
-       // function y() {fieldsNumber = fieldsNumber + 1}
-        removeFields();
+    function removeFields() {
+      if (input.value > 0) {
+        var children = area.children;
+        var lastChildNumber = children.length - 1;
+        area.removeChild(children[lastChildNumber]);
+      } else {
+        input.value = 1;
+      }
     }
-    currentFieldsNumber = parseInt(amount.value);
-  });
 
+    function addFields() {
+      var number = Number(input.value);
 
-  function addFields(templateElement) {
-    debugger;
-    var templateElement = document.createElement("div");
-    templateElement.classList.add("contact-info");
-    templateElement.innerHTML = template;
-    area.appendChild(templateElement);
-    console.log(templateElement);
+      var html = Mustache.render(template, {
+        "number": number
+      });
+
+      var templateElement = document.createElement("div");
+      templateElement.classList.add("contact-info");
+      templateElement.innerHTML = html;
+
+      area.appendChild(templateElement);
+    }
   }
-
-
-  function removeFields(templateElement) {
-    debugger;
-    var templateElement = document.querySelector(".contact-info");
-    console.log(templateElement);
-    templateElement.parentNode.removeChild(templateElement);
-  }
-
-  // function contact(number) {
-  //   var info = new ContactInfo();
-
-  //   var templateElement = document.createElement("div");
-  //   templateElement.classList.add("contact-info");
-  //   templateElement.innerHTML = html;
-
-  //   area.appendChild(templateElement)
-
-  //   templateElement.querySelector(".counter__btn--minus").addEventListener("click",function(event) {
-  //     event.preventDefault();
-  //     removeContact(templateElement);
-  //   });
-  // }
-
-
-  // function removeContact(templateElement) {
-  //   queue = queue.filter(function(element){
-  //     return element.templateElement !=templateElement;
-  //   });
-  //   templateElement.parentNode.removeChild(templateElement);
-  // }
-
 
 })();
 
