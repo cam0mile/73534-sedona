@@ -29,6 +29,10 @@
     @include label;
   }
 
+  &__required {
+    color: $c_red;
+  }
+
   &__input-text {
     @include input-text;
     margin-bottom: 16px;
@@ -135,7 +139,6 @@
       &--center{
         text-align: center;
         padding-left: 0px;
-        margin-left: -9px;
       }
     }
     &__row {

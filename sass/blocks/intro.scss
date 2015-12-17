@@ -6,10 +6,9 @@
     overflow: hidden;
     margin-bottom: 76px;
 
-    background-image: url('../img/intro/photo-background@1x.jpg');
+    background: url("../img/intro/photo-background@1x.jpg") 0 0;
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    background-size: 100%, cover;
     &:after
     {
       position: absolute;
@@ -53,6 +52,7 @@
   .intro {
     margin-bottom: 60px;
     &__wrap {
+      background: url("../img/intro/photo-background@1x.jpg") 0 -150px;
       margin-bottom: 75px;
       &:after{
         background-size: 102%;
