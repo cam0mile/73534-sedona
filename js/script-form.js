@@ -1,43 +1,33 @@
 (function() {
   var form = document.querySelector("form");
-
-  form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    var data = new FormData(form);
-
-    request(data, function(response) {
-      console.log(response);
-      });
-  });
-
-  function request(data, fn) {
-
-    var xhr = new XMLHttpRequest();
-    var time = (new Date()).getTime();
-
-    xhr.open("post", "https://echo.htmlacademy.ru/adaptive?" + time);
-
-    xhr.addEventListener("readystatechange", function() {
-      if (xhr.readyState == 4) {
-        fn(xhr.responseText);
-      }
-    });
-
-    xhr.send(data);
-  }
-
-
   var elements = document.querySelectorAll(".counter");
+  var area = form.querySelector(".contact-info-wrap");
+  var template = document.querySelector("#contact-template").innerHTML;
+  var number = 0;
+  var div = 0;
 
-  for (var i = 0; i < elements.lenght; i++) {
-    initNumberField(elements.lenghts[i]);
+
+  for (var i = 0; i < elements.length; i++) {
+    initNumberField(elements[i]);
   }
+
+
 
   function initNumberField(parent) {
     var input = parent.querySelector("input");
     var minus = parent.querySelector(".counter__btn--minus");
     var plus = parent.querySelector(".counter__btn--plus");
+    var min = parseInt(input.getAttribute('min')) || 0;
+    var max = parseInt(input.getAttribute('max'));
+    var x;
+
+    //дополнительное задание от наставника =)
+    if (min>max) {
+      x = min;
+      min = Math.min(max,min);
+      max = Math.max(max,x);
+    }
+
 
     minus.addEventListener('click', function(){
       changeNumber(false);
@@ -48,58 +38,79 @@
     });
 
     function changeNumber(operation) {
-      var value = Number(input.value);
-
+      var value = parseInt(input.value);
+      var result;
       if (operation) {
-        input.value = value + 1;
+        result = value + 1;
+        if (!isNaN(max)){
+          result = Math.min(result, max);
+        }
       }  else {
-        input.value = value - 1;
+        result = value - 1;
+        result = Math.max(result, min);
       }
+      input.value = result;
     }
   }
 
-form.querySelector("#amount-persons").addEventListener("change", function(){
-var number =
-});
-
-  var area = form.querySelector(".contact-info");
-
-  var template = document.querySelector("#contact-template").innerHTML;
-  var queue = [];
 
 
-  function contact(number) {
-  var info = new ContactInfo();
-  // info.addEventListener("load", function(event) {
-    // var html = Mustache.render(template, {
-    //   "image": event.target.result,
-    //   "name": file.name
-    // });
+  var currentFieldsNumber = 0;
+  var amaunt = document.getElementById("amount-persons");
+  var amauntValue = amaunt.value;
 
-    var div = document.createElement("div");
-    div.classList.add("contact-info");
-    div.innerHTML = html;
+  console.log(amaunt);
 
-    area.appendChild(div)
+  amaunt.addEventListener("change", function(){
+    debugger;
+    var fieldsNumber = parseInt(input.value);
+    if (fieldsNumber > currentFieldsNumber) {
+      for (var i= currentFieldsNumber; i < (fieldsNumber - 1); i++)
+        addFields();
 
-    div.querySelector(".counter__btn--minus").addEventListener("click",function(event) {
-      event.preventDefault();
-      removeContact(div);
-    });
+    } else {
+      for (var i= currentFieldsNumber; i  > (fieldsNumber + 1); i--)
+        removeFields();
+    }
+    currentFieldsNumber = parseInt(input.value);
   });
 
-  queue.push ({
-    "number": number,
-    "div": div
-    });
-  });
 
-  function removeContact(div) {
-    queue = queue.filter(function(element){
-      return element.div !=div;
-    });
-    div.parentNode.removeChild(div);
+  function addFields(templateElement) {
+    var templateElement = document.createElement("div");
+    templateElement.classList.add("contact-info");
+    templateElement.innerHTML = html;
+    area.appendChild(templateElement);
   }
+
+
+  function removeFields(templateElement) {
+    templateElement.parentNode.removeChild(templateElement);
+  }
+
+  // function contact(number) {
+  //   var info = new ContactInfo();
+
+  //   var templateElement = document.createElement("div");
+  //   templateElement.classList.add("contact-info");
+  //   templateElement.innerHTML = html;
+
+  //   area.appendChild(templateElement)
+
+  //   templateElement.querySelector(".counter__btn--minus").addEventListener("click",function(event) {
+  //     event.preventDefault();
+  //     removeContact(templateElement);
+  //   });
+  // }
+
+
+  // function removeContact(templateElement) {
+  //   queue = queue.filter(function(element){
+  //     return element.templateElement !=templateElement;
+  //   });
+  //   templateElement.parentNode.removeChild(templateElement);
+  // }
+
 
 })();
 
