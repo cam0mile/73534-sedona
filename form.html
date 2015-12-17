@@ -122,7 +122,7 @@
             </label>
             <div class="md-wrap">
               <div class="counter form__counter form__counter--mb" data-count="чел.">
-                <input class="counter__field" id="amount-persons" type="number" name="amount-persons" value="2" min="0" readonly max="10">
+                <input class="counter__field" id="amount-persons" type="number" name="amount-persons" value="2" min="0" max="10">
                 <button class="counter__btn counter__btn--plus" type="button">
                   <svg class="svg-icon-plus-icon">
                     <use xlink:href="img/svg/svg_sprite.svg#icon-plus"/>
@@ -238,11 +238,11 @@
                   <div class="photo__wrap">
                     <img class="photo__img" src="http://placebear.com/600/500" alt="photo-review-6"></div>
                 </div>
-                <div class="photo-catalog__item photo">
+             <!--    <div class="photo-catalog__item photo">
                   <a class="photo__link" href="#">&times;</a>
                   <div class="photo__wrap">
                     <img class="photo__img" src="http://placebear.com/40/40" alt="photo-review-7"></div>
-                </div>
+                </div> -->
                 <div class="photo-catalog__item photo-catalog__item--empty"></div>
                 <div class="photo-catalog__item photo-catalog__item--empty"></div>
                 <div class="photo-catalog__item photo-catalog__item--empty"></div>
@@ -252,16 +252,17 @@
           <button class="form__btn" type="submit">Отправить отзыв</button>
         </form>
       </div>
-      <!-- <div class="failure">
+      <div class="failure">
         <h4 class="failure__title">Что-то пошло не так!</h4>
         <p class="failure__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="failure__btn">OK</button>
       </div>
-      <div class="success">
-        <h4 class="success__title">Ваш отзыв отправлен!</h4>
-        <p class="success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="success__btn"> Закрыть окно</button>
-      </div> -->
+      <div class="module-success">
+        <h4 class="module-success__title">Ваш отзыв отправлен!</h4>
+        <p class="module-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="module-success__send">
+        <button class="module-success__btn"> Закрыть окно</button>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer-hashtag">
@@ -288,7 +289,9 @@
         </a>
       </div>
       <div class="footer-copyright">
-        <p class="footer-copyright__text">Разработано</p>
+        <p class="footer-copyright__text">
+         Разработано
+         </p>
         <a class="logo-htmlacademy" href="#" title="htmlacademy">
           <svg class="svg-htmlacademy-icon">
             <use xlink:href="img/svg/svg_sprite.svg#htmlacademy"/>
