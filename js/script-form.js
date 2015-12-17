@@ -55,36 +55,43 @@
 
 
 
-  var currentFieldsNumber = 0;
-  var amaunt = document.getElementById("amount-persons");
-  var amauntValue = amaunt.value;
+  var currentFieldsNumber = 2;
+  var amount = document.getElementById("amount-persons");
+  var amauntValue = amount.value;
 
-  console.log(amaunt);
+  console.log(amount);
 
-  amaunt.addEventListener("change", function(){
+  amount.addEventListener("change", function(){
     debugger;
-    var fieldsNumber = parseInt(input.value);
+    var fieldsNumber = parseInt(amount.value);
     if (fieldsNumber > currentFieldsNumber) {
       for (var i= currentFieldsNumber; i < (fieldsNumber - 1); i++)
+        //function x() {fieldsNumber = fieldsNumber - 1}
         addFields();
 
     } else {
       for (var i= currentFieldsNumber; i  > (fieldsNumber + 1); i--)
+       // function y() {fieldsNumber = fieldsNumber + 1}
         removeFields();
     }
-    currentFieldsNumber = parseInt(input.value);
+    currentFieldsNumber = parseInt(amount.value);
   });
 
 
   function addFields(templateElement) {
+    debugger;
     var templateElement = document.createElement("div");
     templateElement.classList.add("contact-info");
-    templateElement.innerHTML = html;
+    templateElement.innerHTML = template;
     area.appendChild(templateElement);
+    console.log(templateElement);
   }
 
 
   function removeFields(templateElement) {
+    debugger;
+    var templateElement = document.querySelector(".contact-info");
+    console.log(templateElement);
     templateElement.parentNode.removeChild(templateElement);
   }
 
