@@ -1,4 +1,5 @@
 (function() {
+  debugger;
   if (!("FormData" in window)) {
     return;
   }
