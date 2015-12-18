@@ -1,0 +1,94 @@
+.features{
+  padding : $p_base;
+  padding-top : 10px;
+  padding-bottom : 35px;
+
+  text-align : left;
+  &__item{
+    //position: relative;
+    padding : $p_features;
+  }
+  &__title{
+    font : {
+      size : $fz_s;
+      weight : bold;
+    }
+    line-height : (26/18);
+
+    margin-top : 0;
+    margin-bottom : 10px;
+    padding-top : 30px;
+  }
+  &__text{
+    margin-bottom : 0;
+  }
+  &__sprite{
+    @include no-text-2;
+    float : left;
+
+    margin-top : 5px;
+    margin-left : -48px;
+
+    fill : $c_blue;
+    svg{
+      max-width : 37px;
+    }
+    &--burger{
+      margin-top : 8px;
+      margin-left : -50px;
+    }
+    &--gift{
+      margin-top : 1px;
+      margin-left : -45px;
+      svg{
+        max-width : 32px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $screen-md){
+  .features{
+    display : flex;
+
+    min-height : 330px;
+    padding : 0;
+    padding-bottom : 60px;
+
+    text-align : center;
+    &__item{
+      width : 33.33%;
+      padding : 0;
+      padding-top : 57px;
+    }
+    &__title{
+      margin-bottom : 20px;
+      padding : 0;
+
+      @include font-md;
+    }
+    &__text{
+      padding : $p_md-lg-display;
+    }
+    &__sprite{
+      position : static;
+
+      display : inline-block;
+      float : none;
+
+      max-height : 75px;
+      margin : 0;
+      margin-bottom : 29px;
+      svg{
+        max-width : none;
+      }
+      &--house{
+        margin-top : 3px;
+      }
+      &--burger{
+        margin-top : 5px;
+      }
+    }
+  }
+}

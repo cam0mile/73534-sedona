@@ -1,0 +1,98 @@
+.contact-info{
+  margin-bottom : 33px;
+  padding-left : 67px;
+  &:last-child{
+    margin-bottom : 0;
+  }
+  &__item-number{
+    float : left;
+    clear : both;
+
+    margin-left : -67px;
+  }
+  &__text{
+    font : {
+      size : $fz_base;
+    }
+    line-height : (26/14);
+
+    display : block;
+
+    margin : 0;
+    margin-bottom : 7px;
+  }
+  &__label{
+    @include label;
+  }
+  &__number{
+    font-family : "PT Sans", sans-serif;
+    font-size : $fz_s;
+    font-weight : bold;
+    line-height : 59px;
+
+    width : 61px;
+    height : 58px;
+    margin : 0;
+    margin-left : -2px;
+    padding : 0;
+
+    text-align : center;
+    text-transform : uppercase;
+
+    color : #000;
+    border : none;
+    outline : none;
+    background : $c_lighter-grey;
+  }
+  &__input-text{
+    margin-bottom : 16px;
+
+    @include input-text;
+  }
+  &__input-text:hover{
+    background : #e5e5e5;
+  }
+  &__input-text:focus{
+    border : 4px solid #e5e5e5;
+    outline : none;
+    background : #fff;
+  }
+  &__required{
+    color : $c_red;
+  }
+}
+@media (min-width: $screen-md){
+  .contact-info{
+    display : flex;
+
+    margin-bottom : 13px;
+
+    flex-wrap : nowrap;
+    justify-content : space-between;
+    &:last-child{
+      margin-bottom : 46px;
+    }
+    &__group{
+      width : 100%;
+      max-width : 280px;
+      margin-right : 5px;
+      &:first-child{
+        max-width : 211px;
+      }
+      &:last-child{
+        margin-right : 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-bp-md-lg){
+  .contact-info{
+    &__number{
+      padding-left : 8px;
+    }
+    &__label{
+      padding-left : 23px;
+    }
+  }
+}

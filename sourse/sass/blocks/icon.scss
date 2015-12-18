@@ -1,0 +1,21 @@
+.icon{
+  position : relative;
+
+  @include no-text;
+  &:active{
+    svg{
+      fill : $c_darken-blue;
+    }
+  }
+  svg{
+    position : absolute;
+    top : 17px;
+    left : 13px;
+
+    fill : #fff;
+  }
+  &--facebook svg{
+    top : 13px;
+    left : 19px;
+  }
+}

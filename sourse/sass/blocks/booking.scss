@@ -1,0 +1,43 @@
+.booking{
+  margin-bottom : 20px;
+  padding : $p_base;
+  &__button{
+    font : {
+      size : $fz_m;
+      weight : bold;
+    }
+    line-height : (26/21);
+
+    display : block;
+
+    max-width : 458px;
+    margin : 0 auto;
+    margin-bottom : 20px;
+    padding : 16px 15px;
+
+    text-decoration : none;
+
+    color : #fff;
+    background-color : $c_blue;
+    &:hover{
+      background-color : $c_blue-dark;
+    }
+    &:active{
+      color : #91b7d1;
+      background-color : #5496bd;
+    }
+    &:disabled{
+      background-color : #e5e5e5;
+    }
+  }
+}
+@media (min-width: $screen-md){
+  .booking{
+    margin-bottom : 58px;
+  }
+}
+@media (min-width: $screen-bp-md-lg){
+  .booking{
+    margin-bottom : 66px;
+  }
+}

@@ -1,0 +1,47 @@
+.download-btn{
+  font : {
+    size : $fz_m;
+    weight : bold;
+  }
+  line-height : 58px;
+
+  display : block;
+
+  width : 100%;
+  max-width : 458px;
+  height : 58px;
+  margin : 0 auto;
+  margin-bottom : 54px;
+
+  cursor : pointer;
+  text-transform : uppercase;
+
+  color : #c4c4c4;
+  background : $c_lighter-grey;
+  &:hover{
+    color : #8c8c8c;
+    background-color : #e5e5e5;
+  }
+  &:active{
+    color : #afafaf;
+    background-color : #d5d5d5;
+  }
+  &__field{
+    display : none;
+  }
+}
+
+@media (min-width: $screen-md){
+  .download-btn{
+    margin-bottom : 87px;
+  }
+}
+
+@media (min-width: $screen-bp-md-lg){
+  .download-btn{
+    max-width : 960px;
+
+    color : #fff;
+    background : $c_blue;
+  }
+}

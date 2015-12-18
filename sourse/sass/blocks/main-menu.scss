@@ -1,0 +1,101 @@
+.main-menu{
+  &__list{
+    margin : 0;
+    padding-left : 0;
+  }
+  &__item{
+    list-style-type : none;
+    &:last-child a{
+      border-bottom : none;
+      box-shadow : inset 0 -5px 5px 0 #6c96b0;
+    }
+    &:first-child a{
+      border-top : 1px solid $c_blue;
+    }
+  }
+  &__link{
+    font : {
+      size : $fz_s;
+      weight : bold;
+    }
+    line-height : (28/18);
+
+    display : block;
+
+    padding : 13px 43px;
+
+    vertical-align : middle;
+    text-decoration : none;
+    hyphens : auto;
+
+    color : #fff;
+    border-top : 1px solid $c_light-blue;
+    border-bottom : 1px solid $c_dark-blue;
+    background : $c_blue;
+    &:hover{
+      background : $c_blue-dark;
+    }
+    &:active{
+      color : #91b7d1;
+      background-color : #5496bd;
+    }
+  }
+}
+@media (min-width: $screen-md){
+  .main-menu{
+    &__list{
+      display : flex;
+
+      margin : 0;
+      padding-left : 0;
+    }
+    &__item{
+      width : 20%;
+
+      list-style-type : none;
+      &:last-child a{
+        border-bottom : none;
+        box-shadow : none;
+      }
+      &:first-child a{
+        border-top : none;
+      }
+      &:nth-child(2){
+        margin-right : 20%;
+      }
+    }
+    &__link{
+      font : {
+        size : $fz_base;
+        weight : bold;
+      }
+      line-height : (26/14);
+
+      padding : 15px;
+
+      color : #000;
+      border-top : none;
+      border-bottom : none;
+      background : #fff;
+      &:hover{
+        color : $c_blue;
+        background : #fff;
+      }
+      &:active{
+        color : $c_grey-light;
+        background : #fff;
+      }
+      &--active{
+        color : $c_brown;
+        :hover{
+          color : $c_dark-brown;
+          background : #fff;
+        }
+        &:active{
+          color : $c_light-brown;
+          background : #fff;
+        }
+      }
+    }
+  }
+}

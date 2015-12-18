@@ -1,9 +1,12 @@
 gosha/
 node_modules/
 bower_components/
+vendor/
 .DS_Store
 Thumbs.db
 .idea
 *.sublime*
 *.log
 css/*.css
+sprite.symbol.html
+build/

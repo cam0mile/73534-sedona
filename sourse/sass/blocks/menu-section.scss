@@ -1,0 +1,36 @@
+.menu-section{
+  position : relative;
+
+  display : none;
+  &__close{
+    @include no-text-2;
+    &:before{
+      top : 26px;
+      right : 17px;
+
+      content : "";
+      @include cross-white;
+      transform : rotate(45deg);
+    }
+    &:after{
+      top : 26px;
+      right : 17px;
+
+      content : "";
+      @include cross-white;
+      transform : rotate(-45deg);
+    }
+  }
+}
+@media (min-width: $screen-md){
+  .menu-section{
+    display : block;
+    &__close{
+      display : none;
+    }
+  }
+}
+
+.menu-section-show{
+  display : block;
+}

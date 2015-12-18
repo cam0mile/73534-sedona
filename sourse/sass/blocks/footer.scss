@@ -1,0 +1,35 @@
+.footer{
+  padding-top : 30px;
+
+  background-color : $c_light;
+  &-hashtag{
+    font : {
+      size : $fz_m;
+      weight : bold;
+    }
+    line-height : (26/21);
+
+    margin-bottom : 35px;
+  }
+  &-hashtag__link{
+    text-decoration : none;
+
+    color : #000;
+  }
+}
+@media (min-width: $screen-md){
+  .footer{
+    display : flex;
+
+    justify-content : space-around;
+    &-hashtag{
+      width : 33.33%;
+      padding-top : 11px;
+    }
+  }
+}
+@media (min-width: $screen-bp-md-lg){
+  .footer{
+    padding-top : 31px;
+  }
+}

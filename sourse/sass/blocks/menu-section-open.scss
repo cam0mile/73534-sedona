@@ -1,0 +1,26 @@
+.menu-section-open{
+  position : relative;
+  &__link{
+    @include no-text-2;
+    @include menu-icon;
+    top : -21px;
+    right : 20px;
+    &:before{
+      @include menu-icon
+      top : -18px;
+
+      content : "";
+    }
+    &:after{
+      @include menu-icon
+      top : -9px;
+
+      content : "";
+    }
+  }
+}
+@media (min-width: $screen-md){
+  .menu-section-open{
+    display : none;
+  }
+}
