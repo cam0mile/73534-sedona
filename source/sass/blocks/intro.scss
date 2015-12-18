@@ -8,9 +8,11 @@
     max-height : 310px;
     margin-bottom : 76px;
 
-    background : url("../img/intro/photo-background@1x.jpg") 0 0;
+    background : url("../img/intro/photo-background@1x.jpg");
     background-repeat : no-repeat;
-    background-size : 100%, cover;
+    background-size : cover;
+    background-position: bottom;
+    background-color: #7898b5;
     &:after{
       position : absolute;
       z-index : 2;
@@ -53,8 +55,6 @@
     margin-bottom : 60px;
     &__wrap{
       margin-bottom : 75px;
-
-      background : url("../img/intro/photo-background@1x.jpg") 0 -150px;
       &:after{
         background-size : 102%;
       }

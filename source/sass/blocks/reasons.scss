@@ -57,9 +57,11 @@
   }
   &__image--img-1{
     background-image : url("../img/reasons/photo-city@1x.jpg");
+    background-color : #78695a;
   }
   &__image--img-2{
     background-image : url("../img/reasons/photo-bridge@1x.jpg");
+    background-color : #736056;
   }
 }
 @media (min-width: $screen-md){

@@ -2,7 +2,6 @@
   max-width : 458px;
   margin : 0 auto;
 }
-
 .photo-catalog{
   $gap : 10px;
   display : flex;
@@ -19,7 +18,7 @@
     &--empty{
       font-size : 0;
       line-height : 0;
-
+// пустые блоки для фотокаталога
       height : 0 !important;
       min-height : 0 !important;
       margin-top : 0 !important;
