@@ -88,9 +88,9 @@
       }
     }
     &__title{
-      padding : 0 19%;
-
       @include font-md;
+
+      padding : 0 19%;
     }
     &__number{
       margin-bottom : 7px;

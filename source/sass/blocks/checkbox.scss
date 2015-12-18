@@ -1,4 +1,5 @@
 .checkbox{
+  @include label;
   font : {
     weight : bold;
     size : $fz_s;
@@ -16,7 +17,6 @@
 
   text-transform : none;
 
-  @include label;
   &:last-child{
     margin-bottom : 35px;
   }

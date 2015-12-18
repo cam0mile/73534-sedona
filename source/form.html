@@ -15,23 +15,23 @@
         <nav class="main-menu">
           <ul class="main-menu__list">
             <li class="main-menu__item">
-              <a class="main-menu__link main-menu__link--active" href="#">Информация</a>
+              <a class="main-menu__link" href="index.html">Информация</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Оставить отзыв</a>
+              <a class="main-menu__link main-menu__link--active" href="#">Оставить отзыв</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Блог шерифа</a>
+              <a class="main-menu__link" href="blog.html">Блог шерифа</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Гостиницы</a>
+              <a class="main-menu__link" href="hotels.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
       </div>
       <a class ="logo" href="#">logo-sedona</a>
       <div class="menu-section-open">
-        <a class="menu-section-open__link" href="#" title="menu">menu</a>
+        <a class="menu-section-open__link" href="index.html" title="menu">menu</a>
       </div>
     </header>
     <main>
@@ -307,59 +307,61 @@
           <button class="module-success__btn">Закрыть окно</button>
         </div>
       </div>
-      </main>
-      <footer class="footer">
-        <div class="footer-hashtag">
-          <a class="footer-hashtag__link" href="#">#visitsedona</a>
-        </div>
-        <div class="social">
-          <a class="social__link  icon icon--twitter" href="http://twitter.com/htmlacademy" target="_blank" title="twitter">
-            <svg class="svg-icon-twitter-icon">
-              <use xlink:href="img/svg/svg_sprite.svg#icon-twitter"/>
-            </svg>
-            twitter
-          </a>
-          <a class="social__link  icon icon--facebook" href="http://www.facebook.com/htmlacademy" target="_blank" title="facebook">
-            <svg class="svg-icon-facebook-icon">
-              <use xlink:href="img/svg/svg_sprite.svg#icon-facebook"/>
-            </svg>
-            facebook
-          </a>
-          <a class="social__link  icon icon--youtube" href="http://youtube.com/watch?v=3vrvbe-iay8" target="_blank" title="youtube">
-            <svg class="svg-icon-youtube-icon">
-              <use xlink:href="img/svg/svg_sprite.svg#icon-youtube"/>
-            </svg>
-            youtube
-          </a>
-        </div>
-        <div class="footer-copyright">
-          <p class="footer-copyright__text">Разработано</p>
-          <a class="logo-htmlacademy" href="#" title="htmlacademy">
-            <svg class="svg-htmlacademy-icon">
-              <use xlink:href="img/svg/svg_sprite.svg#htmlacademy"/>
-            </svg>
-            htmlacademy
-          </a>
-        </div>
-      </footer>
-    </div>
-    <script src="js/script.js"></script>
-    <script id="contact-template" type="text/html">
-      <div class="contact-info__group">
-        <div class="contact-info__item-number">
-          <p class="contact-info__text">№</p>
-          <p class="contact-info__number">{{number}}</p>
-        </div>
-        <label class="contact-info__label" for="surname--{{number}}">Фамилия:</label>
-        <input id="surname--{{number}}" class="contact-info__input-text" type="text" name="surname--{{number}}" required></div>
-      <div class="contact-info__group">
-        <label class="contact-info__label" for="firstname--{{number}}">Имя:</label>
-        <input id="firstname--{{number}}" class="contact-info__input-text" type="text" name="firstname--{{number}}" required></div>
-      <div class="contact-info__group">
-        <label class="contact-info__label" for="secondname--{{number}}">Отчество:</label>
-        <input id="secondname--{{number}}" class="contact-info__input-text" type="text" name="secondname--{{number}}"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer-hashtag">
+        <a class="footer-hashtag__link" href="#">#visitsedona</a>
+      </div>
+      <div class="social">
+        <a class="social__link  icon icon--twitter" href="http://twitter.com/htmlacademy" target="_blank" title="twitter">
+          <svg class="svg-icon-twitter-icon">
+            <use xlink:href="img/svg/svg_sprite.svg#icon-twitter"/>
+          </svg>
+          twitter
+        </a>
+        <a class="social__link  icon icon--facebook" href="http://www.facebook.com/htmlacademy" target="_blank" title="facebook">
+          <svg class="svg-icon-facebook-icon">
+            <use xlink:href="img/svg/svg_sprite.svg#icon-facebook"/>
+          </svg>
+          facebook
+        </a>
+        <a class="social__link  icon icon--youtube" href="http://youtube.com/watch?v=3vrvbe-iay8" target="_blank" title="youtube">
+          <svg class="svg-icon-youtube-icon">
+            <use xlink:href="img/svg/svg_sprite.svg#icon-youtube"/>
+          </svg>
+          youtube
+        </a>
+      </div>
+      <div class="footer-copyright">
+        <p class="footer-copyright__text">Разработано</p>
+        <a class="logo-htmlacademy" href="#" title="htmlacademy">
+          <svg class="svg-htmlacademy-icon">
+            <use xlink:href="img/svg/svg_sprite.svg#htmlacademy"/>
+          </svg>
+          htmlacademy
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script id="contact-template" type="text/html">
+    <div class="contact-info__group">
+      <div class="contact-info__item-number">
+        <p class="contact-info__text">№</p>
+        <p class="contact-info__number">{{number}}</p>
+      </div>
+      <label class="contact-info__label" for="surname--{{number}}">Фамилия:
+      <span class="form__required">*</span>
+      </label>
+      <input id="surname--{{number}}" class="contact-info__input-text" type="text" name="surname--{{number}}" required></div>
+    <div class="contact-info__group">
+      <label class="contact-info__label" for="firstname--{{number}}">Имя:
+      <span class="form__required">*</span>
+      </label>
+      <input id="firstname--{{number}}" class="contact-info__input-text" type="text" name="firstname--{{number}}" required></div>
+    <div class="contact-info__group">
+      <label class="contact-info__label" for="secondname--{{number}}">Отчество:</label>
+      <input id="secondname--{{number}}" class="contact-info__input-text" type="text" name="secondname--{{number}}"></div>
   </script>
-  <script src="vendor/mustache.js"></script>
-  <script src="js/script-form.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
   </html>

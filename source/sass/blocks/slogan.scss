@@ -19,9 +19,9 @@
   .slogan{
     margin-bottom : 50px;
     &__title{
-      margin-bottom : 28px;
-
       @include font-md;
+
+      margin-bottom : 28px;
     }
   }
 }

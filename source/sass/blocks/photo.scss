@@ -1,11 +1,12 @@
 .photo{
+  $z : 10;
+  $gap : 10px;
+
   position : relative;
   z-index : ($z);
 
   margin : 0 $gap 35px;
 
-  $z : 10;
-  $gap : 10px;
   &__wrap{
     position : relative;
     z-index : ($z);

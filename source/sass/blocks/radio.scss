@@ -1,4 +1,6 @@
 .radio{
+  @include label;
+
   font : {
     weight : bold;
   }
@@ -15,8 +17,6 @@
   padding-left : 77px;
 
   text-transform : none;
-
-  @include label;
   &:last-child{
     margin-bottom : 18px;
   }

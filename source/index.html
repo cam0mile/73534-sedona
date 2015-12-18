@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>html academy: седона</title>
   <meta name="description" content="седона — небольшой городок в аризоне, заслуживающий большего!">
-  <script src="vendor/svg4everybody.js"></script>
-  <script>svg4everybody();</script>
-  <script src="vendor/picturefill.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'></head>
 <body>
   <div class="page-wrap">
@@ -21,20 +18,20 @@
               <a class="main-menu__link main-menu__link--active" href="#">Информация</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Оставить отзыв</a>
+              <a class="main-menu__link" href="form.html">Оставить отзыв</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Блог шерифа</a>
+              <a class="main-menu__link" href="blog.html">Блог шерифа</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="#">Гостиницы</a>
+              <a class="main-menu__link" href="hotels.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
       </div>
       <a class ="logo" href="#">logo-sedona</a>
       <div class="menu-section-open">
-        <a class="menu-section-open__link" href="#" title="menu">Menu</a>
+        <a class="menu-section-open__link" href="index.html" title="menu">Menu</a>
       </div>
     </header>
     <main>
@@ -135,8 +132,7 @@
         <div class="booking">
           <a class="booking__button" href="#">Найти гостиницу</a>
         </div>
-        <div class="info__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838162.8369633065!2d-111.79513845!3d34.854378399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3a0x5548c523fa6c8efd!2z0khqtdc00l7qvdcwlcdqknga0ljqt9c-0l3qscwg0khqqncq!5e0!3m2!1sru!2sru!4v1430084786520"></iframe>
+        <div class="info__map" id="map">
         </div>
       </section>
     </main>
@@ -176,5 +172,7 @@
     </footer>
   </div>
   <script src="js/script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUq68r4koGgtfo2GSky_BbDW6nUjqdnxs&callback=initMap"></script>
+</body>
 </body>
 </html>

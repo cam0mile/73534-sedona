@@ -35,9 +35,9 @@
     color : $c_red;
   }
   &__input-text{
-    margin-bottom : 16px;
-
     @include input-text;
+
+    margin-bottom : 16px;
   }
   &__btn{
     font : {
@@ -94,6 +94,7 @@
       border-top : none;
     }
     &__title{
+      @include font-md;
       font-weight : bold;
 
       position : relative;
@@ -105,7 +106,6 @@
       margin-bottom : 23px;
       padding : 0;
 
-      @include font-md;
       &:before{
         position : absolute;
         top : 50%;

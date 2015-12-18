@@ -4,13 +4,13 @@
 }
 
 .photo-catalog{
+  $gap : 10px;
   display : flex;
 
   margin-right : (- $gap);
   margin-bottom : 8px;
   margin-left : (- $gap);
 
-  $gap : 10px;
   flex-wrap : wrap;
   justify-content : space-between;
   align-items : flex-start;
