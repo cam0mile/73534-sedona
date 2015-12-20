@@ -113,13 +113,13 @@ gulp.task("style", function() {
 
 gulp.task('scripts', function() {
   return gulp.src(jsLibs)
+    .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
     .pipe(concat('script.js'))
     .pipe(gulp.dest('./build/js/'))
     .pipe(uglify())
     .pipe(rename('script.min.js'))
     .pipe(gulp.dest('./build/js/'))
-    .pipe(connect.reload())
-    ;
+    .pipe(connect.reload());
 });
 
 gulp.task('images', function(cb) {
