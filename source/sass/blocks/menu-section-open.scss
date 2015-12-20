@@ -6,13 +6,13 @@
     top : -21px;
     right : 20px;
     &:before{
-      @include menu-icon
+      @include menu-icon;
       top : -18px;
 
       content : "";
     }
     &:after{
-      @include menu-icon
+      @include menu-icon;
       top : -9px;
 
       content : "";

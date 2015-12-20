@@ -51,23 +51,21 @@
             </div>
             <div class="form__row">
               <div class="form__group">
-                <label class="form__label required" for="surname">
+                <label class="form__label form__label--required" for="surname">
                   Фамилия:
-                  <span class="form__required">*</span>
                 </label>
                 <input id="surname" class="form__input-text" type="text" name="surname" required>
               </div>
               <div class="form__group">
-                <label class="form__label required" for="firstname">
+                <label class="form__label form__label--required" for="firstname">
                   Имя:
-                  <span class="form__required">*</span>
+
                 </label>
                 <input id="firstname" class="form__input-text" type="text" name="firstname" required>
               </div>
               <div class="form__group">
-                <label class="form__label required" for="secondname">
+                <label class="form__label form__label--required" for="secondname">
                   Отчество:
-                  <span class="form__required">*</span>
                 </label>
                 <input id="secondname" class="form__input-text" type="text" name="secondname" required>
               </div>
@@ -96,16 +94,14 @@
             </div>
             <div class="form__row">
               <div class="form__group form__group--fb">
-                <label class="form__label required" for="date-arrival">Дата приезда:
-                  <span class="form__required">*</span>
+                <label class="form__label form__label--required" for="date-arrival">Дата приезда:
                 </label>
                 <input id="date-arrival" class="form__input-text" type="date" name="date-arrival" required>
               </div>
               <div class="form__group form__group--fb">
-                <label class="form__label" for="amount-days">
+                <label class="form__label form__label--required" for="amount-days">
                   <span class="md-hidden">Длительность пребывания:</span>
                   <span class="sm-hidden sm-lg-hidden">Дней пребывания:</span>
-                  <span class="form__required">*</span>
                 </label>
                 <div class="counter form__counter" data-count="дн.">
                   <input class="counter__field" id="amount-days" type="number" name="amount-days" value="14" min="0" readonly>
@@ -124,9 +120,8 @@
                 </div>
               </div>
               <div class="form__group form__group--fb">
-                <label class="form__label" for="date-departure">
+                <label class="form__label form__label--required" for="date-departure">
                   Дата отъезда:
-                  <span class="form__required">*</span>
                 </label>
                 <input id="date-departure" class="form__input-text" type="date" name="date-departure" required>
               </div>
@@ -136,10 +131,9 @@
             <div class="form-title-wrap">
               <h4 class="form__title">Кол-во путешественников:</h4>
             </div>
-            <label class="form__label form__label--center" for="amount-persons">
+            <label class="form__label form__label--center form__label--required" for="amount-persons">
               <span class="md-hidden">Количество путешественников:</span>
               <span class=" sm-lg-hidden">Кол-во путешественников:</span>
-              <span class="form__required">*</span>
             </label>
             <div class="md-wrap">
               <div class="counter form__counter form__counter--mb" data-count="чел.">
@@ -165,16 +159,14 @@
                     <p class="contact-info__text">№</p>
                     <p class="contact-info__number">1</p>
                   </div>
-                  <label class="contact-info__label" for="surname--1">
+                  <label class="contact-info__label contact-info__label--required" for="surname--1">
                     Фамилия:
-                    <span class="contact-info__required">*</span>
                   </label>
                   <input id="surname--1" class="contact-info__input-text" type="text" name="surname--1" required>
                 </div>
                 <div class="contact-info__group">
-                  <label class="contact-info__label" for="firstname--1">
+                  <label class="contact-info__label contact-info__label--required" for="firstname--1">
                     Имя:
-                    <span class="contact-info__required">*</span>
                   </label>
                   <input id="firstname--1" class="contact-info__input-text" type="text" name="firstname--1" required>
                 </div>
@@ -189,16 +181,14 @@
                     <p class="contact-info__text">№</p>
                     <p class="contact-info__number">2</p>
                   </div>
-                  <label class="contact-info__label" for="surname--1">
+                  <label class="contact-info__label contact-info__label--required" for="surname--1">
                     Фамилия:
-                    <span class="contact-info__required">*</span>
                   </label>
                   <input id="surname--2" class="contact-info__input-text" type="text" name="surname--2" required>
                 </div>
                 <div class="contact-info__group">
-                  <label class="contact-info__label" for="firstname--1">
+                  <label class="contact-info__label contact-info__label--required" for="firstname--1">
                     Имя:
-                    <span class="contact-info__required">*</span>
                   </label>
                   <input id="firstname--2" class="contact-info__input-text" type="text" name="firstname--2" required>
                 </div>
@@ -349,13 +339,11 @@
         <p class="contact-info__text">№</p>
         <p class="contact-info__number">{{number}}</p>
       </div>
-      <label class="contact-info__label" for="surname--{{number}}">Фамилия:
-      <span class="form__required">*</span>
+      <label class="contact-info__label contact-info__label--required" for="surname--{{number}}">Фамилия:
       </label>
       <input id="surname--{{number}}" class="contact-info__input-text" type="text" name="surname--{{number}}" required></div>
     <div class="contact-info__group">
-      <label class="contact-info__label" for="firstname--{{number}}">Имя:
-      <span class="form__required">*</span>
+      <label class="contact-info__label contact-info__label--required" for="firstname--{{number}}">Имя:
       </label>
       <input id="firstname--{{number}}" class="contact-info__input-text" type="text" name="firstname--{{number}}" required></div>
     <div class="contact-info__group">

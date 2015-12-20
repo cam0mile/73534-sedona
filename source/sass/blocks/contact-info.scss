@@ -23,6 +23,10 @@
   }
   &__label{
     @include label;
+    &--required:after {
+      content : "*";
+      color: $c_red;
+    }
   }
   &__number{
     font-family : "PT Sans", sans-serif;
