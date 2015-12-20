@@ -83,7 +83,7 @@ gulp.task('copy', function () {
 gulp.task('connect', function() {
   connect.server({
     root:'./build/',
-    livereload: true,
+    livereload: false,
     port: 8080
   })
 });
@@ -118,7 +118,8 @@ gulp.task('scripts', function() {
     .pipe(uglify())
     .pipe(rename('script.min.js'))
     .pipe(gulp.dest('./build/js/'))
-    .pipe(connect.reload());
+    .pipe(connect.reload())
+    ;
 });
 
 gulp.task('images', function(cb) {
