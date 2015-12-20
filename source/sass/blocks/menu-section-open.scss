@@ -1,21 +1,31 @@
 .menu-section-open{
   position : relative;
-  &__link{
-    @include no-text-2;
-    @include menu-icon;
-    top : -21px;
-    right : 20px;
-    &:before{
+  &__btn{
+    outline : none;
+    height: 23px;
+    background: none;
+    border: none;
+    width: 23px;
+    position: absolute;
+    top: -38px;
+    right: 20px;
+    span {
+      @include no-text-2;
       @include menu-icon;
-      top : -18px;
+      top : 18px;
+      right : 0px;
+      &:before{
+        @include menu-icon;
+        top : -18px;
 
-      content : "";
-    }
-    &:after{
-      @include menu-icon;
-      top : -9px;
+        content : "";
+      }
+      &:after{
+        @include menu-icon;
+        top : -9px;
 
-      content : "";
+        content : "";
+      }
     }
   }
 }
