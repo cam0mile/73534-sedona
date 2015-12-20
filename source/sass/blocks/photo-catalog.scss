@@ -18,12 +18,11 @@
     &--empty{
       font-size : 0;
       line-height : 0;
-// пустые блоки для фотокаталога
-      height : 0 !important;
-      min-height : 0 !important;
-      margin-top : 0 !important;
-      margin-bottom : 0 !important;
-      padding : 0 !important;
+      height : 0;
+      min-height : 0;
+      margin-top : 0;
+      margin-bottom : 0;
+      padding : 0;
     }
   }
 }
