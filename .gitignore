@@ -7,6 +7,6 @@ Thumbs.db
 .idea
 *.sublime*
 *.log
-css/*.css
+css/
 sprite.symbol.html
 build/
