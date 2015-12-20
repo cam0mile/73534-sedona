@@ -87,7 +87,7 @@
       }
       &--active{
         color : $c_brown;
-        :hover{
+        &:hover{
           color : $c_dark-brown;
           background : #fff;
         }
