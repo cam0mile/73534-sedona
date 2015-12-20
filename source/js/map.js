@@ -1,5 +1,7 @@
-
 function initMap() {
+  if (!document.querySelector(".info__map")) {
+    return;
+  }
 
   var myLatLng = {lat: 34.870, lng: -111.761};
 

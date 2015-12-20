@@ -3,7 +3,16 @@
     return;
   }
 
+  if (!document.querySelector(".form")) {
+    return;
+  }
+
   var form = document.querySelector("form");
+  var elements = document.querySelectorAll(".counter");
+  var area = form.querySelector(".contact-info-wrap");
+  var template = document.querySelector("#contact-template").innerHTML;
+  var number = 0;
+  var div = 0;
 
   form.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -31,19 +40,10 @@
     xhr.send(data);
   }
 
-  var form = document.querySelector("form");
-
-  var elements = document.querySelectorAll(".counter");
-  var area = form.querySelector(".contact-info-wrap");
-  var template = document.querySelector("#contact-template").innerHTML;
-  var number = 0;
-  var div = 0;
-
 
   for (var i = 0; i < elements.length; i++) {
     initNumberField(elements[i]);
   }
-
 
 
   function initNumberField(parent) {
@@ -64,14 +64,14 @@
 
     minus.addEventListener('click', function(){
       changeNumber(false);
-      if (input == document.querySelector("#amount-persons")) {
+      if (input == document.getElementById("amount-persons")) {
         removeFields();
       }
     });
 
     plus.addEventListener('click', function(){
       changeNumber(true);
-      if (input == document.querySelector("#amount-persons")) {
+      if (input == document.getElementById("amount-persons")) {
         addFields();
       }
     });
