@@ -64,9 +64,9 @@
     }
     &__img{
       width : 60%;
-      max-height : 384px;
       margin-top : -35px;
       margin-bottom : -54px;
+      height: 375px;
 
       background-size : 100% auto;
     }
@@ -84,6 +84,9 @@
   .intro{
     &__wrap{
       margin-bottom : 114px;
+    }
+    &__img {
+      height: 384px;
     }
   }
 }
