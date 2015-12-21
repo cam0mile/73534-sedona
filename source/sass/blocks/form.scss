@@ -91,7 +91,7 @@
   .form{
     margin-bottom : 89px;
     padding-right : 8%;
-    padding-left : 8%;
+    padding-left : 7.7%;
     &__item{
       border-top : none;
     }
@@ -106,7 +106,9 @@
       width : 400px;
       margin : 0;
       margin-bottom : 23px;
+      margin-right: 2px;
       padding : 0;
+
 
       vertical-align: middle;
       &:before{
@@ -181,6 +183,20 @@
       &:last-child{
         margin-right : 0;
       }
+    }
+    &__row-float{
+      padding-bottom: 45px;
+      margin-left: -60px;
+      &:after {
+        content:"";
+        display: table;
+        clear: both;
+      }
+    }
+    &__group-float{
+      float: left;
+      padding-left: 60px;
+      width: 33.33%;
     }
   }
 }

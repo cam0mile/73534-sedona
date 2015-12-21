@@ -30,9 +30,7 @@
         </nav>
       </div>
       <a class ="logo" href="index.html">logo-sedona</a>
-      <div class="menu-section-open">
-        <button class="menu-section-open__btn" href="index.html" title="menu"><span>Menu</span></button>
-      </div>
+      <button class="menu-section-open" href="index.html" title="menu"><span>Menu</span></button>
     </header>
     <main>
       <div class="intro">
@@ -40,8 +38,7 @@
           <img class="intro__img" src="img/svg/intro-sedona.svg" width="170px" height="153px" alt="sedona"></div>
         <h1 class="intro__title">Оставьте свой отзыв</h1>
         <p class="intro__text">
-          Помогите нашим отелям стать лучше! оставьте отзыв о них,
-          <br class="sm-hidden">а также о посещенных вами достопримечательностях</p>
+          Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="sm-hidden">а также о посещенных вами достопримечательностях</p>
       </div>
       <div class="form">
         <form action="/echo" method="post">
@@ -92,13 +89,13 @@
             <div class="form-title-wrap">
               <h4 class="form__title form__title--mb2">Даты вашей поездки:</h4>
             </div>
-            <div class="form__row">
-              <div class="form__group form__group--fb">
+            <div class="form__row-float">
+              <div class="form__group-float">
                 <label class="form__label form__label--required" for="date-arrival">Дата приезда:
                 </label>
                 <input id="date-arrival" class="form__input-text" type="date" name="date-arrival" required>
               </div>
-              <div class="form__group form__group--fb">
+              <div class="form__group-float">
                 <label class="form__label form__label--required" for="amount-days">
                   <span class="md-hidden">Длительность пребывания:</span>
                   <span class="sm-hidden sm-lg-hidden">Дней пребывания:</span>
@@ -119,7 +116,7 @@
                   </button>
                 </div>
               </div>
-              <div class="form__group form__group--fb">
+              <div class="form__group-float">
                 <label class="form__label form__label--required" for="date-departure">
                   Дата отъезда:
                 </label>
