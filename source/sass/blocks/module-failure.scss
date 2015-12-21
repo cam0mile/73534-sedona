@@ -1,18 +1,19 @@
 .module-failure{
-  z-index: 101;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+  position : fixed;
+  z-index : 101;
+  top : 0;
+  right : 0;
+  bottom : 0;
+  left : 0;
+
   max-width : 320px;
   max-height : 280px;
+  margin : auto;
   padding-top : 20px;
 
   text-align : center;
-  background-color: #fff;
 
+  background-color : #fff;
   box-shadow : 0 7px 15px 0 rgba(0, 0, 0, .15);
   &__title{
     font : {
