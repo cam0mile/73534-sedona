@@ -11,8 +11,12 @@ html {
 body {
   min-width: $screen-sm;
   margin: 0;
-
 }
+
+header {
+  position: relative;
+}
+
 .page-wrap {
   min-width: $screen-sm;
   max-width: $screen-lg;

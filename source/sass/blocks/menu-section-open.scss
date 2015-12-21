@@ -1,33 +1,30 @@
 .menu-section-open{
-  position : relative;
-  &__btn{
-    position : absolute;
-    top : -38px;
-    right : 20px;
+  position : absolute;
+  bottom : 30px;
+  right : 20px;
 
-    width : 23px;
-    height : 23px;
+  width : 23px;
+  height : 23px;
 
-    border : none;
-    outline : none;
-    background : none;
-    span{
-      @include no-text-2;
+  border : none;
+  outline : none;
+  background : none;
+  span{
+    @include no-text-2;
+    @include menu-icon;
+    top : 18px;
+    right : 0;
+    &:before{
       @include menu-icon;
-      top : 18px;
-      right : 0;
-      &:before{
-        @include menu-icon;
-        top : -18px;
+      top : -18px;
 
-        content : "";
-      }
-      &:after{
-        @include menu-icon;
-        top : -9px;
+      content : "";
+    }
+    &:after{
+      @include menu-icon;
+      top : -9px;
 
-        content : "";
-      }
+      content : "";
     }
   }
 }
