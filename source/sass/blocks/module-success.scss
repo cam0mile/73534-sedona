@@ -1,9 +1,17 @@
 .module-success{
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   max-width : 320px;
-  margin : 0 auto;
+  max-height: 328px;
   padding-top : 20px;
 
   text-align : center;
+  background-color: #fff;
 
   box-shadow : 0 7px 15px 0 rgba(0, 0, 0, .15);
   &__title{

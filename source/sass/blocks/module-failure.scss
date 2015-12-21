@@ -1,10 +1,17 @@
 .module-failure{
+  z-index: 101;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   max-width : 320px;
-  min-height : 280px;
-  margin : 0 auto;
+  max-height : 280px;
   padding-top : 20px;
 
   text-align : center;
+  background-color: #fff;
 
   box-shadow : 0 7px 15px 0 rgba(0, 0, 0, .15);
   &__title{
@@ -46,7 +53,7 @@
 @media (min-width: $screen-md){
   .module-failure{
     max-width : 400px;
-    max-width : 400px;
+    max-height : 363px;
     padding-top : 65px;
     padding-bottom : 50px;
     &__title{
