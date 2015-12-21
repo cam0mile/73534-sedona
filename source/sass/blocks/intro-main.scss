@@ -15,11 +15,11 @@
   background-color : #81a3c1;
   &:after{
     position : absolute;
-    bottom : 0;
+    bottom : -2px;
     left : 0;
 
     width : 100%;
-    height : 57px;
+    height : 63px;
 
     content : "";
 
@@ -38,10 +38,11 @@
 
     background-size : 100% auto;
     &:after{
-      background-size : 101.6%;
+      background-size : 107.2%;
     }
     &__img {
       height: 351px;
+      width: 459px;
     }
   }
 }
