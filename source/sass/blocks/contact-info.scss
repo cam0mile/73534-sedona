@@ -91,6 +91,23 @@
 
 @media (min-width: $screen-bp-md-lg){
   .contact-info{
+    display: block;
+    margin-left: -60px;
+    &:after {
+      content:"";
+      display: table;
+      clear: both;
+    }
+    &__group{
+      float: left;
+      padding-left: 60px;
+      width: 33.33%;
+      max-width: none;
+      margin: 0;
+      &:first-child{
+        max-width : none;
+      }
+    }
     &__number{
       padding-left : 8px;
     }
