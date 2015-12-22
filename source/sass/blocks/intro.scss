@@ -62,8 +62,8 @@
     &__img{
       width : 60%;
       margin-top : -35px;
-      margin-bottom : -54px;
-      height: 375px;
+      margin-bottom : -52px;
+      height: 373px;
 
       background-size : 100% auto;
     }
@@ -84,10 +84,11 @@
 @media (min-width: $screen-bp-md-lg){
   .intro{
     &__wrap{
-      margin-bottom : 114px;
+      margin-bottom : 111px;
     }
     &__img {
-      height: 384px;
+      height: 375px;
+      margin-bottom: -42px;
     }
   }
 }

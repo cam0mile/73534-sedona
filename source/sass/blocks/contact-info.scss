@@ -1,6 +1,6 @@
 .contact-info{
   margin-bottom : 33px;
-  padding-left : 67px;
+  padding-left : 69px;
   &:last-child{
     margin-bottom : 0;
   }
@@ -93,6 +93,9 @@
   .contact-info{
     display: block;
     margin-left: -60px;
+    &:last-child{
+      margin-bottom : 36px;
+    }
     &:after {
       content:"";
       display: table;

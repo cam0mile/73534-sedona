@@ -1,3 +1,11 @@
+.radio-wrap{
+  display : flex;
+  flex-wrap : nowrap;
+  justify-content : space-between;
+
+  margin-bottom : 28px;
+}
+
 .radio{
   @include label;
 
@@ -80,6 +88,12 @@
   }
 }
 @media (min-width: $screen-bp-md-lg){
+  .radio-wrap{
+    margin-bottom : 18px;
+    &--center{
+      justify-content : center;
+    }
+  }
   .radio{
     margin-right : 48px;
     margin-left : 55px;
