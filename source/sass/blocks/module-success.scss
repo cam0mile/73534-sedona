@@ -1,4 +1,4 @@
-.module-success{
+.popup-module{
   position : fixed;
   z-index : 100;
   top : 0;
@@ -15,6 +15,9 @@
 
   background-color : #fff;
   box-shadow : 0 7px 15px 0 rgba(0, 0, 0, .15);
+  &--size{
+    max-height : 280px;
+  }
   &__title{
     font : {
       size : $fz_s;
@@ -32,6 +35,9 @@
     margin-bottom : 40px;
 
     text-align : center;
+    &--size{
+      margin-bottom : 30px;
+    }
   }
   &__send{
     padding : 20px 0;
@@ -53,15 +59,23 @@
     border : none;
     outline : none;
     background-color : #81b3d2;
+    &--size{
+      padding : 16px 78px;
+    }
   }
 }
 
 @media (min-width: $screen-md){
-  .module-success{
+  .popup-module{
     max-width : 640px;
     max-height : 350px;
     padding-top : 65px;
     padding-bottom : 0;
+    &--size{
+      max-width : 400px;
+      max-height : 363px;
+      padding-bottom : 50px;
+    }
     &__title{
       font-size : $fz_l;
       font-weight : bold;
@@ -70,17 +84,26 @@
       width : 350px;
       margin : 0 auto;
       margin-bottom : 25px;
+      &--size{
+        width : 220px;
+      }
     }
     &__text{
       width : 420px;
+      &--size{
+        width : 280px;
+      }
     }
     &__send{
-      padding : 33px 0;
+      padding : 34px 0;
     }
     &__btn{
       font-size : $fz_m;
 
       padding : 17px 145px;
+    &--size{
+      padding : 17px 122px;
+    }
     }
   }
 }
