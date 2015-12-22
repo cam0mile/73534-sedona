@@ -76,20 +76,22 @@
       display : inline-block;
       float : none;
 
-      max-height : 75px;
+      height : 75px;
       margin : 0;
-      margin-bottom : 29px;
+      margin-bottom : 28px;
 
-      vertical-align: middle;
+
+      vertical-align: bottom;
       svg{
-        max-width : none;
+        max-width : 77px;
+        max-height: 75px;
       }
-      &--house{
-        margin-top : 3px;
-      }
-      &--burger{
-        margin-top : 5px;
-      }
+      // &--house{
+      //   margin-top : 3px;
+      // }
+      // &--burger{
+      //   margin-top : 5px;
+      // }
     }
   }
 }
