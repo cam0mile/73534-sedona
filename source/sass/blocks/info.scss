@@ -23,6 +23,10 @@
     height : 350px;
     margin : 0 auto;
     padding-top : 30px;
+    background-image: url('../img/pict-map.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
   }
 }
 @media (min-width: $screen-md){
