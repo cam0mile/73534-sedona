@@ -52,6 +52,7 @@
     var plus = parent.querySelector(".counter__btn--plus");
     var min = parseInt(input.getAttribute('min')) || 0;
     var max = parseInt(input.getAttribute('max'));
+    var id = input.getAttribute("id");
     var x;
 
     //дополнительное задание от наставника =)
@@ -61,17 +62,16 @@
       max = Math.max(max,x);
     }
 
-
     minus.addEventListener('click', function(){
       changeNumber(false);
-      if (input == document.getElementById("amount-persons")) {
+      if (id === "amount-persons") {
         removeFields();
       }
     });
 
     plus.addEventListener('click', function(){
       changeNumber(true);
-      if (input == document.getElementById("amount-persons")) {
+      if (id === "amount-persons") {
         addFields();
       }
     });
