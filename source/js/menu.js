@@ -8,15 +8,17 @@
 
   link.addEventListener("click", function(event) {
     event.preventDefault();
-    if (popup.classList.contains("menu-section-show")) {
-      popup.classList.remove("menu-section-show");
-    } else {
+    // if (popup.classList.contains("menu-section-show")) {
+    //   popup.classList.remove("menu-section-show");
+    // } else {
     popup.classList.add("menu-section-show");
-    }
+    link.classList.add("menu-not-show");
+    // }
   });
 
   close.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.remove("menu-section-show");
+    link.classList.remove("menu-not-show");
   });
 })();
