@@ -8,7 +8,7 @@
 
   link.addEventListener("click", function(event) {
     event.preventDefault();
-    if (popup == document.getElementsByClassName("menu-section-show")) {
+    if (popup.classList.contains("menu-section-show")) {
       popup.classList.remove("menu-section-show");
     } else {
     popup.classList.add("menu-section-show");
