@@ -6,7 +6,7 @@ var plumber = require("gulp-plumber");
 var notify = require("gulp-notify");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var browserSync = require('browser-sync').create();
+//var browserSync = require('browser-sync').create();
 var svgSprite  = require('gulp-svg-sprite');
 var rename = require("gulp-rename");
 var concat = require('gulp-concat');
@@ -35,13 +35,13 @@ var imageArr = [
 //   gulp.watch("./*.html").on('change', browserSync.reload);
 // });
 
-gulp.task('server', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-});
+// gulp.task('server', function() {
+//     browserSync.init({
+//         server: {
+//             baseDir: "./"
+//         }
+//     });
+// });
 
 
 gulp.task('sprite', function() {
@@ -83,7 +83,7 @@ gulp.task('copy', function () {
 gulp.task('connect', function() {
   connect.server({
     root:'./build/',
-    livereload: false,
+    livereload: true,
     port: 8080
   })
 });
@@ -91,8 +91,7 @@ gulp.task('connect', function() {
 gulp.task('html', function () {
   gulp.src('./source/*.html')
     .pipe(gulp.dest('./build/'))
- gulp.src('./build/*.html')
-    .pipe(connect.reload());
+ gulp.src('./build/*.html');
 });
 
 gulp.task("style", function() {
@@ -103,7 +102,7 @@ gulp.task("style", function() {
       autoprefixer({browsers: "last 2 versions"})
     ]))
     .pipe(gulp.dest("./build/css"))
-    .pipe(browserSync.stream())
+   // .pipe(browserSync.stream())
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest('./build/css'))
@@ -118,8 +117,7 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('./build/js/'))
     .pipe(uglify())
     .pipe(rename('script.min.js'))
-    .pipe(gulp.dest('./build/js/'))
-    .pipe(connect.reload());
+    .pipe(gulp.dest('./build/js/'));
 });
 
 gulp.task('images', function(cb) {
@@ -133,11 +131,11 @@ gulp.task('images', function(cb) {
 
 gulp.task('watch', function() {
   gulp.watch("./source/sass/**/*.{sass,scss}", ["style"]);
-  gulp.watch("./*.html").on('change', browserSync.reload);
   gulp.watch('./source/js/*.js', ['scripts']);
+  gulp.watch(['./source/*.html'], ['html']);
 });
 
-gulp.task('default', function() {
+gulp.task('start', function() {
   runSequence(
     'clean',
     'copy',
@@ -146,6 +144,17 @@ gulp.task('default', function() {
     'images',
     'connect',
     'watch'
+  );
+});
+
+gulp.task('build', function() {
+  runSequence(
+    'clean',
+    'copy',
+    'style',
+    'scripts',
+    'images',
+    'connect'
   );
 });
 
