@@ -6,7 +6,6 @@ var plumber = require("gulp-plumber");
 var notify = require("gulp-notify");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-//var browserSync = require('browser-sync').create();
 var svgSprite  = require('gulp-svg-sprite');
 var rename = require("gulp-rename");
 var concat = require('gulp-concat');
@@ -28,20 +27,6 @@ var imageArr = [
   './source/img/**/*.jpg',
   './source/img/**/*.jpeg'
 ]
-
-
-// gulp.task("start", ["server","style"], function() {
-//   gulp.watch("sass/**/*.{sass,scss}", ["style"]);
-//   gulp.watch("./*.html").on('change', browserSync.reload);
-// });
-
-// gulp.task('server', function() {
-//     browserSync.init({
-//         server: {
-//             baseDir: "./"
-//         }
-//     });
-// });
 
 
 gulp.task('sprite', function() {
@@ -102,7 +87,6 @@ gulp.task("style", function() {
       autoprefixer({browsers: "last 2 versions"})
     ]))
     .pipe(gulp.dest("./build/css"))
-   // .pipe(browserSync.stream())
     .pipe(minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest('./build/css'))
@@ -137,11 +121,6 @@ gulp.task('watch', function() {
 
 gulp.task('start', function() {
   runSequence(
-    'clean',
-    'copy',
-    'style',
-    'scripts',
-    'images',
     'connect',
     'watch'
   );

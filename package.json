@@ -21,7 +21,6 @@
     "gulp-postcss": "6.0.x",
     "gulp-sass": "2.1.x",
     "normalize-scss": "^4.0.2",
-    "browser-sync": "^2.10.0",
     "gulp-notify": "^2.2.0",
     "gulp-svg-sprite": "^1.2.16",
     "mustache": "^2.2.1",
