@@ -1,48 +1,47 @@
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+*, *:before, *:after{
+  box-sizing : inherit;
 }
 
-html {
-  box-sizing: border-box;
+html{
+  box-sizing : border-box;
 }
 
-body {
-  min-width: $screen-sm;
-  margin: 0;
+body{
+  min-width : $screen-sm;
+  margin : 0;
 }
 
-header {
-  position: relative;
+header{
+  position : relative;
 }
 
-.page-wrap {
-  min-width: $screen-sm;
-  max-width: $screen-lg;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0,0,0,.20);
+.page-wrap{
+  min-width : $screen-sm;
+  max-width : $screen-lg;
+  margin-right : auto;
+  margin-left : auto;
+
+  background-color : #fff;
+  box-shadow : 0 5px 15px rgba(0,0,0,.20);
 }
 
-.conteiner {
-  max-width: 960px;
+.conteiner{
+  max-width : 960px;
 }
 
-@media (min-width: $screen-md) and (max-width: $screen-bp-lg-md) {
-  .md-wrap {
-    width: 27%;
-    margin:0 auto;
+@media (min-width: $screen-md) and (max-width: $screen-bp-lg-md){
+  .md-wrap{
+    width : 27%;
+    margin : 0 auto;
   }
 }
-@media (min-width: $screen-bp-md-lg) {
-  .md-wrap {
-    max-width: 278px;
-    margin:0;
+@media (min-width: $screen-bp-md-lg){
+  .md-wrap{
+    max-width : 278px;
+    margin : 0;
   }
 }
 
-.no-js .photo-catalog-wrap {
-  display:none;
+.no-js .photo-catalog-wrap{
+  display : none;
 }
