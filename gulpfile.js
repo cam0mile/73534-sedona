@@ -132,8 +132,7 @@ gulp.task('build', function() {
     'copy',
     'style',
     'scripts',
-    'images',
-    'connect'
+    'images'
   );
 });
 
