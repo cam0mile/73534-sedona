@@ -39,6 +39,9 @@
     @include input-text;
 
     margin-bottom : 16px;
+    &--border{
+      border: 2px solid #b8b8b8;
+    }
   }
   &__btn{
     font : {
