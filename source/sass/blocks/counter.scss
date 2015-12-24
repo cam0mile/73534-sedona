@@ -77,6 +77,16 @@
     &[disabled] {
       opacity: 0.3;
       cursor: default;
+      &:hover{
+        background : $c_lighter-grey;
+        fill : $c_darken-grey;
+        opacity: 0.3;
+      }
+      &:active{
+        background : $c_lighter-grey;
+        fill : $c_darken-grey;
+        opacity: 0.3;
+      }
     }
     &--plus{
       right : 0;
