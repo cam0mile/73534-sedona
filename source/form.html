@@ -148,9 +148,9 @@
                 </button>
               </div>
             </div>
-            <div class="contact-info-wrap">
+            <div class="contact-info-wrap" id="area">
               <div class="contact-info">
-                <div class="contact-info__group">
+                <div class="contact-info__group contact-info__group--number">
                   <div class="contact-info__item-number">
                     <p class="contact-info__text">№</p>
                     <p class="contact-info__number">1</p>
@@ -172,7 +172,7 @@
                 </div>
               </div>
               <div class="contact-info">
-                <div class="contact-info__group">
+                <div class="contact-info__group contact-info__group--number">
                   <div class="contact-info__item-number">
                     <p class="contact-info__text">№</p>
                     <p class="contact-info__number">2</p>
@@ -236,32 +236,32 @@
                 <div class="photo-catalog__item photo">
                   <a class="photo__link" href="#">&times;</a>
                   <div class="photo__wrap">
-                    <img class="photo__img" src="http://placebear.com/200/300" width="70" height="70" alt="photo-review-1"></div>
+                    <img class="photo__img" src="http://placebear.com/200/300" width="200" height="300" alt="photo-review-1"></div>
                 </div>
                 <div class="photo-catalog__item photo">
                   <a class="photo__link" href="#">&times;</a>
                   <div class="photo__wrap">
-                    <img class="photo__img" src="http://placebear.com/200/300" width="70" height="70" alt="photo-review-2"></div>
+                    <img class="photo__img" src="http://placebear.com/200/300" width="200" height="300" alt="photo-review-2"></div>
                 </div>
                 <div class="photo-catalog__item photo">
                   <a class="photo__link" href="#">&times;</a>
                   <div class="photo__wrap">
-                    <img class="photo__img" src="http://placebear.com/400/800" width="150" height="150" alt="photo-review-3"></div>
+                    <img class="photo__img" src="http://placebear.com/400/800" width="400" height="800" alt="photo-review-3"></div>
                 </div>
                 <div class="photo-catalog__item photo">
                   <a class="photo__link" href="#">&times;</a>
                   <div class="photo__wrap">
-                    <img class="photo__img" src="http://placebear.com/700/900" width="200" height="300" alt="photo-review-4"></div>
+                    <img class="photo__img" src="http://placebear.com/700/900" width="700" height="900" alt="photo-review-4"></div>
                 </div>
                 <div class="photo-catalog__item photo">
                   <a class="photo__link" href="#">&times;</a>
                   <div class="photo__wrap">
-                    <img class="photo__img" src="http://placebear.com/1000/700" width="300" height="150" alt="photo-review-5"></div>
+                    <img class="photo__img" src="http://placebear.com/1000/700" width="1000" height="700" alt="photo-review-5"></div>
                 </div>
                 <div class="photo-catalog__item photo">
                   <a class="photo__link" href="#">&times;</a>
                   <div class="photo__wrap">
-                    <img class="photo__img" src="http://placebear.com/600/500" width="100" height="70" alt="photo-review-6"></div>
+                    <img class="photo__img" src="http://placebear.com/600/500" width="600" height="500" alt="photo-review-6"></div>
                 </div>
                 <div class="photo-catalog__item photo">
                   <a class="photo__link" href="#">&times;</a>
@@ -277,12 +277,12 @@
           <button class="form__btn" type="submit">Отправить отзыв</button>
         </form>
       </div>
-      <div class="popup-module popup-module--size" style="display: none;">
-        <h4 class="popup-module__title popup-module__title--size">Что-то пошло не так!</h4>
-        <p class="popup-module__text popup-module__text--size">
+      <div class="popup-module popup-module--size-small" style="display: none;">
+        <h4 class="popup-module__title ">Что-то пошло не так!</h4>
+        <p class="popup-module__text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
-        <button class="popup-module__btn popup-module__btn--size">OK</button>
+        <button class="popup-module__btn">OK</button>
       </div>
       <div class="popup-module" style="display: none;">
         <h4 class="popup-module__title">Ваш отзыв отправлен!</h4>
@@ -330,7 +330,7 @@
     </footer>
   </div>
   <script id="contact-template" type="text/html">
-    <div class="contact-info__group">
+    <div class="contact-info__group contact-info__group--number">
       <div class="contact-info__item-number">
         <p class="contact-info__text">№</p>
         <p class="contact-info__number">{{number}}</p>
