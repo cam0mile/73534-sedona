@@ -23,9 +23,10 @@
   }
   &__label{
     @include label;
-    &--required:after {
+    &--required:after{
       content : "*";
-      color: $c_red;
+
+      color : $c_red;
     }
   }
   &__number{
@@ -36,7 +37,6 @@
     width : 61px;
     height : 58px;
     margin : 0;
-    margin-left : -2px;
     padding : 0;
 
     text-align : center;
@@ -48,9 +48,9 @@
     background : $c_lighter-grey;
   }
   &__input-text{
-    margin-bottom : 16px;
-
     @include input-text;
+
+    margin-bottom : 16px;
   }
   &__input-text:hover{
     background : #e5e5e5;
@@ -91,24 +91,31 @@
 
 @media (min-width: $screen-bp-md-lg){
   .contact-info{
-    display: block;
-    margin-left: -60px;
+    display : block;
+
+    margin-left : -60px;
+    padding-left : 0;
     &:last-child{
       margin-bottom : 36px;
     }
-    &:after {
-      content:"";
-      display: table;
-      clear: both;
+    &:after{
+      display : table;
+      clear : both;
+
+      content : "";
     }
     &__group{
-      float: left;
-      padding-left: 60px;
-      width: 33.33%;
-      max-width: none;
-      margin: 0;
+      float : left;
+
+      width : 33.33%;
+      max-width : none;
+      margin : 0;
+      padding-left : 60px;
       &:first-child{
         max-width : none;
+      }
+      &--number{
+        padding-left : 127px;
       }
     }
     &__number{
