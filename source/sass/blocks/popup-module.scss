@@ -1,13 +1,11 @@
 .popup-module{
   position : fixed;
   z-index : 100;
-  top : 0;
-  right : 0;
-  bottom : 0;
-  left : 0;
+  top : 50%;
+  left : 50%;
+  transform: translate(-50%, -50%);
 
-  max-width : 320px;
-  max-height : 328px;
+  width : 320px;
   margin : auto;
   padding-top : 20px;
 
@@ -15,9 +13,6 @@
 
   background-color : #fff;
   box-shadow : 0 7px 15px 0 rgba(0, 0, 0, .15);
-  &--size{
-    max-height : 280px;
-  }
   &__title{
     font : {
       size : $fz_s;
@@ -35,9 +30,6 @@
     margin-bottom : 40px;
 
     text-align : center;
-    &--size{
-      margin-bottom : 30px;
-    }
   }
   &__send{
     padding : 20px 0;
@@ -59,7 +51,13 @@
     border : none;
     outline : none;
     background-color : #81b3d2;
-    &--size{
+  }
+  &--size-small{
+    padding-bottom: 15px;
+    .popup-module__text{
+      margin-bottom : 30px;
+    }
+    .popup-module__btn{
       padding : 16px 78px;
     }
   }
@@ -68,14 +66,8 @@
 @media (min-width: $screen-md){
   .popup-module{
     max-width : 640px;
-    max-height : 350px;
     padding-top : 65px;
     padding-bottom : 0;
-    &--size{
-      max-width : 400px;
-      max-height : 363px;
-      padding-bottom : 50px;
-    }
     &__title{
       font-size : $fz_l;
       font-weight : bold;
@@ -84,15 +76,9 @@
       width : 350px;
       margin : 0 auto;
       margin-bottom : 25px;
-      &--size{
-        width : 220px;
-      }
     }
     &__text{
       width : 420px;
-      &--size{
-        width : 280px;
-      }
     }
     &__send{
       padding : 34px 0;
@@ -101,9 +87,20 @@
       font-size : $fz_m;
 
       padding : 17px 145px;
-    &--size{
-      padding : 17px 122px;
     }
+    &--size-small{
+      width : 400px;
+      padding-bottom : 50px;
+      .popup-module__title{
+        width : 220px;
+      }
+      .popup-module__text{
+        width : 280px;
+      }
+      .popup-module__btn{
+        padding : 17px 122px;
+        margin-bottom: 30px;
+      }
     }
   }
 }
