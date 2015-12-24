@@ -49,3 +49,15 @@ header{
 .no-js .download-btn__field{
   display: inline-block;
 }
+
+.no-js .menu-section {
+  display: block;
+}
+
+.no-js .menu-section-open{
+  display : none;
+}
+
+.no-js .menu-section__close{
+  display : none;
+}
