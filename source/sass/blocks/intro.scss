@@ -95,6 +95,8 @@
 
 @media (min-resolution: $retina2x){
   .intro{
-    background-image : url("../img/intro/photo-background@2x.jpg");
+    &__wrap{
+      background-image : url("../img/intro/photo-background@2x.jpg");
+    }
   }
 }
