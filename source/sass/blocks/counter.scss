@@ -12,7 +12,6 @@
     right : 90px;
 
     overflow : hidden;
-    //width: 45px;
 
     height : 58px;
     padding : 0;
@@ -64,6 +63,7 @@
     background : $c_lighter-grey;
 
     fill : $c_darken-grey;
+    cursor: pointer;
     &:hover{
       background-color : #e5e5e5;
 
@@ -73,6 +73,10 @@
       background-color : #d5d5d5;
 
       fill : #c4c4c4;
+    }
+    &[disabled] {
+      opacity: 0.3;
+      cursor: default;
     }
     &--plus{
       right : 0;
