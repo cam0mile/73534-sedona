@@ -92,12 +92,12 @@
     }
 
     function removeFields() {
-      if (input.value > 0) {
+      if (input.value > min) {
         var children = area.children;
         var lastChildNumber = children.length - 1;
         area.removeChild(children[lastChildNumber]);
       } else {
-        input.value = 1;
+        input.value = min;
       }
     }
 
@@ -107,12 +107,15 @@
       var html = Mustache.render(template, {
         "number": number
       });
+      if (input.value < max) {
+        var templateElement = document.createElement("div");
+        templateElement.classList.add("contact-info");
+        templateElement.innerHTML = html;
 
-      var templateElement = document.createElement("div");
-      templateElement.classList.add("contact-info");
-      templateElement.innerHTML = html;
-
-      area.appendChild(templateElement);
+        area.appendChild(templateElement);
+      } else {
+        input.value = max;
+      }
     }
   }
 })();
