@@ -9,7 +9,7 @@
 
   var form = document.querySelector("form");
   var elements = document.querySelectorAll(".counter");
-  var area = form.querySelector(".contact-info-wrap");
+  var area = document.getElementById("area");
   var template = document.querySelector("#contact-template").innerHTML;
   var number = 0;
   var div = 0;
@@ -58,8 +58,8 @@
     //дополнительное задание от наставника =)
     if (min>max) {
       x = min;
-      min = Math.min(max,min);
-      max = Math.max(max,x);
+      min = max;
+      max = x;
     }
 
     minus.addEventListener('click', function(){
@@ -81,40 +81,61 @@
       var result;
       if (operation) {
         result = value + 1;
+        minus.disabled=false;
         if (!isNaN(max)){
           result = Math.min(result, max);
+          if (value == max) {
+            plus.disabled=true;
+          }
         }
-      }  else {
+      } else {
         result = value - 1;
         result = Math.max(result, min);
+        plus.disabled=false;
+        if (value == min) {
+          minus.disabled=true;
+        }
       }
       input.value = result;
     }
 
     function removeFields() {
-      if (input.value > min) {
-        var children = area.children;
-        var lastChildNumber = children.length - 1;
-        area.removeChild(children[lastChildNumber]);
-      } else {
-        input.value = min;
+      var number = parseInt(input.value);
+      var children = area.children;
+      var childLength = children.length;
+
+
+      if (childLength == min) {
+        return;
+      }
+      if (number >= min) {
+        area.removeChild(children[childLength - 1]);
       }
     }
 
     function addFields() {
-      var number = Number(input.value);
+      var number = parseInt(input.value);
+      var children;
+      var childLength;
+      var html;
+      var templateElement;
 
-      var html = Mustache.render(template, {
-        "number": number
-      });
-      if (input.value < max) {
-        var templateElement = document.createElement("div");
+      if (number == max) {
+        children = area.children;
+        childLength = children.length;
+        if (childLength == max) {
+          return;
+        }
+      }
+      if (number <= max) {
+        html = Mustache.render(template, {
+          "number": number
+        });
+        templateElement = document.createElement("div");
         templateElement.classList.add("contact-info");
         templateElement.innerHTML = html;
 
         area.appendChild(templateElement);
-      } else {
-        input.value = max;
       }
     }
   }
